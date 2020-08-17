@@ -26,21 +26,21 @@
         "feature": {
           "type": "minecraft:random_patch",
           "config": {
-            "xspread": 6,
-            "yspread": 4,
-            "zspread": 6,
+            "xspread": 10,
+            "yspread": 12,
+            "zspread": 10,
             "tries": 64,
             "state_provider": {
               "type": "minecraft:weighted_state_provider",
               "entries": [
                 {
-                  "weight": 3,
+                  "weight": 5,
                   "data": {
                     "Name": "minecraft:smooth_quartz"
                   }
                 },
                 {
-                  "weight": 1,
+                  "weight": 2,
                   "data": {
                     "Name": "minecraft:air"
                   }
@@ -61,6 +61,18 @@
               },
               {
                 "Name": "minecraft:nether_wart_block"
+              },
+              {
+                "Name": "minecraft:red_terracotta"
+              },
+              {
+                "Name": "minecraft:red_concrete_powder"
+              },
+              {
+                "Name": "minecraft:pink_concrete_powder"
+              },
+              {
+                "Name": "minecraft:nether_quartz_ore"
               }
             ],
             "blacklist": []

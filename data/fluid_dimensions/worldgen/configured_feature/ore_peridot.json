@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count",
+      "config": {
+        "count": 4
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "maximum": 63,
+                "bottom_offset": 6,
+                "top_offset": 0
+              }
+            },
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "state": {
+                  "Name": "minecraft:red_nether_brick_slab",
+                  "Properties": {
+                    "type": "double",
+                    "waterlogged": "true"
+                  }
+                },
+                "size": 4,
+                "target": {
+                  "block": "minecraft:blackstone",
+                  "predicate_type": "minecraft:block_match"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,4 @@
-fill ~-10 ~-10 ~-10 ~10 ~10 ~10 air replace water
-say hi
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace water
 scoreboard players reset @a fd.mine_nullite
 scoreboard players reset @a fd.mine_peridot
 kill @s

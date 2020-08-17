@@ -39,12 +39,14 @@
     [],
     [],
     [
+      "fluid_dimensions:gorge_surface",
       "fluid_dimensions:quartz_spike"
     ],
     [
       "minecraft:ore_magma",
       "minecraft:ore_debris_large",
-      "fluid_dimensions:ore_nullite"
+      "fluid_dimensions:ore_nullite",
+      "fluid_dimensions:ore_peridot"
     ],
     [],
     [

@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count",
+      "config": {
+        "count": 48
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:heightmap_world_surface",
+              "config": {}
+            },
+            "feature": {
+              "type": "minecraft:block_pile",
+              "config": {
+                "state_provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 240,
+                      "data": {
+                        "Name": "minecraft:red_terracotta"
+                      }
+                    },
+                    {
+                      "weight": 240,
+                      "data": {
+                        "Name": "minecraft:pink_terracotta"
+                      }
+                    },
+                    {
+                      "weight": 80,
+                      "data": {
+                        "Name": "minecraft:air"
+                      }
+                    },
+                    {
+                      "weight": 160,
+                      "data": {
+                        "Name": "minecraft:netherrack"
+                      }
+                    },
+                    {
+                      "weight": 120,
+                      "data": {
+                        "Name": "minecraft:red_concrete_powder"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:nether_quartz_ore"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
