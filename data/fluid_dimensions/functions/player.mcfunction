@@ -18,5 +18,6 @@ execute if entity @s[predicate=fluid_dimensions:holding/uni_altimeter] run funct
 function fluid_dimensions:i/tick/iris
 function fluid_dimensions:enchanted_door/door
 
-# Nullite Ore Water Removal
-execute if score @s fd.mine_nullite matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:nullite_spongify
+# Custom Ores Water Removal
+execute if score @s fd.mine_nullite matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
+execute if score @s fd.mine_peridot matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
