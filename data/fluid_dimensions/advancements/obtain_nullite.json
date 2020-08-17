@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "You found a \\0"
+        },
+        "description": {
+            "text": "Collect a Nullite Piece",
+            "color": "blue"
+        },
+        "icon": {
+            "item": "minecraft:fermented_spider_eye",
+            "nbt": "{CustomModelData:4701003}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "obtain_sky_pearl": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:fermented_spider_eye",
+                        "nbt": "{fd_nullite_piece:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "fluid_dimensions:the_abyss"
+}

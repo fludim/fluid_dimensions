@@ -1,0 +1,40 @@
+{
+  "config": {
+    "feature": {
+      "config": {
+        "feature": {
+          "name": "ore_nullite",
+          "config": {
+            "target": {
+              "block": "minecraft:blackstone",
+              "predicate_type": "minecraft:block_match"
+            },
+            "state": {
+              "Name": "minecraft:purpur_slab",
+              "Properties": {
+                "type": "double",
+                "waterlogged": "true"
+              }
+            },
+            "size": 1
+          },
+          "type": "minecraft:no_surface_ore"
+        },
+        "decorator": {
+          "config": {
+            "bottom_offset": 6,
+            "top_offset": 14,
+            "maximum": 27
+          },
+          "type": "minecraft:range"
+        }
+      },
+      "type": "minecraft:decorated"
+    },
+    "decorator": {
+      "config": {},
+      "type": "minecraft:square"
+    }
+  },
+  "type": "minecraft:decorated"
+}

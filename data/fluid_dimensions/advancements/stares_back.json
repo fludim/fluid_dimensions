@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "...Stares Back"
+        },
+        "description": {
+            "text": "Summon the boss of the Underridge Dimension",
+            "color": "blue"
+        },
+        "icon": {
+            "item": "minecraft:knowledge_book",
+            "nbt": "{CustomModelData:4701002}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "only_by_the_functions": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "fluid_dimensions:the_abyss"
+}

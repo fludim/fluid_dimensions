@@ -1,0 +1,11 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"position": {
+			"y": {
+				"min": 320
+			}
+		},
+		"dimension": "fluid_dimensions:underridge"
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "config": {
+    "start_pool": "fluid_dimensions:stacks/rooms",
+    "size": 4
+  },
+  "type": "minecraft:village",
+  "name": "fluid_dimensions:stacks"
+}

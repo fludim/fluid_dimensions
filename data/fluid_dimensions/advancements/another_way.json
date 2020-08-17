@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Another Way"
+        },
+        "description": {
+            "text": "Travel between dimensions by flying (or falling), rather than portals",
+            "color": "blue"
+        },
+        "icon": {
+            "item": "minecraft:firework_rocket"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "only_by_the_functions": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "fluid_dimensions:root"
+}

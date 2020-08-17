@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:4701005,fd.enchanted_door:1b,display:{Name:'{\"text\":\"Enchanted Warped Door\",\"italic\": false,\"color\":\"light_purple\"}'},Enchantments:[{id:\"minecraft:infinity\",lvl:1}],HideFlags:1,Damage:20}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

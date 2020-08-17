@@ -1,0 +1,104 @@
+{
+  "starts": [
+    "minecraft:nether_fossil"
+  ],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [
+      {
+        "type": "minecraft:strider",
+        "weight": 80,
+        "minCount": 1,
+        "maxCount": 4
+      }
+    ],
+    "monster": [
+      {
+        "type": "minecraft:ghast",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:magma_cube",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 6
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "surface_builder": "fluid_dimensions:ur_basalt_deltas",
+  "carvers": {
+    "air": [
+      "fluid_dimensions:nether_cave"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "fluid_dimensions:ur_delta"
+    ],
+    [
+      "minecraft:ore_magma",
+      "minecraft:ore_debris_large",
+      "fluid_dimensions:ore_nullite",
+      "minecraft:ore_gold_deltas"
+    ],
+    [],
+    [
+      "minecraft:basalt_blobs",
+      "minecraft:spring_delta",
+      "fluid_dimensions:ur_small_basalt_columns"
+    ],
+    [
+      "minecraft:spring_lava_double",
+      "fluid_dimensions:ur_patch_fire"
+    ],
+    []
+  ],
+  "temperature": 1.0,
+  "downfall": 0.0,
+  "effects": {
+    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_delay": 5000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "minecraft:music.nether.basalt_deltas",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "sky_color": 1792,
+    "fog_color": 1792,
+    "water_color": 1184274,
+    "water_fog_color": 4341314,
+    "grass_color": 4010029,
+    "foliage_color": 16711787,
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.118093334
+    }
+  },
+  "precipitation": "none",
+  "category": "nether",
+  "player_spawn_friendly": true,
+  "depth": 0.3,
+  "scale": 0.3
+}

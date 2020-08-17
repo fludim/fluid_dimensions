@@ -1,0 +1,12 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"mainhand": {
+				"item": "minecraft:clock",
+				"nbt": "{fd_universal_altimeter:1b}"
+			}
+		}
+	}
+}

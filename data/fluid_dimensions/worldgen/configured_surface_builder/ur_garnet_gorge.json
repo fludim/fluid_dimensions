@@ -1,0 +1,14 @@
+{
+  "config": {
+    "top_material": {
+      "Name": "minecraft:red_terracotta"
+    },
+    "under_material": {
+      "Name": "minecraft:red_terracotta"
+    },
+    "underwater_material": {
+      "Name": "minecraft:nether_wart_block"
+    }
+  },
+  "type": "minecraft:default"
+}

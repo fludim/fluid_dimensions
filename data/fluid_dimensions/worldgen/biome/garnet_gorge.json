@@ -1,0 +1,99 @@
+{
+  "starts": [
+    "minecraft:nether_fossil"
+  ],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 6,
+        "minCount": 1,
+        "maxCount": 4
+      }
+    ],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": [
+      {
+        "type": "minecraft:zombie",
+        "weight": 6,
+        "minCount": 3,
+        "maxCount": 6
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "surface_builder": "fluid_dimensions:ur_garnet_gorge",
+  "carvers": {
+    "air": [
+      "fluid_dimensions:gorge_cave",
+      "fluid_dimensions:gorge_cave",
+      "fluid_dimensions:gorge_cave"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "fluid_dimensions:quartz_spike"
+    ],
+    [
+      "minecraft:ore_magma",
+      "minecraft:ore_debris_large",
+      "fluid_dimensions:ore_nullite"
+    ],
+    [],
+    [
+      "fluid_dimensions:nether_wart_blobs",
+      "fluid_dimensions:nether_wart_blobores"
+    ],
+    [
+      "fluid_dimensions:ur_patch_fire",
+      "minecraft:spring_lava_double",
+      "fluid_dimensions:garnet_gorge_vegetation"
+    ],
+    []
+  ],
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "ambient_sound": "minecraft:ambient.crimson_forest.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.crimson_forest.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "minecraft:music.nether.nether_wastes",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "sky_color": 2162962,
+    "fog_color": 5374496,
+    "water_color": 1184274,
+    "water_fog_color": 4341314,
+    "grass_color": 4010029,
+    "foliage_color": 16711787,
+    "particle": {
+      "options": {
+        "type": "minecraft:crimson_spore"
+      },
+      "probability": 0.058093334
+    }
+  },
+  "precipitation": "none",
+  "category": "nether",
+  "player_spawn_friendly": false,
+  "depth": -0.2,
+  "scale": 0.1
+}

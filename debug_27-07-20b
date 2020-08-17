@@ -1,0 +1,36 @@
+commandFunctions(6094/1) - 3.14%/0.81%
+  minecraft:tick(6094/1) - 99.38%/0.80%
+    execute as @e[tag=fd.i] run function fluid_dimensions:i/tick/i(6094/1) - 29.52%/0.24%
+    execute positioned as @s in fluid_dimensions:underridge run tp @s ~ 319 ~(2/0) - 18.90%/0.15%
+    execute as @e[tag=fd.i_carrier] run function fluid_dimensions:i/tick/carrier(6094/1) - 12.44%/0.10%
+    execute as @a run function fluid_dimensions:player(6094/1) - 4.63%/0.04%
+    execute if entity @s[predicate=fluid_dimensions:ypos/upper_sky_lb] run function fluid_dimensions:go_overworld_from_upper_sky(6094/1) - 3.78%/0.03%
+    execute positioned as @s in minecraft:the_end run tp @s ~ 319 ~(1/0) - 2.90%/0.02%
+    effect give @s[tag=fd.blindness] minecraft:blindness 2 0 true(6094/1) - 2.86%/0.02%
+    gamerule sendCommandFeedback true(6094/1) - 2.26%/0.02%
+    execute positioned as @s in minecraft:the_nether run tp @s ~ 383 ~(1/0) - 2.21%/0.02%
+    tag @s[predicate=fluid_dimensions:holding/stygian_iris,tag=!fd.holding_stygian_iris] add fd.holding_stygian_iris(6094/1) - 2.18%/0.02%
+    scoreboard players set @s fd.epearl_thrown 0(6094/1) - 1.56%/0.01%
+    execute as @a run function fluid_dimensions:i/tick/iris(6094/1) - 1.14%/0.01%
+    execute as @s[scores={fd.epearl_thrown=1..}] at @s run function fluid_dimensions:sky_pearl/check(6094/1) - 1.14%/0.01%
+    tag @s remove fd.blindness(6094/1) - 0.96%/0.01%
+    execute as @s run function fluid_dimensions:travel(6094/1) - 0.64%/0.01%
+    
+    execute if entity @s[predicate=fluid_dimensions:ypos/overworld_ub] run function fluid_dimensions:go_upper_sky_from_overworld(6094/1) - 0.59%/0.00%
+    execute if entity @s[predicate=fluid_dimensions:ypos/overworld_lb] run function fluid_dimensions:go_end_from_overworld(6094/1) - 0.57%/0.00%
+    execute as @s[tag=fd.holding_stygian_iris,scores={fd.consume_book=1..}] at @s positioned ^ ^ ^3 run function fluid_dimensions:i/summon(6094/1) - 0.51%/0.00%
+    execute if entity @s[predicate=fluid_dimensions:ypos/the_end_ub] run function fluid_dimensions:go_overworld_from_end(6094/1) - 0.44%/0.00%
+    execute if entity @s[predicate=fluid_dimensions:ypos/the_nether_ub] run function fluid_dimensions:go_end_from_nether(6094/1) - 0.42%/0.00%
+    function fluid_dimensions:i/tick(12188/2) - 0.36%/0.00%
+    execute if entity @s[predicate=fluid_dimensions:ypos/the_nether_lb] run function fluid_dimensions:go_underridge_from_nether(6094/1) - 0.35%/0.00%
+    execute if entity @s[predicate=fluid_dimensions:ypos/underridge_ub] run function fluid_dimensions:go_nether_from_underridge(6094/1) - 0.34%/0.00%
+    execute if entity @s[predicate=fluid_dimensions:ypos/the_end_lb] run function fluid_dimensions:go_nether_from_end(6094/1) - 0.33%/0.00%
+    function fluid_dimensions:player(6094/1) - 0.08%/0.00%
+    function fluid_dimensions:travel(6094/1) - 0.06%/0.00%
+    function fluid_dimensions:i/tick/iris(6094/1) - 0.05%/0.00%
+    execute as @s[advancements={fluid_dimensions:another_way=false}] run advancement grant @s only fluid_dimensions:another_way(4/0) - 0.00%/0.00%
+    tag @s add fd.blindness(4/0) - 0.00%/0.00%
+    function fluid_dimensions:go_underridge_from_nether(2/0) - 0.00%/0.00%
+    function fluid_dimensions:go_nether_from_end(1/0) - 0.00%/0.00%
+    function fluid_dimensions:go_end_from_overworld(1/0) - 0.00%/0.00%
+  unspecified(6094/1) - 0.62%/0.00%
