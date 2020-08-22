@@ -7,23 +7,19 @@
             "feature": {
               "config": {
                 "target": {
-                  "block": "minecraft:blackstone",
+                  "block": "minecraft:netherrack",
                   "predicate_type": "minecraft:block_match"
                 },
                 "state": {
-                  "Name": "minecraft:gilded_blackstone"
+                  "Name": "minecraft:magma_block"
                 },
-                "size": 11
+                "size": 20
               },
               "type": "minecraft:ore"
             },
             "decorator": {
-              "config": {
-                "bottom_offset": 10,
-                "top_offset": 10,
-                "maximum": 80
-              },
-              "type": "minecraft:range"
+              "config": {},
+              "type": "minecraft:magma"
             }
           },
           "type": "minecraft:decorated"
@@ -37,7 +33,7 @@
     },
     "decorator": {
       "config": {
-        "count": 12
+        "count": 5
       },
       "type": "minecraft:count"
     }

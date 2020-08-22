@@ -24,7 +24,12 @@
       }
     ]
   },
-  "spawn_costs": {},
+  "spawn_costs": {
+    "minecraft:zombie": {
+      "energy_budget": 0.09,
+      "charge": 0.8
+    }
+  },
   "surface_builder": "fluid_dimensions:ur_garnet_gorge",
   "carvers": {
     "air": [
@@ -43,8 +48,9 @@
       "fluid_dimensions:quartz_spike"
     ],
     [
-      "minecraft:ore_magma",
+      "fluid_dimensions:ur_ore_magma",
       "minecraft:ore_debris_large",
+      "fluid_dimensions:ore_gilded_blackstone",
       "fluid_dimensions:ore_nullite",
       "fluid_dimensions:ore_peridot"
     ],

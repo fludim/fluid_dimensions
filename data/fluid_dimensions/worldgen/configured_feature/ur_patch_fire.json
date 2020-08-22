@@ -14,7 +14,10 @@
             "Name": "minecraft:blackstone",
             "Name": "minecraft:obsidian",
             "Name": "minecraft:magma_block",
-            "Name": "minecraft:red_terracotta"
+            "Name": "minecraft:red_terracotta",
+            "Name": "minecraft:pink_terracotta",
+            "Name": "minecraft:red_concrete_powder",
+            "Name": "minecraft:netherrack"
           }
         ],
         "blacklist": [],
@@ -41,7 +44,7 @@
     },
     "decorator": {
       "config": {
-        "count": 40
+        "count": 36
       },
       "type": "minecraft:fire"
     }
