@@ -1,6 +1,6 @@
 # Welcome message (credits: minecraft.tools)
 gamerule sendCommandFeedback false
-tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n      Thanks for using\n"},{"text":"       Fluid","italic":true,"color":"blue"},{"text":" Dimensions","color":"gold"},{"text":"\n"},{"text":"           v2.2","bold":true,"color":"green"},{"text":"\n\n"},{"text":"[Info]","color":"white","clickEvent":{"action":"run_command","value":"/function fluid_dimensions:info/1"}},{"text":"             ","color":"white"},{"text":"[Uninstall]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function fluid_dimensions:areyousure"}},{"text":"\n"},{"text":"==+----------------+==","color":"gray"}]
+tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n      Thanks for using\n"},{"text":"       Fluid","italic":true,"color":"blue"},{"text":" Dimensions","color":"gold"},{"text":"\n"},{"text":"           v2.2","bold":true,"color":"green"},{"text":"\n\n"},{"text":"[Info]","color":"white","clickEvent":{"action":"run_command","value":"/function fluid_dimensions:info/1"}},{"text":"             ","color":"white"},{"text":"[Uninstall]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function fluid_dimensions:info/areyousure"}},{"text":"\n"},{"text":"==+----------------+==","color":"gray"}]
 
 # fd.load
 scoreboard objectives add fd.sball_thrown minecraft.used:minecraft.snowball "Snowball Used"

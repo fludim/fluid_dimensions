@@ -11,8 +11,8 @@ tag @s remove fd.blindness
 execute if score @s fd.sball_thrown matches 1.. at @s run function fluid_dimensions:sky_pearl/check
 scoreboard players reset @s fd.sball_thrown
 
-# Uni Altimeter
-execute if entity @s[predicate=fluid_dimensions:holding/uni_altimeter] run function fluid_dimensions:uni_altimeter/calculate
+# Universal Altimeter
+function fluid_dimensions:uni_altimeter/holding
 
 # Right clicks
 function fluid_dimensions:i/tick/iris
@@ -21,3 +21,9 @@ function fluid_dimensions:enchanted_door/door
 # Custom Ores Water Removal
 execute if score @s fd.mine_nullite matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
 execute if score @s fd.mine_peridot matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
+
+# Void Cloak
+function fluid_dimensions:void_cloak/tick
+
+# right-click reset
+scoreboard players reset @s[scores={fd.r_click=1..}] fd.r_click

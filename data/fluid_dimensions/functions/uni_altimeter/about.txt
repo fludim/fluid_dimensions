@@ -1,0 +1,14 @@
+From y=0 in Underridge, changing your y level by the following amounts will take you to y=0 in the other dimensions:
+
+511  (+511)    -> Nether
+1086 (+575)    -> End
+1533 (+447)    -> Overworld
+1976 (+443)    -> Upper Sky
+
+The height calculations allow you to 'skip' entire dimensions when teleporting relatively.
+
+The total 'distance' between the Underridge and the height limit of the Upper Sky is 1976+256 = 2232 blocks.
+This is the Fluid Dimensions world height span.
+
+When teleporting certain amounts up/down you may incorrectly teleport.
+This happens because it is not technically an intended feature and @#'!£%^("^&@*~$}€.

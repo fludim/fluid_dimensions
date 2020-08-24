@@ -1,1 +1,2 @@
+# Gives a Stygian Iris
 give @s minecraft:knowledge_book{Recipes:[{}],display:{Name:'{"text":"Stygian Iris","color":"dark_red","italic":false}',Lore:["[{\"text\":\"Summons the powerful boss\",\"italic\":false,\"color\":\"gray\"}]","[{\"text\":\"of the Underridge Dimension\",\"italic\":false,\"color\":\"gray\"},{\"text\":\"\",\"italic\":false}]","[{\"text\":\"\",\"italic\":false}]"]},CustomModelData:4701002,fd_stygian_iris:1b}
