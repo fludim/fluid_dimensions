@@ -27,10 +27,25 @@
         "weight": 6,
         "minCount": 2,
         "maxCount": 4
+      },
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 3
       }
     ]
   },
-  "spawn_costs": {},
+  "spawn_costs": {
+    "minecraft:wither_skeleton": {
+      "energy_budget": 0.03s,
+      "charge": 0.9
+    },
+    "minecraft:enderman": {
+      "energy_budget": 0.1,
+      "charge": 0.7
+    }
+  },
   "surface_builder": "fluid_dimensions:ur_bleak_forest",
   "carvers": {
     "air": [

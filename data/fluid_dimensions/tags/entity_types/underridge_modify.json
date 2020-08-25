@@ -1,6 +1,7 @@
 {
         "values": [
             "minecraft:magma_cube",
-            "minecraft:zombie"
+            "minecraft:zombie",
+            "minecraft:wither_skeleton"
         ]
 }

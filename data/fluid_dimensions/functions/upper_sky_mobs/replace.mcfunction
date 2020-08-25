@@ -1,4 +1,4 @@
-#From: 10ticks
+#From: 10ticks, as @e[type=#fluid_dimensions:upper_sky_modify]
 
 #Basic replacement system for mobs that spawn because it's much easier and less laggy than whatever custom spawning mechanism I can come up with
 #Tags: fd.us_mob
