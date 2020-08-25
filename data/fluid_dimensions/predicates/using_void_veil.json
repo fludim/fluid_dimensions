@@ -25,7 +25,7 @@
             "equipment": {
               "head": {
                 "item": "minecraft:warped_fungus_on_a_stick",
-                "nbt": "{fd_void_cloak:1b}"
+                "nbt": "{fd_void_veil:1b}"
               }
             }
           }

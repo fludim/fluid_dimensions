@@ -22,8 +22,8 @@ function fluid_dimensions:enchanted_door/door
 execute if score @s fd.mine_nullite matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
 execute if score @s fd.mine_peridot matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
 
-# Void Cloak
-function fluid_dimensions:void_cloak/tick
+# Void Veil
+function fluid_dimensions:void_veil/tick
 
 # right-click reset
 scoreboard players reset @s[scores={fd.r_click=1..}] fd.r_click
