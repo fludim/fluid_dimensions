@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count_extra",
+      "config": {
+        "count": 10,
+        "extra_count": 1,
+        "extra_chance": 0.1
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:decorated",
+          "config": {
+            "outer": {
+              "type": "minecraft:square",
+              "config": {}
+            },
+            "inner": {
+              "type": "minecraft:heightmap",
+              "config": {}
+            }
+          }
+        },
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "max_water_depth": 0,
+            "ignore_vines": false,
+            "heightmap": "OCEAN_FLOOR",
+            "minimum_size": {
+              "type": "minecraft:three_layers_feature_size"
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:mushroom_stem",
+                "Properties": {
+                  "down": "false",
+                  "east": "true",
+                  "west": "true",
+                  "south": "true",
+                  "north": "true",
+                  "up": "false"
+                }
+              }
+            },
+            "leaves_provider": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 5,
+                  "data": {
+                    "Name": "minecraft:yellow_stained_glass"
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:white_stained_glass"
+                  }
+                }
+              ]
+            },
+            "trunk_placer": {
+              "type": "minecraft:forking_trunk_placer",
+              "base_height": 7,
+              "height_rand_a": 4,
+              "height_rand_b": 1
+            },
+            "foliage_placer": {
+              "type": "minecraft:pine_foliage_placer",
+              "radius": 1,
+              "offset": 1,
+              "height": {
+                "base": 1,
+                "spread": 2
+              }
+            },
+            "decorators": []
+          }
+        }
+      }
+    }
+  }
+}

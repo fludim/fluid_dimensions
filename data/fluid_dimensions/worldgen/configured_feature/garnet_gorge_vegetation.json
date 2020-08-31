@@ -8,7 +8,25 @@
     "zspread": 10,
     "whitelist": [
       {
+        "Name": "minecraft:blackstone"
+      },
+      {
+        "Name": "minecraft:netherrack"
+      },
+      {
+        "Name": "minecraft:nether_wart_block"
+      },
+      {
+        "Name": "minecraft:red_terracotta"
+      },
+      {
         "Name": "minecraft:red_concrete_powder"
+      },
+      {
+        "Name": "minecraft:pink_concrete_powder"
+      },
+      {
+        "Name": "minecraft:nether_quartz_ore"
       }
     ],
     "blacklist": [],

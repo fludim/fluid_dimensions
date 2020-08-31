@@ -5,23 +5,26 @@
         "feature": {
           "config": {
             "feature": {
+              "name": "stone_darkening",
               "config": {
                 "target": {
-                  "block": "minecraft:blackstone",
-                  "predicate_type": "minecraft:block_match"
+                  "Name": "minecraft:stone"
                 },
                 "state": {
-                  "Name": "minecraft:gilded_blackstone"
+                  "Name": "minecraft:blackstone"
                 },
-                "size": 11
+                "radius": {
+                  "base": 30,
+                  "spread": 10
+                }
               },
-              "type": "minecraft:ore"
+              "type": "minecraft:netherrack_replace_blobs"
             },
             "decorator": {
               "config": {
-                "bottom_offset": 10,
-                "top_offset": 10,
-                "maximum": 80
+                "bottom_offset": 0,
+                "top_offset": 0,
+                "maximum": 255
               },
               "type": "minecraft:range"
             }
@@ -37,7 +40,7 @@
     },
     "decorator": {
       "config": {
-        "count": 6
+        "count": 128
       },
       "type": "minecraft:count"
     }

@@ -30,7 +30,7 @@
       "charge": 0.8
     }
   },
-  "surface_builder": "fluid_dimensions:ur_garnet_gorge",
+  "surface_builder": "fluid_dimensions:garnet_gorge",
   "carvers": {
     "air": [
       "fluid_dimensions:gorge_cave",

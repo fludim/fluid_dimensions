@@ -11,9 +11,9 @@
                   "predicate_type": "minecraft:block_match"
                 },
                 "state": {
-                  "Name": "minecraft:gilded_blackstone"
+                  "Name": "minecraft:air"
                 },
-                "size": 11
+                "size": 32
               },
               "type": "minecraft:ore"
             },
@@ -21,7 +21,7 @@
               "config": {
                 "bottom_offset": 10,
                 "top_offset": 10,
-                "maximum": 80
+                "maximum": 140
               },
               "type": "minecraft:range"
             }
@@ -37,7 +37,7 @@
     },
     "decorator": {
       "config": {
-        "count": 6
+        "count": 10
       },
       "type": "minecraft:count"
     }
