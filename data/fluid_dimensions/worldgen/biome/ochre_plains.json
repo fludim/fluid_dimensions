@@ -42,13 +42,13 @@
   "features": [
     [],
     [
-      "fluid_dimensions:ur_lake_lava",
-      "fluid_dimensions:crobs_spikes",
-      "fluid_dimensions:crobs_spikes_one"
+      "fluid_dimensions:ur_lake_lava"
     ],
     [],
     [],
-    [],
+    [
+      "fluid_dimensions:crobs_spikes"
+    ],
     [
       "fluid_dimensions:ur_ore_magma",
       "fluid_dimensions:ore_dirt",
@@ -63,9 +63,10 @@
       "minecraft:basalt_blobs",
       "minecraft:basalt_blobs",
       "minecraft:basalt_blobs",
-      "fluid_dimensions:yellow_terracotta_blobs_grass"
+      "fluid_dimensions:podzol_blobs_grass"
     ],
     [
+      "fluid_dimensions:ochre_shroom",
       "fluid_dimensions:ochre_pine",
       "fluid_dimensions:ur_brown_mushroom",
       "minecraft:spring_lava_double"

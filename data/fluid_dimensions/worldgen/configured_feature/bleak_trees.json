@@ -13,7 +13,7 @@
           "config": {
             "count": {
               "base": 0,
-              "spread": 2
+              "spread": 5
             }
           }
         },
