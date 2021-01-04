@@ -15,7 +15,7 @@ execute if entity @s[type=minecraft:drowned] run attribute @s minecraft:generic.
 execute if entity @s[type=minecraft:stray] run attribute @s minecraft:generic.max_health base set 32
 execute if entity @s[type=minecraft:stray] run data modify entity @s Health set value 32
 execute if entity @s[type=minecraft:stray] run attribute @s minecraft:generic.follow_range base set 25
-execute if entity @s[type=minecraft:stray] run replaceitem entity @s weapon.mainhand minecraft:diamond_pickaxe{display:{Name:'{"text":"Sharpened Diamond Pickaxe","color":"aqua","italic":false}'},RepairCost:999999,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:7,Operation:0,UUID:[I;1529320876,-706723786,-2014194444,1474272158],Slot:"mainhand"}]}
+execute if entity @s[type=minecraft:stray] run replaceitem entity @s weapon.mainhand minecraft:diamond_pickaxe{display:{Name:'{"translate":"item.fd.sharpened_diamond_pickaxe","color":"aqua","italic":false}'},RepairCost:999999,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:7,Operation:0,UUID:[I;1529320876,-706723786,-2014194444,1474272158],Slot:"mainhand"}]}
 
 #add the checked tag to the mobs
 tag @s add fd.us_mob

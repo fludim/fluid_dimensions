@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:4701010,display:{Name:'{\"text\":\"Nadir Gel\",\"italic\":false}'},fd_nadir_gel:1b}"
+              "tag": "{CustomModelData:4701010,display:{Name:'{\"translate\":\"item.fd.nadir_gel\",\"italic\":false}'},fd_nadir_gel:1b}"
             },
             {
               "function": "minecraft:set_count",
@@ -54,7 +54,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:4701011,display:{Name:'{\"text\":\"Hiatuan Cloth\",\"italic\":false}'},fd_hiatuan_cloth:1b}"
+              "tag": "{CustomModelData:4701011,display:{Name:'{\"translate\":\"item.fd.hiatuan_cloth\",\"italic\":false}'},fd_hiatuan_cloth:1b}"
             }
           ],
           "conditions": [
