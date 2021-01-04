@@ -1,0 +1,20 @@
+{
+  "parent": "fluid_dimensions:the_abyss",
+  "criteria": {
+    "pod": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "item": "minecraft:bowl"
+        },
+        "entity": {
+          "type": "minecraft:villager",
+          "nbt": "{Tags:[fd.pod_ready]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fluid_dimensions:pod/fill_bowl"
+  }
+}
