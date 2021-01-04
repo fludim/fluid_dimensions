@@ -1,33 +1,32 @@
 {
-    "display": {
-        "title": {
-            "text": "For my cloud necklace"
-        },
-        "description": {
-            "text": "Collect a Sky Pearl. I wonder what it does...",
-            "color": "blue"
-        },
-        "icon": {
+  "display": {
+    "title": {
+      "translate": "advancement.fd.obtain_sky_pearl.t"
+    },
+    "description": {
+      "translate": "advancement.fd.obtain_sky_pearl.d"
+    },
+    "icon": {
+      "item": "minecraft:snowball",
+      "nbt": "{CustomModelData:4701001}"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_sky_pearl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
             "item": "minecraft:snowball",
-            "nbt": "{CustomModelData:4701001}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "obtain_sky_pearl": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "item": "minecraft:snowball",
-                        "nbt": "{fd_sky_pearl:1b}"
-                    }
-                ]
-            }
-        }
-    },
-    "parent": "fluid_dimensions:root"
+            "nbt": "{fd_sky_pearl:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "fluid_dimensions:root"
 }

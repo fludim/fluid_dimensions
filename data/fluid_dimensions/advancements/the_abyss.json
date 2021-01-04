@@ -1,27 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "The Abyss"
-        },
-        "description": {
-            "text": "Visit the Underridge Dimension",
-            "color": "blue"
-        },
-        "icon": {
-            "item": "minecraft:blackstone"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
+  "display": {
+    "title": {
+      "translate": "advancement.fd.the_abyss.t"
     },
-    "criteria": {
-        "in_underridge": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "dimension": "fluid_dimensions:underridge"
-            }
-        }
+    "description": {
+      "translate": "advancement.fd.the_abyss.d"
     },
-    "parent": "fluid_dimensions:root"
+    "icon": {
+      "item": "minecraft:blackstone"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "in_underridge": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "dimension": "fluid_dimensions:underridge"
+      }
+    }
+  },
+  "parent": "fluid_dimensions:root"
 }

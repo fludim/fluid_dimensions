@@ -1,27 +1,24 @@
 {
-    "display": {
-        "title": {
-            "text": "Fluid Dimensions",
-            "color": "gold",
-            "bold": true,
-            "italic": false
-        },
-        "description": {
-            "text": "All the advancements from this pack"
-        },
-        "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner:{Id:[I;1,1,1,1],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc2Nzg1YzkxOGVhMjIzZTg0NGFmMGM0MjNhNGNmMzY4Zjk4M2FjNzVlNjA5ZDczZjUzMzRlYmZlOGUyOGI1In19fQ=\"}]}}}"
-        },
-        "frame": "challenge",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false,
-        "background": "minecraft:textures/gui/advancements/backgrounds/honey_block_top.png"
+  "display": {
+    "title": {
+      "translate": "advancement.fd.root.t"
     },
-    "criteria": {
-        "only_by_the_functions": {
-            "trigger": "minecraft:impossible"
-        }
+    "description": {
+      "translate": "advancement.fd.root.d"
+    },
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;1,1,1,1],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc2Nzg1YzkxOGVhMjIzZTg0NGFmMGM0MjNhNGNmMzY4Zjk4M2FjNzVlNjA5ZDczZjUzMzRlYmZlOGUyOGI1In19fQ=\"}]}}}"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/honey_block_top.png"
+  },
+  "criteria": {
+    "only_by_the_functions": {
+      "trigger": "minecraft:impossible"
     }
+  }
 }

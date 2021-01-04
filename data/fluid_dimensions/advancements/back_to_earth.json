@@ -1,24 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Back to Earth"
-        },
-        "description": {
-            "text": "Use a Sky Pearl in the Upper Sky, returning you to the Overworld",
-            "color": "blue"
-        },
-        "icon": {
-            "item": "minecraft:ladder"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
+  "display": {
+    "title": {
+      "translate": "advancement.fd.back_to_earth.t"
     },
-    "criteria": {
-        "only_by_the_functions": {
-            "trigger": "minecraft:impossible"
-        }
+    "description": {
+      "translate": "advancement.fd.back_to_earth.d"
     },
-    "parent": "fluid_dimensions:obtain_sky_pearl"
+    "icon": {
+      "item": "minecraft:ladder"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "only_by_the_functions": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "fluid_dimensions:obtain_sky_pearl"
 }
