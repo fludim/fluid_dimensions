@@ -1,4 +1,6 @@
 {
+  "height": 256,
+  "min_y": 0,
   "ultrawarm": true,
   "natural": false,
   "coordinate_scale": 8.0,

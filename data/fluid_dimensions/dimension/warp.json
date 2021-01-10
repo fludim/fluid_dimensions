@@ -51,6 +51,7 @@
         }
       },
       "noise": {
+        "min_y": 0,
         "density_factor": 1,
         "density_offset": -0.46875,
         "simplex_surface_noise": true,

@@ -41,7 +41,7 @@
         {
           "biome": "fluid_dimensions:blackstone_ridge",
           "parameters": {
-            "altitude": 0.57,
+            "altitude": 0.47,
             "temperature": 0.58,
             "humidity": -0.53,
             "weirdness": 0,
@@ -59,23 +59,33 @@
           }
         },
         {
-          "biome": "fluid_dimensions:ochre_plains",
+          "biome": "fluid_dimensions:dismal_desert",
           "parameters": {
             "altitude": -0.3,
             "temperature": -0.4,
-            "humidity": -0.65,
-            "weirdness": 0.4,
+            "humidity": -0.75,
+            "weirdness": 0.6,
             "offset": 0
           }
         },
         {
           "biome": "fluid_dimensions:garnet_gorge",
           "parameters": {
-            "altitude": -0.7,
-            "temperature": 0.2,
-            "humidity": -0.8,
-            "weirdness": 0.5,
+            "altitude": -0.8,
+            "temperature": 0.6,
+            "humidity": 0.7,
+            "weirdness": 0.4,
             "offset": 0.4
+          }
+        },
+        {
+          "biome": "fluid_dimensions:ochre_plains",
+          "parameters": {
+            "altitude": -0.2,
+            "temperature": 0.8,
+            "humidity": -0.3,
+            "weirdness": 0.6,
+            "offset": 0
           }
         }
       ]
@@ -96,6 +106,7 @@
         }
       },
       "noise": {
+        "min_y": 0,
         "density_factor": 1,
         "density_offset": -0.46875,
         "simplex_surface_noise": true,
