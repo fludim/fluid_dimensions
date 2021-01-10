@@ -48,7 +48,7 @@
               "type": "minecraft:bush_foliage_placer",
               "radius": {
                 "base": 1,
-                "spread": 2
+                "spread": 1
               },
               "offset": 0,
               "height": 2
