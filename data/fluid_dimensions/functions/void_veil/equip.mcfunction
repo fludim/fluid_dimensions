@@ -1,5 +1,5 @@
-replaceitem entity @s[gamemode=!creative,nbt=!{SelectedItem:{tag:{fd_void_veil:1b}}},nbt={Inventory:[{tag:{fd_void_veil:1b},Slot:-106b}]}] weapon.offhand air
-replaceitem entity @s[gamemode=!creative,nbt={SelectedItem:{tag:{fd_void_veil:1b}}}] weapon.mainhand air
+item entity @s[predicate=fluid_dimensions:void_veil/from_offhand] weapon.offhand replace air
+item entity @s[gamemode=!creative,nbt={SelectedItem:{tag:{fd_void_veil:1b}}}] weapon.mainhand replace air
 
 playsound minecraft:item.armor.equip_elytra master @s ~ ~ ~ 1 0
 

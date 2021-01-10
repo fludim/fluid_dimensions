@@ -10,4 +10,4 @@ execute if entity @s[nbt={Dimension:"minecraft:the_end"}] run scoreboard players
 execute if entity @s[nbt={Dimension:"minecraft:overworld"}] run scoreboard players operation @s fd.a_y += $overworld fd.y
 execute if entity @s[nbt={Dimension:"fluid_dimensions:upper_sky"}] run scoreboard players operation @s fd.a_y += $upper_sky fd.y
 
-title @s actionbar [{"text":"Absolute Y Position: "},{"score":{"name":"@s","objective":"fd.a_y"},"color":"#FF5B27"}]
+title @s actionbar [{"translate":"actionbar.fd.absolute_y_position"},{"score":{"name":"@s","objective":"fd.a_y"},"color":"#FF5B27"}]

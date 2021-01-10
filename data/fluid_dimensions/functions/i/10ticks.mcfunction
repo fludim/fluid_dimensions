@@ -1,5 +1,5 @@
-effect give @e[type=minecraft:elder_guardian,tag=fd.i] minecraft:invisibility 1000000 0 true
-effect give @e[type=minecraft:elder_guardian,tag=fd.i] minecraft:fire_resistance 1000000 0 true
+effect give @e[limit=1,tag=fd.i,sort=random] minecraft:invisibility 1000000 0 true
+effect give @e[limit=1,tag=fd.i,sort=random] minecraft:fire_resistance 1000000 0 true
 
 execute store result bossbar minecraft:fd.i_0 max run attribute @e[limit=1,scores={fd.i_id=1}] minecraft:generic.max_health get
 execute store result bossbar minecraft:fd.i_0 value run data get entity @e[limit=1,scores={fd.i_id=1}] Health

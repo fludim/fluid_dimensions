@@ -25,5 +25,5 @@ execute if score @s fd.mine_peridot matches 1.. run execute as @e[type=item,nbt=
 # Void Veil
 function fluid_dimensions:void_veil/tick
 
-# right-click reset
-scoreboard players reset @s[scores={fd.r_click=1..}] fd.r_click
+# call r_click
+execute if entity @s[scores={fd.r_click=1..}] run function fluid_dimensions:r_click
