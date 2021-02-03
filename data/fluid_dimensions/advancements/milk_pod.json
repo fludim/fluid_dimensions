@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fluid_dimensions:pod/fill_bowl"
+    "function": "fluid_dimensions:pod/resolve"
   }
 }
