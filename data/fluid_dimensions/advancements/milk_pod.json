@@ -1,12 +1,37 @@
 {
-  "parent": "fluid_dimensions:the_abyss",
   "criteria": {
     "pod": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "item": {
-          "item": "minecraft:bowl"
-        },
+        "player": [
+          {
+            "condition": "minecraft:alternative",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "item": "minecraft:bowl"
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "item": "minecraft:bowl"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
         "entity": {
           "type": "minecraft:villager",
           "nbt": "{Tags:[fd.pod_ready]}"

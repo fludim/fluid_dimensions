@@ -18,7 +18,7 @@ scoreboard objectives add fd.dimension dummy
 scoreboard objectives add fd.y dummy
 scoreboard objectives add fd.a_y dummy
 scoreboard objectives add fd.mine_nullite minecraft.mined:minecraft.purpur_slab
-scoreboard objectives add fd.mine_peridot minecraft.mined:minecraft.red_nether_brick_slab
+scoreboard objectives add fd.mine_garnet minecraft.mined:minecraft.red_nether_brick_slab
 
 # I preload
 function fluid_dimensions:i/bossbar_config

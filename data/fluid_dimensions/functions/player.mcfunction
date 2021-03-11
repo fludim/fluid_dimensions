@@ -20,7 +20,7 @@ function fluid_dimensions:enchanted_door/door
 
 # Custom Ores Water Removal
 execute if score @s fd.mine_nullite matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
-execute if score @s fd.mine_peridot matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
+execute if score @s fd.mine_garnet matches 1.. run execute as @e[type=item,nbt={Item:{tag:{fd_remove_water:1b}}}] at @s run function fluid_dimensions:custom_ore_spongify
 
 # Void Veil
 function fluid_dimensions:void_veil/tick

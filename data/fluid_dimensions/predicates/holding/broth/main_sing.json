@@ -5,8 +5,8 @@
         "equipment": {
             "mainhand": {
                 "count": 1,
-                "nbt": "{fd_midnight_broth:1b}"
+                "item": "minecraft:bowl"
             }
         }
     }
-}
+}   

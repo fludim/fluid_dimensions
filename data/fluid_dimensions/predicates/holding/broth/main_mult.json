@@ -3,9 +3,11 @@
     "entity": "this",
     "predicate": {
         "equipment": {
-            "offhand": {
-                "count": 1,
-                "item": "minecraft:bowl"
+            "mainhand": {
+                "item": "minecraft:bowl",
+                "count": {
+                    "min": 2
+                }
             }
         }
     }

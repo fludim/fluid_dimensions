@@ -11,7 +11,7 @@ scoreboard objectives remove fd.dimension
 scoreboard objectives remove fd.y
 scoreboard objectives remove fd.a_y
 scoreboard objectives remove fd.mine_nullite
-scoreboard objectives remove fd.mine_peridot
+scoreboard objectives remove fd.mine_garnet
 tp @e[tag=fd.i] 0 -999 0
 tp @e[tag=fd.i_carrier] 0 -999 0
 tag @e remove fd.blindness
