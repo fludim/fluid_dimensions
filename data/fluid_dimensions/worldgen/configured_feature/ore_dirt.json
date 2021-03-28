@@ -1,46 +1,54 @@
 {
+  "type": "minecraft:decorated",
   "config": {
-    "feature": {
-      "config": {
-        "feature": {
-          "config": {
-            "feature": {
-              "config": {
-                "target": {
-                  "block": "minecraft:blackstone",
-                  "predicate_type": "minecraft:block_match"
-                },
-                "state": {
-                  "Name": "minecraft:dirt"
-                },
-                "size": 31
-              },
-              "type": "minecraft:ore"
-            },
-            "decorator": {
-              "config": {
-                "bottom_offset": 10,
-                "top_offset": 10,
-                "maximum": 130
-              },
-              "type": "minecraft:range"
-            }
-          },
-          "type": "minecraft:decorated"
-        },
-        "decorator": {
-          "config": {},
-          "type": "minecraft:square"
-        }
-      },
-      "type": "minecraft:decorated"
-    },
     "decorator": {
+      "type": "minecraft:count",
       "config": {
         "count": 20
-      },
-      "type": "minecraft:count"
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "bottom_inclusive": {
+                  "absolute": 10
+                },
+                "top_inclusive": {
+                  "absolute": 130
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "size": 31,
+                "discard_chance_on_air_exposure": 0,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:blackstone"
+                    },
+                    "state": {
+                      "Name": "minecraft:dirt"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

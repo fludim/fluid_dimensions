@@ -2,85 +2,107 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:count_extra",
+      "type": "minecraft:count_multilayer",
       "config": {
-        "count": 3,
-        "extra_count": 1,
-        "extra_chance": 0.05
+        "count": {
+          "base": 2,
+          "spread": 1
+        }
       }
     },
     "feature": {
       "type": "minecraft:decorated",
       "config": {
         "decorator": {
-          "type": "minecraft:decorated",
+          "type": "minecraft:count_noise_biased",
           "config": {
-            "outer": {
-              "type": "minecraft:square",
-              "config": {}
-            },
-            "inner": {
-              "type": "minecraft:heightmap",
-              "config": {}
-            }
+            "noise_to_count_ratio": 1,
+            "noise_factor": -24,
+            "noise_offset": 0.3
           }
         },
         "feature": {
-          "type": "minecraft:tree",
+          "type": "minecraft:decorated",
           "config": {
-            "max_water_depth": 0,
-            "ignore_vines": false,
-            "heightmap": "OCEAN_FLOOR",
-            "minimum_size": {
-              "type": "minecraft:three_layers_feature_size"
-            },
-            "trunk_provider": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:mushroom_stem",
-                "Properties": {
-                  "down": "false",
-                  "east": "true",
-                  "west": "true",
-                  "south": "true",
-                  "north": "true",
-                  "up": "false"
+            "decorator": {
+              "type": "minecraft:decorated",
+              "config": {
+                "outer": {
+                  "type": "minecraft:square",
+                  "config": {}
+                },
+                "inner": {
+                  "type": "minecraft:heightmap",
+                  "config": {
+                    "heightmap": "OCEAN_FLOOR_WG"
+                  }
                 }
               }
             },
-            "leaves_provider": {
-              "type": "minecraft:weighted_state_provider",
-              "entries": [
-                {
-                  "weight": 5,
-                  "data": {
-                    "Name": "minecraft:yellow_stained_glass"
+            "feature": {
+              "type": "minecraft:tree",
+              "config": {
+                "ignore_vines": false,
+                "force_dirt": false,
+                "minimum_size": {
+                  "type": "minecraft:three_layers_feature_size",
+                  "upper_size": 2
+                },
+                "dirt_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:coarse_dirt"
                   }
                 },
-                {
-                  "weight": 1,
-                  "data": {
-                    "Name": "minecraft:white_stained_glass"
+                "trunk_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:mushroom_stem",
+                    "Properties": {
+                      "down": "false",
+                      "east": "true",
+                      "west": "true",
+                      "south": "true",
+                      "north": "true",
+                      "up": "false"
+                    }
                   }
-                }
-              ]
-            },
-            "trunk_placer": {
-              "type": "minecraft:forking_trunk_placer",
-              "base_height": 7,
-              "height_rand_a": 4,
-              "height_rand_b": 1
-            },
-            "foliage_placer": {
-              "type": "minecraft:pine_foliage_placer",
-              "radius": 1,
-              "offset": 1,
-              "height": {
-                "base": 1,
-                "spread": 2
+                },
+                "foliage_provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 5,
+                      "data": {
+                        "Name": "minecraft:yellow_stained_glass"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:white_stained_glass"
+                      }
+                    }
+                  ]
+                },
+                "trunk_placer": {
+                  "type": "minecraft:forking_trunk_placer",
+                  "base_height": 7,
+                  "height_rand_a": 4,
+                  "height_rand_b": 1
+                },
+                "foliage_placer": {
+                  "type": "minecraft:pine_foliage_placer",
+                  "radius": 1,
+                  "offset": 1,
+                  "height": {
+                    "base": 1,
+                    "spread": 2
+                  }
+                },
+                "decorators": []
               }
-            },
-            "decorators": []
+            }
           }
         }
       }

@@ -1,36 +1,9 @@
 {
+  "type": "fluid_dimensions:nothing",
   "generator": {
-  	"type": "minecraft:noise",
-  	"seed": -1464245863,
-  	"biome_source": {
-      "humidity_noise": {
-        "firstOctave": -7,
-        "amplitudes": [
-          1.0,
-          1.0
-        ]
-      },
-      "altitude_noise": {
-        "firstOctave": -7,
-        "amplitudes": [
-          1.0,
-          1.0
-        ]
-      },
-      "weirdness_noise": {
-        "firstOctave": -7,
-        "amplitudes": [
-          1.0,
-          1.0
-        ]
-      },
-      "temperature_noise": {
-        "firstOctave": -7,
-        "amplitudes": [
-          1.0,
-          1.0
-        ]
-      },
+    "type": "minecraft:noise",
+    "seed": -1464245863,
+    "biome_source": {
       "type": "minecraft:fixed",
       "seed": 0,
       "biome": "fluid_dimensions:nothing_tundra"
@@ -41,6 +14,9 @@
       "bedrock_floor_position": 0,
       "sea_level": 63,
       "disable_mob_generation": true,
+      "noise_caves_enabled": false,
+      "aquifers_enabled": false,
+      "deepslate_enabled": false,
       "default_block": {
         "Name": "minecraft:stone"
       },
@@ -52,15 +28,15 @@
       },
       "noise": {
         "min_y": 0,
+        "height": 256,
         "density_factor": 1,
         "density_offset": -0.46875,
+        "size_horizontal": 2,
+        "size_vertical": 2,
         "simplex_surface_noise": true,
         "random_density_offset": true,
         "island_noise_override": false,
         "amplified": false,
-        "size_horizontal": 2,
-        "size_vertical": 2,
-        "height": 256,
         "sampling": {
           "xz_scale": 1,
           "y_scale": 1,
@@ -79,9 +55,8 @@
         }
       },
       "structures": {
-    		"structures": {}
-  	  }
+        "structures": {}
+      }
     }
-  },
-  "type": "fluid_dimensions:nothing"
+  }
 }

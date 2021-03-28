@@ -30,7 +30,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:clock",
+          "name": "minecraft:charcoal",
           "functions": [
             {
               "function": "minecraft:set_nbt",

@@ -44,8 +44,6 @@
     [
       "fluid_dimensions:ur_lake_lava"
     ],
-    [],
-    [],
     [
       "fluid_dimensions:crobs_spikes"
     ],
@@ -65,11 +63,14 @@
       "minecraft:basalt_blobs",
       "fluid_dimensions:podzol_blobs_grass"
     ],
+    [],
     [
       "fluid_dimensions:ochre_shroom",
       "fluid_dimensions:ochre_pine",
-      "fluid_dimensions:ur_brown_mushroom",
-      "minecraft:spring_lava_double"
+      "fluid_dimensions:ur_brown_mushroom"
+    ],
+    [
+      "fluid_dimensions:ur_spring_lava"
     ],
     []
   ],

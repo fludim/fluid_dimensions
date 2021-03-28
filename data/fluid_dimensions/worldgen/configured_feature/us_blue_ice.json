@@ -5,8 +5,8 @@
       "type": "minecraft:count",
       "config": {
         "count": {
-          "base": 5,
-          "spread": 39
+          "base": 15,
+          "spread": 5
         }
       }
     },
@@ -23,9 +23,12 @@
             "decorator": {
               "type": "minecraft:range",
               "config": {
-                "maximum": 84,
-                "bottom_offset": 10,
-                "top_offset": 32
+                "bottom_inclusive": {
+                  "absolute": 10
+                },
+                "top_inclusive": {
+                  "absolute": 83
+                }
               }
             },
             "feature": {

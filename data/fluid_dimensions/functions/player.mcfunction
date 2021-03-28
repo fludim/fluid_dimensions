@@ -3,11 +3,11 @@
 # Travel
 function fluid_dimensions:travel/tick
 
-# blindness tag
+# Blindness tag
 effect give @s[tag=fd.blindness] minecraft:blindness 2 0 true
 tag @s remove fd.blindness
 
-# Epearl check
+# Sball check
 execute if score @s fd.sball_thrown matches 1.. at @s run function fluid_dimensions:sky_pearl/check
 scoreboard players reset @s fd.sball_thrown
 
@@ -25,5 +25,5 @@ execute if score @s fd.mine_garnet matches 1.. run execute as @e[type=item,nbt={
 # Void Veil
 function fluid_dimensions:void_veil/tick
 
-# call r_click
+# Call r_click
 execute if entity @s[scores={fd.r_click=1..}] run function fluid_dimensions:r_click

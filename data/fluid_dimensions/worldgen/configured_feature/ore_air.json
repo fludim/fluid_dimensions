@@ -1,46 +1,57 @@
 {
+  "type": "minecraft:decorated",
   "config": {
-    "feature": {
-      "config": {
-        "feature": {
-          "config": {
-            "feature": {
-              "config": {
-                "target": {
-                  "block": "minecraft:blackstone",
-                  "predicate_type": "minecraft:block_match"
-                },
-                "state": {
-                  "Name": "minecraft:air"
-                },
-                "size": 32
-              },
-              "type": "minecraft:ore"
-            },
-            "decorator": {
-              "config": {
-                "bottom_offset": 10,
-                "top_offset": 10,
-                "maximum": 140
-              },
-              "type": "minecraft:range"
-            }
-          },
-          "type": "minecraft:decorated"
-        },
-        "decorator": {
-          "config": {},
-          "type": "minecraft:square"
-        }
-      },
-      "type": "minecraft:decorated"
-    },
     "decorator": {
+      "type": "minecraft:count",
       "config": {
-        "count": 10
-      },
-      "type": "minecraft:count"
+        "count": {
+          "base": 8,
+          "spread": 4
+        }
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "bottom_inclusive": {
+                  "absolute": 10
+                },
+                "top_inclusive": {
+                  "absolute": 140
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "size": 32,
+                "discard_chance_on_air_exposure": 0,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:blackstone"
+                    },
+                    "state": {
+                      "Name": "minecraft:air"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

@@ -2,21 +2,20 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:chance",
+      "type": "minecraft:count_multilayer",
       "config": {
-        "chance": 10
+        "count": 4
       }
     },
     "feature": {
       "type": "minecraft:decorated",
       "config": {
         "decorator": {
-          "type": "minecraft:count_multilayer",
+          "type": "minecraft:count_noise_biased",
           "config": {
-            "count": {
-              "base": 4,
-              "spread": 2
-            }
+            "noise_to_count_ratio": 1,
+            "noise_factor": 6,
+            "noise_offset": 0.2
           }
         },
         "feature": {
@@ -31,21 +30,28 @@
                 },
                 "inner": {
                   "type": "minecraft:heightmap",
-                  "config": {}
+                  "config": {
+                    "heightmap": "OCEAN_FLOOR_WG"
+                  }
                 }
               }
             },
             "feature": {
               "type": "minecraft:tree",
               "config": {
-                "max_water_depth": 0,
                 "ignore_vines": false,
-                "heightmap": "OCEAN_FLOOR",
+                "force_dirt": false,
                 "minimum_size": {
                   "type": "minecraft:three_layers_feature_size",
                   "limit": 3,
                   "lower_size": 0,
                   "upper_size": 2
+                },
+                "dirt_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:coarse_dirt"
+                  }
                 },
                 "trunk_provider": {
                   "type": "minecraft:simple_state_provider",
@@ -56,7 +62,7 @@
                     }
                   }
                 },
-                "leaves_provider": {
+                "foliage_provider": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
                     "Name": "minecraft:coal_block"

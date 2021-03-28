@@ -1,22 +1,21 @@
 {
+  "type": "minecraft:decorated",
   "config": {
+    "decorator": {
+      "type": "minecraft:count_multilayer",
+      "config": {
+        "count": 3
+      }
+    },
     "feature": {
-      "name": "ur_small_basalt_columns",
+      "type": "minecraft:basalt_columns",
       "config": {
         "reach": 1,
         "height": {
           "base": 1,
           "spread": 2
         }
-      },
-      "type": "minecraft:basalt_columns"
-    },
-    "decorator": {
-      "config": {
-        "count": 3
-      },
-      "type": "minecraft:count_multilayer"
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

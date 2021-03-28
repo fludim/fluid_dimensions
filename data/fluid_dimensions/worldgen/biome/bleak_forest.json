@@ -68,7 +68,6 @@
     [],
     [
       "fluid_dimensions:stone_to_blackstone",
-      "fluid_dimensions:stone_to_blackstone",
       "minecraft:basalt_blobs",
       "fluid_dimensions:warped_wart_blobs"
     ],
@@ -77,7 +76,7 @@
       "fluid_dimensions:bleak_trees",
       "fluid_dimensions:webbed_bushes",
       "fluid_dimensions:ur_patch_fire",
-      "minecraft:spring_lava_double"
+      "fluid_dimensions:ur_spring_lava"
     ],
     []
   ],

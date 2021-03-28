@@ -94,8 +94,11 @@
       "name": "fluid_dimensions:underridge",
       "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
-      "sea_level": 1,
+      "sea_level": 31,
       "disable_mob_generation": false,
+      "noise_caves_enabled": false,
+      "aquifers_enabled": false,
+      "deepslate_enabled": false,
       "default_block": {
         "Name": "minecraft:blackstone"
       },
@@ -107,15 +110,15 @@
       },
       "noise": {
         "min_y": 0,
+        "height": 256,
         "density_factor": 1,
         "density_offset": -0.46875,
+        "size_horizontal": 2,
+        "size_vertical": 4,
         "simplex_surface_noise": true,
         "random_density_offset": true,
         "island_noise_override": false,
         "amplified": true,
-        "size_horizontal": 2,
-        "size_vertical": 4,
-        "height": 256,
         "sampling": {
           "xz_scale": 1,
           "y_scale": 1,

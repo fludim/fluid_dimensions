@@ -2,58 +2,107 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:square",
-      "config": {}
+      "type": "minecraft:count_multilayer",
+      "config": {
+        "count": 2
+      }
     },
     "feature": {
       "type": "minecraft:decorated",
       "config": {
         "decorator": {
-          "type": "minecraft:count",
-          "config": {
-            "count": 1
-          }
+          "type": "minecraft:square",
+          "config": {}
         },
         "feature": {
-          "type": "minecraft:tree",
+          "type": "minecraft:decorated",
           "config": {
-            "max_water_depth": 0,
-            "ignore_vines": true,
-            "heightmap": "OCEAN_FLOOR",
-            "minimum_size": {
-              "type": "minecraft:two_layers_feature_size",
-              "limit": 1,
-              "lower_size": 0,
-              "upper_size": 1
-            },
-            "trunk_provider": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:cobweb"
+            "decorator": {
+              "type": "minecraft:count_noise_biased",
+              "config": {
+                "noise_to_count_ratio": 1,
+                "noise_factor": 26,
+                "noise_offset": 0.25
               }
             },
-            "leaves_provider": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:cobweb"
+            "feature": {
+              "type": "minecraft:decorated",
+              "config": {
+                "decorator": {
+                  "type": "minecraft:count_noise_biased",
+                  "config": {
+                    "noise_to_count_ratio": 1,
+                    "noise_factor": 6,
+                    "noise_offset": 0.2
+                  }
+                },
+                "feature": {
+                  "type": "minecraft:decorated",
+                  "config": {
+                    "decorator": {
+                      "type": "minecraft:heightmap",
+                      "config": {
+                        "heightmap": "OCEAN_FLOOR"
+                      }
+                    },
+                    "feature": {
+                      "type": "minecraft:tree",
+                      "config": {
+                        "ignore_vines": true,
+                        "force_dirt": false,
+                        "minimum_size": {
+                          "type": "minecraft:two_layers_feature_size",
+                          "limit": 1,
+                          "lower_size": 0,
+                          "upper_size": 1
+                        },
+                        "dirt_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:coarse_dirt"
+                          }
+                        },
+                        "trunk_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:cobweb"
+                          }
+                        },
+                        "foliage_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:cobweb"
+                          }
+                        },
+                        "trunk_placer": {
+                          "type": "minecraft:straight_trunk_placer",
+                          "base_height": 0,
+                          "height_rand_a": 0,
+                          "height_rand_b": 0
+                        },
+                        "foliage_placer": {
+                          "type": "minecraft:random_spread_foliage_placer",
+                          "radius": {
+                            "base": 2,
+                            "spread": 2
+                          },
+                          "offset": {
+                            "base": 0,
+                            "spread": 1
+                          },
+                          "foliage_height": {
+                            "base": 2,
+                            "spread": 1
+                          },
+                          "leaf_placement_attempts": 22
+                        },
+                        "decorators": []
+                      }
+                    }
+                  }
+                }
               }
-            },
-            "trunk_placer": {
-              "type": "minecraft:straight_trunk_placer",
-              "base_height": 0,
-              "height_rand_a": 0,
-              "height_rand_b": 0
-            },
-            "foliage_placer": {
-              "type": "minecraft:bush_foliage_placer",
-              "radius": {
-                "base": 1,
-                "spread": 1
-              },
-              "offset": 0,
-              "height": 2
-            },
-            "decorators": []
+            }
           }
         }
       }

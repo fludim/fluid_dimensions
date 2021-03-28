@@ -1,47 +1,54 @@
 {
+  "type": "minecraft:decorated",
   "config": {
-    "feature": {
-      "config": {
-        "feature": {
-          "config": {
-            "feature": {
-              "name": "us_ore_iron",
-              "config": {
-                "target": {
-                    "block": "minecraft:packed_ice",
-                    "predicate_type": "minecraft:block_match"
-                },
-                "state": {
-                  "Name": "minecraft:iron_ore"
-                },
-                "size": 14
-              },
-              "type": "minecraft:ore"
-            },
-            "decorator": {
-              "config": {
-                "bottom_offset": 10,
-                "top_offset": 0,
-                "maximum": 54
-              },
-              "type": "minecraft:range"
-            }
-          },
-          "type": "minecraft:decorated"
-        },
-        "decorator": {
-          "config": {},
-          "type": "minecraft:square"
-        }
-      },
-      "type": "minecraft:decorated"
-    },
     "decorator": {
+      "type": "minecraft:count",
       "config": {
-        "count": 17
-      },
-      "type": "minecraft:count"
+        "count": 7
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "bottom_inclusive": {
+                  "absolute": 0
+                },
+                "top_inclusive": {
+                  "absolute": 54
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "size": 14,
+                "discard_chance_on_air_exposure": 0,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:stone"
+                    },
+                    "state": {
+                      "Name": "minecraft:stone"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

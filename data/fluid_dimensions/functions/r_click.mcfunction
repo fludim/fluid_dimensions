@@ -1,4 +1,4 @@
-#From: player
+# From: player
 
 # Handles all right-clicks, in one place.
 

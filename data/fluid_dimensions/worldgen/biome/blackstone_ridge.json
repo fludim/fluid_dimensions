@@ -63,7 +63,7 @@
       "fluid_dimensions:ur_small_basalt_columns"
     ],
     [
-      "minecraft:spring_lava_double",
+      "fluid_dimensions:ur_spring_lava",
       "fluid_dimensions:ur_patch_fire"
     ],
     []

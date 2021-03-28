@@ -1,49 +1,51 @@
 {
+  "type": "minecraft:decorated",
   "config": {
-    "feature": {
+    "decorator": {
+      "type": "minecraft:count",
       "config": {
+        "count": 5
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
         "feature": {
+          "type": "minecraft:decorated",
           "config": {
-            "feature": {
-              "name": "blackstone_replace_blobs",
+            "decorator": {
+              "type": "minecraft:range",
               "config": {
-                "target": {
-                  "Name": "minecraft:blackstone"
+                "bottom_inclusive": {
+                  "absolute": 0
                 },
+                "top_inclusive": {
+                  "absolute": 255
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:netherrack_replace_blobs",
+              "config": {
                 "state": {
                   "Name": "minecraft:nether_wart_block"
+                },
+                "target": {
+                  "Name": "minecraft:blackstone"
                 },
                 "radius": {
                   "base": 1,
                   "spread": 2
                 }
-              },
-              "type": "minecraft:netherrack_replace_blobs"
-            },
-            "decorator": {
-              "config": {
-                "bottom_offset": 0,
-                "top_offset": 0,
-                "maximum": 255
-              },
-              "type": "minecraft:range"
+              }
             }
-          },
-          "type": "minecraft:decorated"
-        },
-        "decorator": {
-          "config": {},
-          "type": "minecraft:square"
+          }
         }
-      },
-      "type": "minecraft:decorated"
-    },
-    "decorator": {
-      "config": {
-        "count": 4
-      },
-      "type": "minecraft:count"
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

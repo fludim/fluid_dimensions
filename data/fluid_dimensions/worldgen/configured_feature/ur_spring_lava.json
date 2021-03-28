@@ -4,7 +4,7 @@
     "decorator": {
       "type": "minecraft:count",
       "config": {
-        "count": 16
+        "count": 20
       }
     },
     "feature": {
@@ -18,31 +18,33 @@
           "type": "minecraft:decorated",
           "config": {
             "decorator": {
-              "type": "minecraft:range",
+              "type": "minecraft:range_very_biased_to_bottom",
               "config": {
                 "bottom_inclusive": {
-                  "absolute": 10
+                  "above_bottom": 0
                 },
                 "top_inclusive": {
-                  "absolute": 255
-                }
+                  "below_top": 8
+                },
+                "cutoff": 8
               }
             },
             "feature": {
-              "type": "minecraft:ore",
+              "type": "minecraft:spring_feature",
               "config": {
-                "size": 64,
-                "discard_chance_on_air_exposure": 0,
-                "targets": [
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:blackstone"
-                    },
-                    "state": {
-                      "Name": "minecraft:nether_wart_block"
-                    }
+                "state": {
+                  "Name": "minecraft:lava",
+                  "Properties": {
+                    "falling": "true",
+                    "level": "0"
                   }
+                },
+                "rock_count": 3,
+                "hole_count": 1,
+                "requires_block_below": true,
+                "valid_blocks": [
+                  "minecraft:blackstone",
+                  "minecraft:magma_block"
                 ]
               }
             }

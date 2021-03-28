@@ -1,49 +1,51 @@
 {
+  "type": "minecraft:decorated",
   "config": {
-    "feature": {
+    "decorator": {
+      "type": "minecraft:count",
       "config": {
+        "count": 50
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
         "feature": {
+          "type": "minecraft:decorated",
           "config": {
-            "feature": {
-              "name": "blackstone_replace_blobs",
+            "decorator": {
+              "type": "minecraft:range",
               "config": {
-                "target": {
-                  "Name": "minecraft:blackstone"
+                "bottom_inclusive": {
+                  "absolute": 0
                 },
+                "top_inclusive": {
+                  "absolute": 196
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:netherrack_replace_blobs",
+              "config": {
                 "state": {
                   "Name": "minecraft:warped_wart_block"
                 },
+                "target": {
+                  "Name": "minecraft:blackstone"
+                },
                 "radius": {
                   "base": 3,
-                  "spread": 4
+                  "spread": 3
                 }
-              },
-              "type": "minecraft:netherrack_replace_blobs"
-            },
-            "decorator": {
-              "config": {
-                "bottom_offset": 0,
-                "top_offset": 16,
-                "maximum": 196
-              },
-              "type": "minecraft:range"
+              }
             }
-          },
-          "type": "minecraft:decorated"
-        },
-        "decorator": {
-          "config": {},
-          "type": "minecraft:square"
+          }
         }
-      },
-      "type": "minecraft:decorated"
-    },
-    "decorator": {
-      "config": {
-        "count": 50
-      },
-      "type": "minecraft:count"
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

@@ -1,13 +1,20 @@
 {
+  "type": "minecraft:decorated",
   "config": {
+    "decorator": {
+      "type": "minecraft:count_multilayer",
+      "config": {
+        "count": 40
+      }
+    },
     "feature": {
-      "name": "ur_delta",
+      "type": "minecraft:delta_feature",
       "config": {
         "contents": {
+          "Name": "minecraft:lava",
           "Properties": {
             "level": "0"
-          },
-          "Name": "minecraft:lava"
+          }
         },
         "rim": {
           "Name": "minecraft:magma_block"
@@ -20,15 +27,7 @@
           "base": 0,
           "spread": 2
         }
-      },
-      "type": "minecraft:delta_feature"
-    },
-    "decorator": {
-      "config": {
-        "count": 40
-      },
-      "type": "minecraft:count_multilayer"
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

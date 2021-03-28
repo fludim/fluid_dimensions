@@ -74,10 +74,6 @@
   "spawn_costs": {},
   "surface_builder": "fluid_dimensions:us_frozen_ocean",
   "carvers": {
-    "liquid": [
-      "fluid_dimensions:underwater_canyon",
-      "fluid_dimensions:underwater_cave"
-    ],
     "air": [
       "minecraft:ocean_cave",
       "minecraft:canyon"
