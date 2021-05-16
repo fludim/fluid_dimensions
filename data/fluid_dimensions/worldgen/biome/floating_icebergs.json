@@ -1,30 +1,48 @@
 {
+  "surface_builder": "fluid_dimensions:us_frozen_ocean",
+  "depth": -1,
+  "scale": 0.2,
+  "temperature": -1,
+  "downfall": 0.8,
+  "precipitation": "snow",
+  "category": "ocean",
+  "effects": {
+    "sky_color": 10463743,
+    "fog_color": 14869480,
+    "water_color": 7967180,
+    "water_fog_color": 329011,
+    "grass_color": 8578812,
+    "foliage_color": 3792616,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
   "starts": [],
   "spawners": {
-    "water_ambient": [],
     "ambient": [
       {
         "type": "minecraft:bat",
-        "weight": 10,
-        "minCount": 8,
+        "weight": 2,
+        "minCount": 4,
         "maxCount": 8
       }
     ],
-    "misc": [],
-    "water_creature": [],
     "creature": [
       {
+        "type": "minecraft:snow_golem",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
         "type": "minecraft:polar_bear",
-        "weight": 30,
+        "weight": 6,
         "minCount": 1,
         "maxCount": 5
-    },
-    {
-      "type": "minecraft:snow_golem",
-      "weight": 15,
-      "minCount": 1,
-      "maxCount": 1
-    }
+      }
     ],
     "monster": [
       {
@@ -72,11 +90,9 @@
     ]
   },
   "spawn_costs": {},
-  "surface_builder": "fluid_dimensions:us_frozen_ocean",
   "carvers": {
     "air": [
-      "minecraft:ocean_cave",
-      "minecraft:canyon"
+      "minecraft:cave"
     ]
   },
   "features": [
@@ -85,46 +101,24 @@
       "minecraft:lake_lava"
     ],
     [
-      "minecraft:iceberg_packed",
-      "minecraft:iceberg_blue"
+      "minecraft:iceberg_blue",
+      "minecraft:iceberg_packed"
     ],
     [
       "fluid_dimensions:us_blue_ice"
     ],
     [],
     [
-      "fluid_dimensions:us_ore_iron",
-      "fluid_dimensions:us_ore_diamond"
+      "fluid_dimensions:us_ore_diamond",
+      "fluid_dimensions:us_ore_iron"
     ],
-    [],
     [
-      "minecraft:brown_mushroom_normal",
+      "minecraft:spring_lava",
       "minecraft:red_mushroom_normal",
-      "minecraft:spring_lava"
+      "minecraft:brown_mushroom_normal"
     ],
     [
       "minecraft:freeze_top_layer"
     ]
-  ],
-  "temperature": -1.0,
-  "downfall": 0.8,
-  "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2.0
-    },
-    "sky_color": 10463743,
-    "fog_color": 14869480,
-    "water_color": 7967180,
-    "water_fog_color": 329011,
-    "grass_color": 8578812,
-    "foliage_color": 3792616
-  },
-  "precipitation": "snow",
-  "category": "ocean",
-  "player_spawn_friendly": true,
-  "depth": -1.0,
-  "scale": 0.2
+  ]
 }

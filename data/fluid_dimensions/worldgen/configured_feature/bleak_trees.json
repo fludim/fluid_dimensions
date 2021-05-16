@@ -12,8 +12,11 @@
           "type": "minecraft:count_multilayer",
           "config": {
             "count": {
-              "base": 2,
-              "spread": 4
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 2,
+                "max_inclusive": 6
+              }
             }
           }
         },

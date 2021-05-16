@@ -5,8 +5,11 @@
       "type": "minecraft:count_multilayer",
       "config": {
         "count": {
-          "base": 2,
-          "spread": 1
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 2,
+            "max_inclusive": 3
+          }
         }
       }
     },
@@ -34,7 +37,7 @@
                 "inner": {
                   "type": "minecraft:heightmap",
                   "config": {
-                    "heightmap": "OCEAN_FLOOR_WG"
+                    "heightmap": "OCEAN_FLOOR"
                   }
                 }
               }
@@ -96,8 +99,11 @@
                   "radius": 1,
                   "offset": 1,
                   "height": {
-                    "base": 1,
-                    "spread": 2
+                    "type": "minecraft:uniform",
+                    "value": {
+                      "min_inclusive": 1,
+                      "max_inclusive": 3
+                    }
                   }
                 },
                 "decorators": []

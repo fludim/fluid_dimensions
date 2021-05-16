@@ -1,4 +1,5 @@
 {
+  "type": "minecraft:frozen_ocean",
   "config": {
     "top_material": {
       "Name": "minecraft:snow_block"
@@ -9,6 +10,5 @@
     "underwater_material": {
       "Name": "minecraft:gravel"
     }
-  },
-  "type": "minecraft:frozen_ocean"
+  }
 }

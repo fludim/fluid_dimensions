@@ -1,13 +1,13 @@
 {
-	"generator": {
-      "type": "minecraft:noise",
+  "type": "fluid_dimensions:upper_sky_area",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": -1464245863,
+    "biome_source": {
+      "type": "minecraft:fixed",
       "seed": -1464245863,
-      "biome_source": {
-      	"type": "minecraft:fixed",
-      	"seed": -1464245863,
-      	"biome": "fluid_dimensions:floating_icebergs"
-      },
-      "settings": "minecraft:floating_islands"
+      "biome": "fluid_dimensions:floating_icebergs"
     },
-	"type": "fluid_dimensions:floating_icebergs"
+    "settings": "minecraft:floating_islands"
+  }
 }

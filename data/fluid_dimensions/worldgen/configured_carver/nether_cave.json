@@ -1,6 +1,42 @@
 {
+  "type": "minecraft:nether_cave",
   "config": {
-    "probability": 0.3
-  },
-  "type": "minecraft:nether_cave"
+    "probability": 0.3,
+    "y": {
+      "type": "minecraft:biased_to_bottom",
+      "min_inclusive": {
+        "absolute": 8
+      },
+      "max_inclusive": {
+        "absolute": 94
+      },
+      "inner": 24
+    },
+    "yScale": 0,
+    "lava_level": {
+      "absolute": 17
+    },
+    "aquifers_enabled": false,
+    "debug_settings": {
+      "debug_mode": true,
+      "air_state": {
+        "Name": "minecraft:cave_air"
+      },
+      "lava_state": {
+        "Name": "minecraft:lava",
+        "Properties": {
+          "level": "0"
+        }
+      }
+    },
+    "horizontal_radius_multiplier": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 0.8,
+        "max_exclusive": 1.2
+      }
+    },
+    "vertical_radius_multiplier": 1,
+    "floor_level": 0
+  }
 }

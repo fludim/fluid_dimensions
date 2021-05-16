@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:4701003, display:{Name:'{\"text\":\"Nullite Piece\",\"italic\":false}'}}"
+              "tag": "{CustomModelData:4701003, display:{Name:'{\"text\":\"Nullite Piece\",\"italic\":false}'}, fd_nullite_piece:1b}"
             }
           ],
           "conditions": [

@@ -1,0 +1,56 @@
+{
+    "type": "minecraft:decorated",
+    "config": {
+        "decorator": {
+            "type": "minecraft:count_extra",
+            "config": {
+                "count": 128,
+                "extra_count": 3000,
+                "extra_chance": 1
+            }
+        },
+        "feature": {
+            "type": "minecraft:decorated",
+            "config": {
+                "decorator": {
+                    "type": "minecraft:square",
+                    "config": {}
+                },
+                "feature": {
+                    "type": "minecraft:decorated",
+                    "config": {
+                        "decorator": {
+                            "type": "minecraft:range",
+                            "config": {
+                                "height": {
+                                    "type": "minecraft:uniform",
+                                    "min_inclusive": {
+                                        "absolute": 1
+                                    },
+                                    "max_inclusive": {
+                                        "absolute": 11
+                                    }
+                                }
+                            }
+                        },
+                        "feature": {
+                            "type": "minecraft:netherrack_replace_blobs",
+                            "config": {
+                                "state": {
+                                    "Name": "minecraft:lava",
+                                    "Properties": {
+                                        "level": "0"
+                                    }
+                                },
+                                "target": {
+                                    "Name": "minecraft:cave_air"
+                                },
+                                "radius": 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

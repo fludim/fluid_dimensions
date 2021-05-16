@@ -20,11 +20,14 @@
             "decorator": {
               "type": "minecraft:range",
               "config": {
-                "bottom_inclusive": {
-                  "absolute": 0
-                },
-                "top_inclusive": {
-                  "absolute": 196
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": {
+                    "absolute": 0
+                  },
+                  "max_inclusive": {
+                    "absolute": 106
+                  }
                 }
               }
             },
@@ -38,8 +41,11 @@
                   "Name": "minecraft:blackstone"
                 },
                 "radius": {
-                  "base": 3,
-                  "spread": 3
+                  "type": "minecraft:uniform",
+                  "value": {
+                    "min_inclusive": 3,
+                    "max_inclusive": 6
+                  }
                 }
               }
             }

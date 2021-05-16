@@ -4,62 +4,117 @@
     "decorator": {
       "type": "minecraft:chance",
       "config": {
-        "chance": 30
+        "chance": 4
       }
     },
     "feature": {
       "type": "minecraft:decorated",
       "config": {
         "decorator": {
-          "type": "minecraft:decorated",
+          "type": "minecraft:heightmap",
           "config": {
-            "outer": {
-              "type": "minecraft:square",
-              "config": {}
-            },
-            "inner": {
-              "type": "minecraft:heightmap",
-              "config": {}
-            }
+            "heightmap": "WORLD_SURFACE"
           }
         },
         "feature": {
           "type": "minecraft:decorated",
           "config": {
             "decorator": {
-              "type": "minecraft:count",
-              "config": {
-                "count": {
-                  "base": 100,
-                  "spread": 20
-                }
-              }
+              "type": "minecraft:square",
+              "config": {}
             },
             "feature": {
-              "type": "minecraft:block_pile",
+              "type": "minecraft:decorated",
               "config": {
-                "state_provider": {
-                  "type": "minecraft:weighted_state_provider",
-                  "entries": [
-                    {
-                      "weight": 6,
-                      "data": {
-                        "Name": "minecraft:crying_obsidian"
+                "decorator": {
+                  "type": "minecraft:count_noise_biased",
+                  "config": {
+                    "noise_to_count_ratio": 1,
+                    "noise_factor": 64,
+                    "noise_offset": 0.6
+                  }
+                },
+                "feature": {
+                  "type": "minecraft:decorated",
+                  "config": {
+                    "decorator": {
+                      "type": "minecraft:count",
+                      "config": {
+                        "count": {
+                          "type": "minecraft:uniform",
+                          "value": {
+                            "min_inclusive": 16,
+                            "max_inclusive": 22
+                          }
+                        }
                       }
                     },
-                    {
-                      "weight": 4,
-                      "data": {
-                        "Name": "minecraft:purple_terracotta"
-                      }
-                    },
-                    {
-                      "weight": 8,
-                      "data": {
-                        "Name": "minecraft:obsidian"
+                    "feature": {
+                      "type": "minecraft:random_patch",
+                      "config": {
+                        "can_replace": true,
+                        "project": true,
+                        "need_water": false,
+                        "xspread": 1,
+                        "yspread": 8,
+                        "zspread": 1,
+                        "tries": 12,
+                        "state_provider": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "weight": 6,
+                              "data": {
+                                "Name": "minecraft:crying_obsidian"
+                              }
+                            },
+                            {
+                              "weight": 2,
+                              "data": {
+                                "Name": "minecraft:purple_terracotta"
+                              }
+                            },
+                            {
+                              "weight": 8,
+                              "data": {
+                                "Name": "minecraft:obsidian"
+                              }
+                            }
+                          ]
+                        },
+                        "block_placer": {
+                          "type": "minecraft:simple_block_placer"
+                        },
+                        "whitelist": [
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:purple_terracotta"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:blackstone"
+                          },
+                          {
+                            "Name": "minecraft:podzol",
+                            "Properties": {
+                              "snowy": "false"
+                            }
+                          },
+                          {
+                            "Name": "minecraft:grass_block",
+                            "Properties": {
+                              "snowy": "false"
+                            }
+                          }
+                        ],
+                        "blacklist": []
                       }
                     }
-                  ]
+                  }
                 }
               }
             }

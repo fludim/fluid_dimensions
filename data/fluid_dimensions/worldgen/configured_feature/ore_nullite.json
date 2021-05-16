@@ -1,40 +1,61 @@
 {
+  "type": "minecraft:decorated",
   "config": {
-    "feature": {
+    "decorator": {
+      "type": "minecraft:chance",
       "config": {
+        "chance": 1
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
         "feature": {
-          "name": "ore_nullite",
+          "type": "minecraft:decorated",
           "config": {
-            "target": {
-              "block": "minecraft:blackstone",
-              "predicate_type": "minecraft:block_match"
-            },
-            "state": {
-              "Name": "minecraft:purpur_slab",
-              "Properties": {
-                "type": "double",
-                "waterlogged": "true"
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": {
+                    "absolute": 6
+                  },
+                  "max_inclusive": {
+                    "absolute": 27
+                  }
+                }
               }
             },
-            "size": 1
-          },
-          "type": "minecraft:no_surface_ore"
-        },
-        "decorator": {
-          "config": {
-            "bottom_offset": 6,
-            "top_offset": 14,
-            "maximum": 27
-          },
-          "type": "minecraft:range"
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "size": 1,
+                "discard_chance_on_air_exposure": 0.5,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:blackstone"
+                    },
+                    "state": {
+                      "Name": "minecraft:purpur_slab",
+                      "Properties": {
+                        "type": "double",
+                        "waterlogged": "true"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
         }
-      },
-      "type": "minecraft:decorated"
-    },
-    "decorator": {
-      "config": {},
-      "type": "minecraft:square"
+      }
     }
-  },
-  "type": "minecraft:decorated"
+  }
 }

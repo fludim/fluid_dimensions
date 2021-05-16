@@ -20,11 +20,14 @@
             "decorator": {
               "type": "minecraft:range",
               "config": {
-                "bottom_inclusive": {
-                  "absolute": 0
-                },
-                "top_inclusive": {
-                  "absolute": 54
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": {
+                    "absolute": 10
+                  },
+                  "max_inclusive": {
+                    "absolute": 54
+                  }
                 }
               }
             },

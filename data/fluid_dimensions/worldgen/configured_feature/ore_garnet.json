@@ -4,7 +4,13 @@
     "decorator": {
       "type": "minecraft:count",
       "config": {
-        "count": 4
+        "count": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 5,
+            "max_inclusive": 6
+          }
+        }
       }
     },
     "feature": {
@@ -20,26 +26,37 @@
             "decorator": {
               "type": "minecraft:range",
               "config": {
-                "maximum": 63,
-                "bottom_offset": 6,
-                "top_offset": 0
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": {
+                    "absolute": 6
+                  },
+                  "max_inclusive": {
+                    "absolute": 83
+                  }
+                }
               }
             },
             "feature": {
               "type": "minecraft:ore",
               "config": {
-                "state": {
-                  "Name": "minecraft:red_nether_brick_slab",
-                  "Properties": {
-                    "type": "double",
-                    "waterlogged": "true"
-                  }
-                },
                 "size": 4,
-                "target": {
-                  "block": "minecraft:blackstone",
-                  "predicate_type": "minecraft:block_match"
-                }
+                "discard_chance_on_air_exposure": 0.2,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:blackstone"
+                    },
+                    "state": {
+                      "Name": "minecraft:red_nether_brick_slab",
+                      "Properties": {
+                        "type": "double",
+                        "waterlogged": "true"
+                      }
+                    }
+                  }
+                ]
               }
             }
           }

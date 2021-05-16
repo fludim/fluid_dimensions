@@ -5,8 +5,11 @@
       "type": "minecraft:count",
       "config": {
         "count": {
-          "base": 5,
-          "spread": 2
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 5,
+            "max_inclusive": 7
+          }
         }
       }
     },
@@ -23,11 +26,14 @@
             "decorator": {
               "type": "minecraft:range",
               "config": {
-                "bottom_inclusive": {
-                  "absolute": 10
-                },
-                "top_inclusive": {
-                  "absolute": 127
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": {
+                    "absolute": 10
+                  },
+                  "max_inclusive": {
+                    "absolute": 127
+                  }
                 }
               }
             },

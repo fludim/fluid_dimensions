@@ -12,8 +12,11 @@
       "config": {
         "reach": 1,
         "height": {
-          "base": 1,
-          "spread": 2
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 1,
+            "max_inclusive": 3
+          }
         }
       }
     }

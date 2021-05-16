@@ -31,7 +31,7 @@
                 "inner": {
                   "type": "minecraft:heightmap",
                   "config": {
-                    "heightmap": "OCEAN_FLOOR_WG"
+                    "heightmap": "OCEAN_FLOOR"
                   }
                 }
               }
