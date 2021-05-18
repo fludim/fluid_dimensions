@@ -44,7 +44,7 @@
                           "type": "minecraft:uniform",
                           "value": {
                             "min_inclusive": 16,
-                            "max_inclusive": 22
+                            "max_inclusive": 28
                           }
                         }
                       }
@@ -56,7 +56,7 @@
                         "project": true,
                         "need_water": false,
                         "xspread": 1,
-                        "yspread": 8,
+                        "yspread": 9,
                         "zspread": 1,
                         "tries": 12,
                         "state_provider": {

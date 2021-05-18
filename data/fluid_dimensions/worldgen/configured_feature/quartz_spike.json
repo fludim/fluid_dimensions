@@ -41,20 +41,14 @@
                 "xspread": 10,
                 "yspread": 12,
                 "zspread": 10,
-                "tries": 64,
+                "tries": 32,
                 "state_provider": {
                   "type": "minecraft:weighted_state_provider",
                   "entries": [
                     {
-                      "weight": 5,
+                      "weight": 1,
                       "data": {
                         "Name": "minecraft:smooth_quartz"
-                      }
-                    },
-                    {
-                      "weight": 2,
-                      "data": {
-                        "Name": "minecraft:air"
                       }
                     }
                   ]
@@ -64,8 +58,8 @@
                   "size": {
                     "type": "minecraft:uniform",
                     "value": {
-                      "min_inclusive": 10,
-                      "max_inclusive": 80
+                      "min_inclusive": 1,
+                      "max_inclusive": 8
                     }
                   }
                 },

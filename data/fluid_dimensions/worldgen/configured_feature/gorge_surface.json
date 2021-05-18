@@ -2,9 +2,9 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:count",
+      "type": "minecraft:count_multilayer",
       "config": {
-        "count": 48
+        "count": 40
       }
     },
     "feature": {
@@ -18,52 +18,80 @@
           "type": "minecraft:decorated",
           "config": {
             "decorator": {
-              "type": "minecraft:heightmap_world_surface",
-              "config": {}
+              "type": "minecraft:count_noise_biased",
+              "config": {
+                "noise_to_count_ratio": 1,
+                "noise_factor": 32,
+                "noise_offset": 0.6
+              }
             },
             "feature": {
-              "type": "minecraft:block_pile",
+              "type": "minecraft:decorated",
               "config": {
-                "state_provider": {
-                  "type": "minecraft:weighted_state_provider",
-                  "entries": [
-                    {
-                      "weight": 240,
-                      "data": {
-                        "Name": "minecraft:red_terracotta"
+                "decorator": {
+                  "type": "minecraft:count_noise_biased",
+                  "config": {
+                    "noise_to_count_ratio": -1,
+                    "noise_factor": 18,
+                    "noise_offset": -0.5
+                  }
+                },
+                "feature": {
+                  "type": "minecraft:decorated",
+                  "config": {
+                    "decorator": {
+                      "type": "minecraft:heightmap",
+                      "config": {
+                        "heightmap": "WORLD_SURFACE_WG"
                       }
                     },
-                    {
-                      "weight": 240,
-                      "data": {
-                        "Name": "minecraft:pink_terracotta"
-                      }
-                    },
-                    {
-                      "weight": 80,
-                      "data": {
-                        "Name": "minecraft:air"
-                      }
-                    },
-                    {
-                      "weight": 160,
-                      "data": {
-                        "Name": "minecraft:netherrack"
-                      }
-                    },
-                    {
-                      "weight": 120,
-                      "data": {
-                        "Name": "minecraft:red_concrete_powder"
-                      }
-                    },
-                    {
-                      "weight": 1,
-                      "data": {
-                        "Name": "minecraft:nether_quartz_ore"
+                    "feature": {
+                      "type": "minecraft:block_pile",
+                      "config": {
+                        "state_provider": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "weight": 240,
+                              "data": {
+                                "Name": "minecraft:red_terracotta"
+                              }
+                            },
+                            {
+                              "weight": 200,
+                              "data": {
+                                "Name": "minecraft:pink_terracotta"
+                              }
+                            },
+                            {
+                              "weight": 80,
+                              "data": {
+                                "Name": "minecraft:air"
+                              }
+                            },
+                            {
+                              "weight": 180,
+                              "data": {
+                                "Name": "minecraft:netherrack"
+                              }
+                            },
+                            {
+                              "weight": 140,
+                              "data": {
+                                "Name": "minecraft:red_concrete_powder"
+                              }
+                            },
+                            {
+                              "weight": 1,
+                              "data": {
+                                "Name": "minecraft:nether_quartz_ore"
+                              }
+                            }
+                          ]
+                        }
                       }
                     }
-                  ]
+                  }
                 }
               }
             }

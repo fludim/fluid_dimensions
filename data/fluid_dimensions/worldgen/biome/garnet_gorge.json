@@ -33,14 +33,11 @@
   "surface_builder": "fluid_dimensions:garnet_gorge",
   "carvers": {
     "air": [
-      "fluid_dimensions:gorge_cave",
-      "fluid_dimensions:gorge_cave",
-      "fluid_dimensions:gorge_cave"
+      "fluid_dimensions:gorge_canyon",
+      "fluid_dimensions:nether_cave"
     ]
   },
   "features": [
-    [],
-    [],
     [],
     [],
     [
@@ -61,8 +58,7 @@
     ],
     [
       "fluid_dimensions:ur_patch_fire",
-      "minecraft:spring_lava_double",
-      "fluid_dimensions:garnet_gorge_vegetation"
+      "fluid_dimensions:ur_spring_lava"
     ],
     []
   ],
