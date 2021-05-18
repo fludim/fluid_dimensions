@@ -1,5 +1,5 @@
-effect give @e[limit=1,tag=fd.i,sort=random] minecraft:invisibility 1000000 0 true
-effect give @e[limit=1,tag=fd.i,sort=random] minecraft:fire_resistance 1000000 0 true
+effect give @e[limit=1,type=elder_guardian,tag=fd.i,sort=random] minecraft:invisibility 1000000 0 true
+effect give @e[limit=1,type=elder_guardian,tag=fd.i,sort=random] minecraft:fire_resistance 1000000 0 true
 
 execute store result bossbar minecraft:fd.i_0 max run attribute @e[limit=1,scores={fd.i_id=1}] minecraft:generic.max_health get
 execute store result bossbar minecraft:fd.i_0 value run data get entity @e[limit=1,scores={fd.i_id=1}] Health
@@ -27,6 +27,6 @@ execute as @e[limit=1,scores={fd.i_id=5}] at @s run bossbar set minecraft:fd.i_4
 execute unless entity @e[scores={fd.i_id=5}] run bossbar set minecraft:fd.i_4 players
 
 #Stages
-execute as @e[tag=fd.i] run function fluid_dimensions:i/stages
+execute as @e[type=elder_guardian,tag=fd.i] run function fluid_dimensions:i/stages
 
 schedule function fluid_dimensions:i/10ticks 10t
