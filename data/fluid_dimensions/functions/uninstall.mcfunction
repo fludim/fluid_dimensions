@@ -12,8 +12,13 @@ scoreboard objectives remove fd.y
 scoreboard objectives remove fd.a_y
 scoreboard objectives remove fd.mine_nullite
 scoreboard objectives remove fd.mine_garnet
+scoreboard objectives remove fd.pod_age
+scoreboard objectives remove fd.pod_stage
+scoreboard objectives remove fd.pod_ripeness
+
 tp @e[tag=fd.i] 0 -999 0
 tp @e[tag=fd.i_carrier] 0 -999 0
+
 tag @e remove fd.blindness
 tag @e remove fd.sky_pearl_in_transit
 tag @e remove fd.us_mob
@@ -22,11 +27,13 @@ tag @e remove fd.i
 tag @e remove fd.i_carrier
 tag @e remove fd.i_id_tagged
 tag @e remove fd.cochineal
+
 bossbar remove minecraft:fd.i_0
 bossbar remove minecraft:fd.i_1
 bossbar remove minecraft:fd.i_2
 bossbar remove minecraft:fd.i_3
 bossbar remove minecraft:fd.i_4
+
 advancement revoke @a from fluid_dimensions:root
 
 # Uninstalled pack message (credits: minecraft.tools)

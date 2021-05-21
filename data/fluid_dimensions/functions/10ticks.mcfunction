@@ -9,4 +9,6 @@ execute as @e[sort=random,limit=16,type=minecraft:zombie,tag=fd.cochineal] run f
 execute as @e[sort=random,limit=16,type=minecraft:skeleton,tag=fd.haunted] run function fluid_dimensions:underridge_mobs/haunted
 execute as @e[sort=random,limit=16,type=minecraft:wither_skeleton,tag=fd.psirot] run function fluid_dimensions:underridge_mobs/psirot
 
+execute as @e[sort=random,type=villager,tag=fd.pod] run function fluid_dimensions:pod/tick
+
 schedule function fluid_dimensions:10ticks 10t

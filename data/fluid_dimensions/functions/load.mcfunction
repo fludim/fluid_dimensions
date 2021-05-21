@@ -6,6 +6,7 @@ tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n     
 team add fd.noNameTag
 team modify fd.noNameTag nametagVisibility never
 
+# Objectives setup
 scoreboard objectives add fd.sball_thrown minecraft.used:minecraft.snowball "Snowball Used"
 scoreboard objectives add fd.i_id dummy
 scoreboard objectives add fd.consume_book minecraft.used:knowledge_book
@@ -19,6 +20,11 @@ scoreboard objectives add fd.y dummy
 scoreboard objectives add fd.a_y dummy
 scoreboard objectives add fd.mine_nullite minecraft.mined:minecraft.purpur_slab
 scoreboard objectives add fd.mine_garnet minecraft.mined:minecraft.red_nether_brick_slab
+scoreboard objectives add fd.pod_age dummy
+scoreboard objectives add fd.pod_stage dummy
+scoreboard objectives add fd.pod_ripeness dummy
+
+function fluid_dimensions:pod/interact/load
 
 # I preload
 function fluid_dimensions:i/bossbar_config
@@ -26,7 +32,7 @@ scoreboard players reset @e fd.i_id
 tag @e remove fd.i_id_tagged
 scoreboard players set $counter fd.i_id 0
 
-# Universal Altimeter Heights
+# Universal Altimeter heights
 scoreboard players set $underridge fd.y 0
 scoreboard players set $nether fd.y 511
 scoreboard players set $end fd.y 1086
