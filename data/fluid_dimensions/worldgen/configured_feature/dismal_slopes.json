@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count_multilayer",
+      "config": {
+        "count": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 40,
+            "max_inclusive": 50
+          }
+        }
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:count_noise_biased",
+          "config": {
+            "noise_to_count_ratio": 1,
+            "noise_factor": 7,
+            "noise_offset": 0.4
+          }
+        },
+        "feature": {
+          "type": "minecraft:delta_feature",
+          "config": {
+            "contents": {
+              "Name": "minecraft:gravel"
+            },
+            "rim": {
+              "Name": "minecraft:gray_concrete_powder"
+            },
+            "size": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 4,
+                "max_inclusive": 6
+              }
+            },
+            "rim_size": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 2,
+                "max_inclusive": 5
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
