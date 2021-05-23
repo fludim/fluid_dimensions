@@ -78,7 +78,9 @@
       "fluid_dimensions:ur_patch_fire",
       "fluid_dimensions:ur_spring_lava"
     ],
-    []
+    [
+      "fluid_dimensions:pod_pod"
+    ]
   ],
   "temperature": 0.9,
   "downfall": 0.0,

@@ -3,6 +3,35 @@
         "pod": {
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:alternative",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "offhand": {
+                                            "item": "minecraft:bowl"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "mainhand": {
+                                            "item": "minecraft:bowl"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
                 "entity": [
                     {
                         "condition": "minecraft:entity_scores",

@@ -1,5 +1,9 @@
 # From: 10ticks
 
+# Effects
+effect give @s invisibility 1000000 0 true
+effect give @s fire_resistance 1000000 0 true
+
 # Get Age / 100 (1 = 5 seconds)
 execute store result score @s fd.pod_age run data get entity @s Age 0.01
 

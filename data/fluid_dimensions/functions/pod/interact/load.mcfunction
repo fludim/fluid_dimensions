@@ -34,6 +34,6 @@ scoreboard objectives add fd.pod_id.29 dummy
 scoreboard objectives add fd.pod_id.30 dummy
 scoreboard objectives add fd.pod_id.31 dummy
 scoreboard players set #loaded fd.pod_id 1
-scoreboard objectives add const dummy
-scoreboard players set 2 const 2
-scoreboard players set -1 const -1
+scoreboard objectives add fd.const dummy
+scoreboard players set 2 fd.const 2
+scoreboard players set -1 fd.const -1

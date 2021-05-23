@@ -32,5 +32,5 @@ execute if entity @s[advancements={fluid_dimensions:pod_on_interact={bit27=true}
 execute if entity @s[advancements={fluid_dimensions:pod_on_interact={bit28=true}}] run scoreboard players add $target fd.pod_id 268435456
 execute if entity @s[advancements={fluid_dimensions:pod_on_interact={bit29=true}}] run scoreboard players add $target fd.pod_id 536870912
 execute if entity @s[advancements={fluid_dimensions:pod_on_interact={bit30=true}}] run scoreboard players add $target fd.pod_id 1073741824
-execute if entity @s[advancements={fluid_dimensions:pod_on_interact={bit31=true}}] run scoreboard players operation $target fd.pod_id *= -1 const
-execute as @e[type=villager,tag=fd.pod,scores={fd.pod_stage=4}] if score @s fd.pod_id = $target fd.pod_id run function fluid_dimensions:pod/interact/pod_on_interact
+execute if entity @s[advancements={fluid_dimensions:pod_on_interact={bit31=true}}] run scoreboard players operation $target fd.pod_id *= -1 fd.const
+execute as @e[type=villager,tag=fd.pod,scores={fd.pod_stage=4}] if score @s fd.pod_id = $target fd.pod_id at @s run function fluid_dimensions:pod/interact/pod_on_interact
