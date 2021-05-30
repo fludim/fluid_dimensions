@@ -1,0 +1,32 @@
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "enchantments": [
+                        {
+                            "enchantment": "minecraft:fortune",
+                            "levels": 3
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "items": [
+                        "minecraft:diamond_pickaxe",
+                        "minecraft:netherite_pickaxe"
+                    ]
+                }
+            }
+        }
+    }
+]

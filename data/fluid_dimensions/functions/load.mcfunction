@@ -7,6 +7,7 @@ team add fd.noNameTag
 team modify fd.noNameTag nametagVisibility never
 
 # Objectives setup
+scoreboard objectives add fd.temp dummy
 scoreboard objectives add fd.sball_thrown minecraft.used:minecraft.snowball "Snowball Used"
 scoreboard objectives add fd.i_id dummy
 scoreboard objectives add fd.consume_book minecraft.used:knowledge_book
@@ -20,6 +21,7 @@ scoreboard objectives add fd.y dummy
 scoreboard objectives add fd.a_y dummy
 scoreboard objectives add fd.mine_nullite minecraft.mined:minecraft.purpur_slab
 scoreboard objectives add fd.mine_garnet minecraft.mined:minecraft.red_nether_brick_slab
+scoreboard objectives add fd.mine_bstone minecraft.mined:minecraft.blackstone
 scoreboard objectives add fd.pod_age dummy
 scoreboard objectives add fd.pod_stage dummy
 scoreboard objectives add fd.pod_ripeness dummy

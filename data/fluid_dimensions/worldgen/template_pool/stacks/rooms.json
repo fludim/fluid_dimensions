@@ -10,19 +10,53 @@
       }
     },
     {
+      "weight": 100,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    },
+    {
       "weight": 10,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_l_1",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
     {
-      "weight": 15,
+      "weight": 5,
+      "element": {
+        "location": "fluid_dimensions:stacks/rooms/room_l_2",
+        "processors": "fluid_dimensions:damage_stacks",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "fluid_dimensions:stacks/rooms/room_l_3",
+        "processors": "fluid_dimensions:damage_stacks",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "fluid_dimensions:stacks/rooms/room_l_4",
+        "processors": "fluid_dimensions:damage_stacks",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 18,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_m_1",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
@@ -31,16 +65,16 @@
       "weight": 15,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_m_2",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
     {
-      "weight": 15,
+      "weight": 18,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_m_3",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
@@ -49,25 +83,25 @@
       "weight": 15,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_m_4",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
     {
-      "weight": 20,
+      "weight": 22,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_s_1",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
     {
-      "weight": 20,
+      "weight": 24,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_s_2",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
@@ -76,16 +110,16 @@
       "weight": 30,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_s_3",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
     {
-      "weight": 20,
+      "weight": 22,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_s_4",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
@@ -94,7 +128,7 @@
       "weight": 25,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_s_5",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
@@ -103,7 +137,7 @@
       "weight": 25,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_s_6",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
@@ -112,7 +146,7 @@
       "weight": 1,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_s_hidden",
-        "processors": "fluid_dimensions:no",
+        "processors": "fluid_dimensions:damage_stacks",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }

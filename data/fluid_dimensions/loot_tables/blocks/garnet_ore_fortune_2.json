@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4701007, display:{Name:'{\"translate\":\"item.fd.garnet\",\"italic\":false}'}, fd_garnet:1b}"
+                        }
+                    ]
+                }
+            ],
+            "functions": [
+                {
+                    "function": "minecraft:set_count",
+                    "count": 1,
+                    "add": true,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.5
+                        }
+                    ]
+                },
+                {
+                    "function": "minecraft:set_count",
+                    "count": 1,
+                    "add": true,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

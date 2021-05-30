@@ -24,7 +24,7 @@
           "predicate": {
             "equipment": {
               "head": {
-                "item": "minecraft:warped_fungus_on_a_stick",
+                "items": ["minecraft:warped_fungus_on_a_stick"],
                 "nbt": "{fd_void_veil:1b}"
               }
             }

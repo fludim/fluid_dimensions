@@ -1,0 +1,149 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:axis_aligned_linear_pos",
+                        "axis": "y",
+                        "min_dist": 0,
+                        "max_dist": 15,
+                        "min_chance": 0.02,
+                        "max_chance": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:polished_blackstone_bricks"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:white_stained_glass_pane",
+                        "probability": 0.3
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:white_stained_glass",
+                        "probability": 0.3
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:axis_aligned_linear_pos",
+                        "axis": "y",
+                        "min_dist": 0,
+                        "max_dist": 15,
+                        "min_chance": 0.1,
+                        "max_chance": 0.25
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_basalt",
+                            "Properties": {
+                                "axis": "y"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "Name": "minecraft:basalt",
+                        "Properties": {
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:axis_aligned_linear_pos",
+                        "axis": "y",
+                        "min_dist": 0,
+                        "max_dist": 15,
+                        "min_chance": 0.1,
+                        "max_chance": 0.25
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_basalt",
+                            "Properties": {
+                                "axis": "x"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "Name": "minecraft:basalt",
+                        "Properties": {
+                            "axis": "x"
+                        }
+                    }
+                },
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:axis_aligned_linear_pos",
+                        "axis": "y",
+                        "min_dist": 0,
+                        "max_dist": 15,
+                        "min_chance": 0.1,
+                        "max_chance": 0.25
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_basalt",
+                            "Properties": {
+                                "axis": "z"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "Name": "minecraft:basalt",
+                        "Properties": {
+                            "axis": "z"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

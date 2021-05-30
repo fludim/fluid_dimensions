@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:fermented_spider_eye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4701003, display:{Name:'{\"translate\":\"item.fd.nullite_piece\",\"italic\":false}'}, fd_nullite_piece:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

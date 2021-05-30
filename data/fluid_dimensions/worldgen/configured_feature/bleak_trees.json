@@ -61,6 +61,15 @@
                     "Name": "minecraft:shroomlight"
                   }
                 },
+                "sapling_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:oak_sapling",
+                    "Properties": {
+                      "stage": "0"
+                    }
+                  }
+                },
                 "trunk_placer": {
                   "type": "minecraft:fancy_trunk_placer",
                   "base_height": 10,

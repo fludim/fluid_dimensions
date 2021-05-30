@@ -29,5 +29,4 @@ function fluid_dimensions:void_veil/tick
 execute if entity @s[scores={fd.r_click=1..}] run function fluid_dimensions:r_click
 
 # Nearby pod interactions
-
-execute if entity @e[type=villager,x=0,tag=fd.pod] run function fluid_dimensions:pod/interact/tick
+execute as @e[type=villager,x=0,tag=fd.pod,tag=!fd.pod_id_set] run function fluid_dimensions:pod/interact/tick

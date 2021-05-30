@@ -1,0 +1,52 @@
+[
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:fortune"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:silk_touch"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "items": [
+                        "minecraft:diamond_pickaxe",
+                        "minecraft:netherite_pickaxe"
+                    ]
+                }
+            }
+        }
+    }
+]

@@ -4,7 +4,7 @@
 	"predicate": {
 		"equipment": {
 			"mainhand": {
-				"item": "minecraft:knowledge_book",
+				"items": ["minecraft:knowledge_book"],
 				"nbt": "{fd_stygian_iris:1b}"
 			}
 		}

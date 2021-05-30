@@ -88,6 +88,15 @@
                     }
                   ]
                 },
+                "sapling_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:oak_sapling",
+                    "Properties": {
+                      "stage": "0"
+                    }
+                  }
+                },
                 "trunk_placer": {
                   "type": "minecraft:forking_trunk_placer",
                   "base_height": 7,
