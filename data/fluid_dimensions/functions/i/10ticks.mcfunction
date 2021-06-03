@@ -1,3 +1,6 @@
+# From: load
+# every 10 ticks
+
 effect give @e[limit=1,type=elder_guardian,tag=fd.i,sort=random] minecraft:invisibility 1000000 0 true
 effect give @e[limit=1,type=elder_guardian,tag=fd.i,sort=random] minecraft:fire_resistance 1000000 0 true
 

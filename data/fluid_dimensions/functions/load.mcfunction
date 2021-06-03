@@ -1,10 +1,12 @@
+# fd.load
+
+# Teams
+team add fd.noNameTag
+team modify fd.noNameTag nametagVisibility never
+
 # Welcome message (credits: minecraft.tools)
 gamerule sendCommandFeedback false
 tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n      Thanks for using\n"},{"text":"       Fluid","italic":true,"color":"blue"},{"text":" Dimensions","color":"gold"},{"text":"\n"},{"text":"           v2.2","bold":true,"color":"green"},{"text":"\n\n"},{"text":"[Info]","color":"white","clickEvent":{"action":"run_command","value":"/function fluid_dimensions:info/1"}},{"text":"             ","color":"white"},{"text":"[Uninstall]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function fluid_dimensions:info/areyousure"}},{"text":"\n"},{"text":"==+----------------+==","color":"gray"}]
-
-# fd.load
-team add fd.noNameTag
-team modify fd.noNameTag nametagVisibility never
 
 # Objectives setup
 scoreboard objectives add fd.temp dummy
@@ -44,7 +46,9 @@ scoreboard players set $upper_sky fd.y 1976
 advancement grant @a only fluid_dimensions:root
 
 # Less-often-ticking functions:
-## offset 0:
+## 10t
 function fluid_dimensions:10ticks
-## offset 5t:
+## 10t, offset 5t
 schedule function fluid_dimensions:i/10ticks 5t
+## 6000t (5 mins)
+function fluid_dimensions:6000ticks
