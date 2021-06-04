@@ -22,18 +22,9 @@
           "type": "minecraft:decorated",
           "config": {
             "decorator": {
-              "type": "minecraft:decorated",
+              "type": "minecraft:heightmap",
               "config": {
-                "outer": {
-                  "type": "minecraft:square",
-                  "config": {}
-                },
-                "inner": {
-                  "type": "minecraft:heightmap",
-                  "config": {
-                    "heightmap": "OCEAN_FLOOR"
-                  }
-                }
+                "heightmap": "OCEAN_FLOOR"
               }
             },
             "feature": {
