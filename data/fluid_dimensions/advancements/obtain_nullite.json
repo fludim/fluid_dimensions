@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:fermented_spider_eye",
+            "items": ["minecraft:fermented_spider_eye"],
             "nbt": "{fd_nullite_piece:1b}"
           }
         ]

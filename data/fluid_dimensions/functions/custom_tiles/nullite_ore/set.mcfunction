@@ -1,4 +1,4 @@
 # From: custom_tiles/place
 
-setblock ~ ~ ~ blackstone destroy
+setblock ~ ~ ~ blackstone
 tag @s add fd.ore_placed

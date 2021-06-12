@@ -20,7 +20,7 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "item": {
-          "item": "minecraft:bowl"
+          "items": ["minecraft:bowl"]
         },
         "entity": {
           "type": "minecraft:villager",

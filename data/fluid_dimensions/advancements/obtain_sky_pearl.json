@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:snowball",
+            "items": ["minecraft:snowball"],
             "nbt": "{fd_sky_pearl:1b}"
           }
         ]

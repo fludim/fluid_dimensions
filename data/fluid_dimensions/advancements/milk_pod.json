@@ -13,7 +13,7 @@
                 "predicate": {
                   "equipment": {
                     "mainhand": {
-                      "item": "minecraft:bowl"
+                      "items": ["minecraft:bowl"]
                     }
                   }
                 }
@@ -24,7 +24,7 @@
                 "predicate": {
                   "equipment": {
                     "offhand": {
-                      "item": "minecraft:bowl"
+                      "items": ["minecraft:bowl"]
                     }
                   }
                 }

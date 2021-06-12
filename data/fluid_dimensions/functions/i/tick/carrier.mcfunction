@@ -3,4 +3,4 @@
 particle minecraft:lava ~ ~2.3 ~ 0.8 0.8 0.8 0.07 40
 
 #Kill empty carrier (after the death particles)
-kill @s
+kill @s[type=!player]
