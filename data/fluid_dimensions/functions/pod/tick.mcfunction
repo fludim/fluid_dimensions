@@ -25,4 +25,4 @@ execute if score @s fd.pod_stage matches 3 run scoreboard players add @s fd.pod_
 execute if score @s fd.pod_stage matches 4 run tag @s add fd.pod_ready
 
 # Kill if not on #dirt blocks
-execute unless block ~ ~-0.01 ~ #minecraft:dirt run kill @s
+execute unless block ~ ~-0.01 ~ #minecraft:dirt run kill @s[type=!player]

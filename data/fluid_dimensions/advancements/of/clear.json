@@ -1,0 +1,15 @@
+{
+    "rewards": {
+      "function": "fluid_dimensions:ocular_forge/advancements/clear"
+    },
+    "criteria": {
+      "selected": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "nbt": "{Inventory:[{tag:{fd_of_gui_clear:1}}]}"
+          }
+        }
+      }
+    }
+  }

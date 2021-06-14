@@ -1,0 +1,85 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "offsetY": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "hopper"
+          ],
+          "nbt": "{TransferCooldown:8}",
+          "state": {
+            "enabled": "true",
+            "facing": "down"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "hopper"
+          ],
+          "nbt": "{TransferCooldown:8}",
+          "state": {
+            "enabled": "true",
+            "facing": "west"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": -1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "hopper"
+          ],
+          "nbt": "{TransferCooldown:8}",
+          "state": {
+            "enabled": "true",
+            "facing": "east"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetZ": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "hopper"
+          ],
+          "nbt": "{TransferCooldown:8}",
+          "state": {
+            "enabled": "true",
+            "facing": "north"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetZ": -1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "hopper"
+          ],
+          "nbt": "{TransferCooldown:8}",
+          "state": {
+            "enabled": "true",
+            "facing": "south"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:barrier",
+      "minecraft:white_stained_glass_pane"
+    ]
+  }

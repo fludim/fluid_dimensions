@@ -1,0 +1,13 @@
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "feet": {
+                    "nbt": "{fd_nulliron_boots:1b}"
+                }
+            }
+        }
+    }
+]

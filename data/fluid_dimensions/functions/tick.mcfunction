@@ -10,3 +10,4 @@ execute as @e[type=vex,tag=fd.i_carrier,nbt=!{Passengers:[{}]},limit=1] at @s ru
 
 # Custom Blocks
 function fluid_dimensions:custom_tiles/tick
+function fluid_dimensions:ocular_forge/tick

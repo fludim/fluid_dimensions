@@ -21,12 +21,11 @@ scoreboard objectives add fd.gamemode dummy
 scoreboard objectives add fd.dimension dummy
 scoreboard objectives add fd.y dummy
 scoreboard objectives add fd.a_y dummy
-scoreboard objectives add fd.mine_nullite minecraft.mined:minecraft.purpur_slab
-scoreboard objectives add fd.mine_garnet minecraft.mined:minecraft.red_nether_brick_slab
 scoreboard objectives add fd.mine_bstone minecraft.mined:minecraft.blackstone
 scoreboard objectives add fd.pod_age dummy
 scoreboard objectives add fd.pod_stage dummy
 scoreboard objectives add fd.pod_ripeness dummy
+scoreboard objectives add fd.fall_dist dummy
 
 function fluid_dimensions:pod/interact/load
 
@@ -44,6 +43,9 @@ scoreboard players set $overworld fd.y 1533
 scoreboard players set $upper_sky fd.y 1976
 
 advancement grant @a only fluid_dimensions:root
+
+# Set up Ocular Forge
+function fluid_dimensions:ocular_forge/load
 
 # Less-often-ticking functions:
 ## 10t
