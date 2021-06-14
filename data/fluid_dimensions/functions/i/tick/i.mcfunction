@@ -12,4 +12,4 @@ particle minecraft:squid_ink ~ ~1.1 ~ 0.6 0.6 0.6 0.05 8
 
 # TP detached I into the void (touched water, etc)
 execute as @s[predicate=!fluid_dimensions:not_a_passenger] at @s run particle minecraft:falling_dust quartz_block ~ ~ ~ 0.8 0.8 0.8 0.04 600
-execute in fluid_dimensions:underridge run tp @s[predicate=!fluid_dimensions:not_a_passenger] 0 -999 0
+execute in fluid_dimensions:underridge run tp @s[predicate=!fluid_dimensions:not_a_passenger] 0 -9999 0
