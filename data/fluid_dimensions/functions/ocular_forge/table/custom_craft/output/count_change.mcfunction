@@ -7,3 +7,5 @@ data modify entity @e[type=item,limit=1,tag=fd.of.summon] Item set from storage 
 
 data remove storage fluid_dimensions:craft Items[{Slot:15b}]
 tag @e[type=item,tag=fd.of.summon] remove fd.of.summon
+
+say COUNT_CHANGE

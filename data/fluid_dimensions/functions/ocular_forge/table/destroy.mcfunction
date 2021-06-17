@@ -1,4 +1,3 @@
-# Converted with Data Modify Updater | Created by PixiGeko #
 execute align xyz positioned ~-0.5 ~-0.5 ~-0.5 run kill @e[type=item,tag=!global.ignore,tag=!global.ignore.kill,dx=1,dy=1,dz=1,nbt={Age:0s}]
 
 data remove block 16942001 1 -14269007 Items

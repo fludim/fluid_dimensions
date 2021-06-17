@@ -1,0 +1,3 @@
+
+execute unless entity @s[tag=fd.of.display_craft] if data storage fluid_dimensions:craft Items[{id:"minecraft:glow_item_frame",tag:{fd_item_garnet_block:1b}}] run function fluid_dimensions:ocular_forge/craft/garnet_from_garnet_block
+execute unless entity @s[tag=fd.of.display_craft] if data storage fluid_dimensions:craft Items[{id:"minecraft:glow_item_frame",tag:{fd_item_nulliron_block:1b}}] run function fluid_dimensions:ocular_forge/craft/nulliron_ingot_from_nulliron_block

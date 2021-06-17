@@ -4,3 +4,5 @@ function fluid_dimensions:ocular_forge/table/change/replace/recursive
 
 data remove block ~ ~ ~ Items[{tag:{fd_of_fill:1}}]
 data modify block ~ ~ ~ Items append from storage fluid_dimensions:craft ClearSlotUseless[]
+
+say REPLACE/REPLACE

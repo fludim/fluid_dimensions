@@ -22,6 +22,8 @@ scoreboard objectives add fd.dimension dummy
 scoreboard objectives add fd.y dummy
 scoreboard objectives add fd.a_y dummy
 scoreboard objectives add fd.mine_bstone minecraft.mined:minecraft.blackstone
+scoreboard objectives add fd.mine_eblock minecraft.mined:minecraft.emerald_block
+scoreboard objectives add fd.mine_iblock minecraft.mined:minecraft.iron_block
 scoreboard objectives add fd.pod_age dummy
 scoreboard objectives add fd.pod_stage dummy
 scoreboard objectives add fd.pod_ripeness dummy

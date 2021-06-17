@@ -5,7 +5,6 @@ execute store result score Count fd.o_forge if data storage fluid_dimensions:cra
 execute if entity @s[tag=fd.of.display_craft] unless data storage fluid_dimensions:craft Items[{Slot:15b}] run function fluid_dimensions:ocular_forge/table/custom_craft/clear/clear_craft_slot
 execute if entity @s[tag=fd.of.display_craft] if data storage fluid_dimensions:craft Items[{Slot:15b}] run function fluid_dimensions:ocular_forge/table/custom_craft/output/test
 
-###execute if data storage fluid_dimensions:craft Items[{Slot:8b}] run scoreboard players remove Count fd.o_forge 1
 execute if data storage fluid_dimensions:craft Items[{Slot:15b}] run scoreboard players remove Count fd.o_forge 1
 execute store result score GUI fd.o_forge if data storage fluid_dimensions:craft Items[{tag:{fd_of_gui_item:1}}]
 
@@ -29,3 +28,5 @@ data modify entity @s Item.tag.Display set from storage fluid_dimensions:craft I
 
 data modify block ~ ~ ~ Items set from storage fluid_dimensions:craft Items
 data modify entity @s Item.tag.Items set from block ~ ~ ~ Items
+
+say DISPLAY

@@ -1,0 +1,2 @@
+tag @s add fd.of.display_craft
+execute if entity @s[tag=fd.of.display_craft] run data modify storage fluid_dimensions:craft Items[{Slot:15b}] merge value {id:"minecraft:glow_item_frame",Count:1b,tag:{CustomModelData:4701020,display:{Name:'{"translate":"block.fd.garnet_block","italic":false}'},EntityTag:{Tags:["fd.garnet_block","fd.ore"],Invulnerable:1b,Facing:1b,Invisible:1b,Fixed:1b,Item:{id:"minecraft:wooden_shovel",Count:1b,tag:{CustomModelData:4701020,display:{Name:'{"text":""}'}}}},fd_item_ore:1b,fd_item_garnet_block:1b}}

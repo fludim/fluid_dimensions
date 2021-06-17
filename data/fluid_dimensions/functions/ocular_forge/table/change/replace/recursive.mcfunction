@@ -10,3 +10,5 @@ loot insert ~ ~ ~ mine 16942001 1 -14269007 air{drop_contents:1b}
 execute if data block ~ ~ ~ Items[22] run function fluid_dimensions:ocular_forge/table/change/replace/summon
 
 execute if data storage fluid_dimensions:craft Test[0] run function fluid_dimensions:ocular_forge/table/change/replace/recursive
+
+say RECURSIVE

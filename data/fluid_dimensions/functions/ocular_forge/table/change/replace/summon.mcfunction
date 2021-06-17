@@ -9,3 +9,5 @@ execute if data storage fluid_dimensions:craft Summon[{Slot:26b}] run summon ite
 
 execute as @e[type=item,tag=fd.of.summon] run function fluid_dimensions:ocular_forge/table/change/replace/summon2
 tag @e[type=item,tag=fd.of.summon] remove fd.of.summon
+
+say SUMMON

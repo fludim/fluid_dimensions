@@ -11,6 +11,8 @@ scoreboard objectives remove fd.dimension
 scoreboard objectives remove fd.y
 scoreboard objectives remove fd.a_y
 scoreboard objectives remove fd.mine_bstone
+scoreboard objectives remove fd.mine_eblock
+scoreboard objectives remove fd.mine_iblock
 scoreboard objectives remove fd.pod_age
 scoreboard objectives remove fd.pod_stage
 scoreboard objectives remove fd.pod_ripeness

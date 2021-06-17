@@ -11,3 +11,5 @@ execute if score Item_Change fd.o_forge matches 1 run function fluid_dimensions:
 
 execute if score Item_Change fd.o_forge matches 0 if score Count_Change fd.o_forge < Count_Change2 fd.o_forge run function fluid_dimensions:ocular_forge/table/custom_craft/output/replace_output
 execute if score Item_Change fd.o_forge matches 0 if score Count_Change fd.o_forge > Count_Change2 fd.o_forge run function fluid_dimensions:ocular_forge/table/custom_craft/output/count_change
+
+say TEST
