@@ -18,5 +18,3 @@ execute if entity @s[tag=fd.of.display_craft] run data remove storage fluid_dime
 
 execute unless data storage fluid_dimensions:craft Test[0] run function fluid_dimensions:ocular_forge/table/change/display
 execute if data storage fluid_dimensions:craft Test[0] run function fluid_dimensions:ocular_forge/table/change/replace/replace
-
-say CHANGE/MAIN

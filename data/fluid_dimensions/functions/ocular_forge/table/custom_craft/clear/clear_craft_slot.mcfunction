@@ -11,5 +11,3 @@ execute store result storage fluid_dimensions:craft Items[{Slot:21b}].Count byte
 data remove storage fluid_dimensions:craft Items[{Count:0b}]
 
 tag @s remove fd.of.display_craft
-
-say CLEAR_CRAFT_SLOT

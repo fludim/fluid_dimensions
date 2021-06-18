@@ -28,5 +28,3 @@ data modify entity @s Item.tag.Display set from storage fluid_dimensions:craft I
 
 data modify block ~ ~ ~ Items set from storage fluid_dimensions:craft Items
 data modify entity @s Item.tag.Items set from block ~ ~ ~ Items
-
-say DISPLAY
