@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          },
+          "effects": {
+            "minecraft:levitation": {}
+          }
+        },
+        "item": {
+          "items": ["minecraft:apple"],
+          "nbt": "{fd_fallen_apple:1b}"
+        }   
+      }
+    }
+  },
+  "rewards": {
+    "function": "fluid_dimensions:fallen_apple/activate"
+  }
+}
