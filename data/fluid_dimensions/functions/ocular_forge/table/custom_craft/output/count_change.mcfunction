@@ -1,3 +1,5 @@
+# From: ocular_forge/table/custom_craft/output/test
+
 summon item ~ ~1 ~ {Item:{id:"minecraft:paper",Count:1b},Tags:["fd.of.summon"]}
 
 scoreboard players operation Count_Change fd.o_forge -= Count_Change2 fd.o_forge

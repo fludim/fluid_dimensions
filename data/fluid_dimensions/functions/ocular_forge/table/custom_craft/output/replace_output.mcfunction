@@ -1,3 +1,5 @@
+# From: ocular_forge/table/change/display, ocular_forge/table/custom_craft/output/test
+
 summon item ~ ~1 ~ {Item:{id:"minecraft:paper",Count:1b},Tags:["fd.of.summon"]}
 
 data modify entity @e[type=item,limit=1,tag=fd.of.summon] Item set from storage fluid_dimensions:craft Items[{Slot:15b}]

@@ -1,3 +1,5 @@
+# From: ocular_forge/tick
+
 data remove block ~ ~ ~ Items[{tag:{fd_of_fill:1}}]
 data remove block ~ ~ ~ Items[].tag.fd_of_no_stack
 data remove block ~ ~ ~ Items[{tag:{fd_of_no_tag:1}}].tag

@@ -1,3 +1,5 @@
+# From: ocular_forge/table/change/main
+
 execute unless entity @s[tag=fd.of.display_craft] if data storage fluid_dimensions:craft Items[{Slot:15b}] run function fluid_dimensions:ocular_forge/table/custom_craft/output/replace_output
 
 execute store result score Count fd.o_forge if data storage fluid_dimensions:craft Items[]
