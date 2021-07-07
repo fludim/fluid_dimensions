@@ -9,5 +9,5 @@ execute if entity @s[nbt={SelectedItem:{tag:{fd_enchanted_door:1b}}}] at @s run 
 execute if entity @s[predicate=fluid_dimensions:void_veil/can_equip] at @s run function fluid_dimensions:void_veil/equip
 
 
-### RESET ###
+# RESET
 scoreboard players reset @s[scores={fd.r_click=1..}] fd.r_click
