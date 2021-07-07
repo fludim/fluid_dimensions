@@ -1,3 +1,5 @@
+# From: ocular_forge/table/change/display, ocular_forge/table/custom_craft/output/replace_output
+
 execute store result storage fluid_dimensions:craft Items[{Slot:1b}].Count byte 0.99 run data get storage fluid_dimensions:craft Items[{Slot:1b}].Count 
 execute store result storage fluid_dimensions:craft Items[{Slot:2b}].Count byte 0.99 run data get storage fluid_dimensions:craft Items[{Slot:2b}].Count 
 execute store result storage fluid_dimensions:craft Items[{Slot:3b}].Count byte 0.99 run data get storage fluid_dimensions:craft Items[{Slot:3b}].Count 

@@ -1,2 +1,3 @@
 # Gives Ocular Forge
-give @s zombie_villager_spawn_egg{fd_ocular_forge:1b,CustomModelData:4701014,display:{Name:'{"translate":"block.fd.ocular_forge","italic":false}'},EntityTag:{id:"minecraft:area_effect_cloud",Duration:1,Particle:"block air",ReapplicationDelay:0,Radius:0f,RadiusOnUse:0f,WaitTime:0,Tags:["fd.of.place", "global.ignore", "global.ignore.kill", "global.ignore.pos"]}}
+
+give @s glow_item_frame{CustomModelData:4701014,display:{Name:'{"translate":"block.fd.ocular_forge","italic":false}'},EntityTag:{Tags:["fd.ocular_forge","fd.ore","global.ignore","global.ignore.kill","global.ignore.pos"],Invulnerable:1b,Facing:1b,Invisible:1b,Fixed:1b,Item:{id:"minecraft:wooden_shovel",Count:1b,tag:{CustomModelData:4701014,display:{Name:'{"text":""}'}}}},fd_item_ore:1b,fd_ocular_forge:1b}

@@ -16,6 +16,10 @@ execute as @e[type=minecraft:glow_item_frame,tag=fd.garnet_block,tag=!fd.ore_pla
 execute as @e[type=minecraft:glow_item_frame,tag=fd.nulliron_block,tag=!fd.ore_placed] at @s unless block ~ ~ ~ #fluid_dimensions:replaceable run loot spawn ~ ~ ~ loot fluid_dimensions:blocks/nulliron_block
 execute as @e[type=minecraft:glow_item_frame,tag=fd.nulliron_block,tag=!fd.ore_placed] at @s if block ~ ~ ~ #fluid_dimensions:replaceable run function fluid_dimensions:custom_tiles/nulliron_block/set
 
+# Ocular Forge
+execute as @e[type=minecraft:glow_item_frame,tag=fd.ocular_forge,tag=!fd.ore_placed] at @s unless block ~ ~ ~ #fluid_dimensions:replaceable run loot spawn ~ ~ ~ loot fluid_dimensions:blocks/ocular_forge
+execute as @e[type=minecraft:glow_item_frame,tag=fd.ocular_forge,tag=!fd.ore_placed] at @s if block ~ ~ ~ #fluid_dimensions:replaceable run function fluid_dimensions:custom_tiles/ocular_forge/set
+
 # Fail blocks not replacing air
 execute as @e[type=minecraft:glow_item_frame,tag=fd.ore,tag=!fd.ore_placed] at @s unless block ~ ~ ~ #fluid_dimensions:replaceable run kill @s
 
