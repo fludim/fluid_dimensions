@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:4701007, display:{Name:'{\"translate\":\"item.fd.garnet\",\"italic\":false}'}, fd_garnet:1b}"
+                            "tag": "{CustomModelData:4470007, display:{Name:'{\"translate\":\"item.fd.garnet\",\"italic\":false}'}, fd_garnet:1b}"
                         }
                     ]
                 }

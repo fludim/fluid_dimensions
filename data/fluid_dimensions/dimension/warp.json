@@ -2,7 +2,7 @@
   "type": "fluid_dimensions:nothing",
   "generator": {
     "type": "minecraft:noise",
-    "seed": -1464245863,
+    "seed": 0,
     "biome_source": {
       "type": "minecraft:fixed",
       "seed": 0,
@@ -11,33 +11,30 @@
     "settings": {
       "name": "fluid_dimensions:warp",
       "bedrock_roof_position": -10,
-      "bedrock_floor_position": 0,
-      "sea_level": 63,
+      "bedrock_floor_position": -10,
+      "sea_level": 0,
       "disable_mob_generation": true,
       "noise_caves_enabled": false,
       "aquifers_enabled": false,
       "deepslate_enabled": false,
-      "min_surface_level": 32,
+      "min_surface_level": 0,
       "ore_veins_enabled": false,
       "noodle_caves_enabled": false,
       "default_block": {
-        "Name": "minecraft:stone"
+        "Name": "minecraft:air"
       },
       "default_fluid": {
-        "Name": "minecraft:water",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:air"
       },
       "noise": {
         "min_y": 0,
-        "height": 256,
+        "height": 128,
         "density_factor": 1,
         "density_offset": -0.46875,
         "size_horizontal": 2,
         "size_vertical": 2,
-        "simplex_surface_noise": true,
-        "random_density_offset": true,
+        "simplex_surface_noise": false,
+        "random_density_offset": false,
         "island_noise_override": false,
         "amplified": false,
         "sampling": {

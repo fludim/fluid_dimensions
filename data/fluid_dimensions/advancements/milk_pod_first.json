@@ -8,7 +8,7 @@
     },
     "icon": {
       "item": "minecraft:suspicious_stew",
-      "nbt": "{CustomModelData:4701012}"
+      "nbt": "{CustomModelData:4470012}"
     },
     "frame": "task",
     "show_toast": true,

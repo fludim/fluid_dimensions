@@ -5,7 +5,7 @@ scoreboard players set @s fd.pod_ripeness 0
 scoreboard players set @s fd.pod_stage 3
 
 # Change to last non-ready model
-data modify entity @s HandItems[0].tag.CustomModelData set value 4701057
+data modify entity @s HandItems[0].tag.CustomModelData set value 4470057
 
 # Remove ready tag
 tag @s remove fd.pod_ready

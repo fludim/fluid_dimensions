@@ -1,2 +1,2 @@
 tag @s add fd.of.display_craft
-execute if entity @s[tag=fd.of.display_craft] run data modify storage fluid_dimensions:craft Items[{Slot:15b}] merge value {id:"minecraft:clock",Count:1b,tag:{CustomModelData:4701006,display:{Name:'{"translate":"item.fd.universal_altimeter","italic":false}'},fd_universal_altimeter:1b}}
+execute if entity @s[tag=fd.of.display_craft] run data modify storage fluid_dimensions:craft Items[{Slot:15b}] merge value {id:"minecraft:clock",Count:1b,tag:{CustomModelData:4470006,display:{Name:'{"translate":"item.fd.universal_altimeter","italic":false}'},fd_universal_altimeter:1b}}

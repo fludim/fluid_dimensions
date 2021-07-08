@@ -8,7 +8,7 @@
     },
     "icon": {
       "item": "minecraft:knowledge_book",
-      "nbt": "{CustomModelData:4701002}"
+      "nbt": "{CustomModelData:4470002}"
     },
     "frame": "challenge",
     "show_toast": true,

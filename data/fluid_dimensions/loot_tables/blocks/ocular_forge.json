@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:4470021,display:{Name:'{\"translate\":\"block.fd.nulliron_block\",\"italic\":false}'},EntityTag:{Tags:[\"fd.nulliron_block\",\"fd.ore\"],Invulnerable:1b,Facing:1b,Invisible:1b,Fixed:1b,Item:{id:\"minecraft:wooden_shovel\",Count:1b,tag:{CustomModelData:4470021,display:{Name:'{\"text\":\"\"}'}}}},fd_item_ore:1b,fd_item_nulliron_block:1b}"
+                            "tag": "{CustomModelData:4470014,display:{Name:'{\"translate\":\"block.fd.ocular_forge\",\"italic\":false}'},EntityTag:{Tags:[\"fd.ocular_forge\",\"fd.ore\",\"global.ignore\",\"global.ignore.kill\",\"global.ignore.pos\"],Invulnerable:1b,Facing:1b,Invisible:1b,Fixed:1b,Item:{id:\"minecraft:wooden_shovel\",Count:1b,tag:{CustomModelData:4470014,display:{Name:'{\"text\":\"\"}'}}}},fd_item_ore:1b,fd_ocular_forge:1b}"
                         }
                     ]
                 }

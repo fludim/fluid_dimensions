@@ -8,7 +8,7 @@
     },
     "icon": {
       "item": "minecraft:snowball",
-      "nbt": "{CustomModelData:4701001}"
+      "nbt": "{CustomModelData:4470001}"
     },
     "frame": "task",
     "show_toast": true,
