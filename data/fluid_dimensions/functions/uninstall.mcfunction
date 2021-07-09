@@ -1,4 +1,13 @@
-# Remove scores and tags
+# Please run this function before permanently disabling the pack to safely remove all pack features (as much as the game allows)
+
+# Uninstalled pack message (credits: minecraft.tools)
+execute store result score $command_feedback fd.temp run gamerule sendCommandFeedback
+gamerule sendCommandFeedback false
+tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n\n      "},{"text":"Fluid","italic":true,"color":"blue"},{"text":" Dimensions","color":"gold"},{"text":"\n           "},{"text":"v2.2","color":"green"},{"text":"\n\n\n\nThe datapack and its\nrelated tags and\nscoreboard objectives\nhave been removed.\n\nThanks for trying the\npack.\n\n\n\n~"},{"text":"DylzMC","color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/dylzmc/"}},{"text":"\n\n"},{"text":"==+----------------+==","color":"gray"}]
+execute if score $command_feedback fd.temp matches 1 run gamerule sendCommandFeedback true
+
+# Remove objectives
+scoreboard objectives remove fd.temp
 scoreboard objectives remove fd.sball_thrown
 scoreboard objectives remove fd.i_id
 scoreboard objectives remove fd.consume_book
@@ -18,17 +27,16 @@ scoreboard objectives remove fd.pod_stage
 scoreboard objectives remove fd.pod_ripeness
 scoreboard objectives remove fd.fall_dist
 
+# Remove Pod objectives
+function fluid_dimensions:pod/uninstall
+
+# Remove I boss, bossbars, some tags (not all, in case reinstalled) and teams
+
 tp @e[tag=fd.i] 0 -9999 0
 tp @e[tag=fd.i_carrier] 0 -9999 0
 
-tag @e remove fd.blindness
-tag @e remove fd.sky_pearl_in_transit
-tag @e remove fd.us_mob
-tag @e remove fd.ur_mob
-tag @e remove fd.i
-tag @e remove fd.i_carrier
-tag @e remove fd.i_id_tagged
-tag @e remove fd.cochineal
+tag @a remove fd.blindness
+tag @a remove fd.sky_pearl_in_transit
 
 bossbar remove minecraft:fd.i_0
 bossbar remove minecraft:fd.i_1
@@ -38,12 +46,13 @@ bossbar remove minecraft:fd.i_4
 
 advancement revoke @a from fluid_dimensions:root
 
+team remove fd.noNameTag
+
 # Uninstall Ocular Forge
 function fluid_dimensions:ocular_forge/uninstall
 
-# Uninstalled pack message (credits: minecraft.tools)
-gamerule sendCommandFeedback false
-tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n\n      "},{"text":"Fluid","italic":true,"color":"blue"},{"text":" Dimensions","color":"gold"},{"text":"\n           "},{"text":"v2.2","color":"green"},{"text":"\n\n\n\nThe datapack and its\nrelated tags and\nscoreboard objectives\nhave been removed.\n\nThanks for trying the\npack.\n\n\n\n~"},{"text":"DylzMC","color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/dylzmc/"}},{"text":"\n\n"},{"text":"==+----------------+==","color":"gray"}]
+# Kill custom blocks
+kill @e[tag=fd.ore]
 
 # Disable datapack (if name still the same)
 datapack disable "file/Fluid Dimensions v2.2"
