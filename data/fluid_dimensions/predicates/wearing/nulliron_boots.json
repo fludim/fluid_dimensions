@@ -5,7 +5,7 @@
         "predicate": {
             "equipment": {
                 "feet": {
-                    "nbt": "{fd_nulliron_boots:1b}"
+                    "nbt": "{fd:{id:\"nulliron_boots\"}}"
                 }
             }
         }

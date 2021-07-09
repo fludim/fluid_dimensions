@@ -13,7 +13,7 @@
         },
         "item": {
           "items": ["minecraft:apple"],
-          "nbt": "{fd_fallen_apple:1b}"
+          "nbt": "{fd:{id:\"fallen_apple\"}}"
         }   
       }
     }

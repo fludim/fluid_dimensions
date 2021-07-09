@@ -8,7 +8,7 @@ execute if entity @s[tag=fd.of.display_craft] unless data storage fluid_dimensio
 execute if entity @s[tag=fd.of.display_craft] if data storage fluid_dimensions:craft Items[{Slot:15b}] run function fluid_dimensions:ocular_forge/table/custom_craft/output/test
 
 execute if data storage fluid_dimensions:craft Items[{Slot:15b}] run scoreboard players remove Count fd.o_forge 1
-execute store result score GUI fd.o_forge if data storage fluid_dimensions:craft Items[{tag:{fd_of_gui_item:1}}]
+execute store result score GUI fd.o_forge if data storage fluid_dimensions:craft Items[{tag:{fd:{tags:{"of_gui_item":1b}}}}]
 
 scoreboard players operation Count fd.o_forge -= GUI fd.o_forge
 

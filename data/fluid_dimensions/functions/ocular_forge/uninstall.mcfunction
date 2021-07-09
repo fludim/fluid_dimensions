@@ -11,5 +11,5 @@ data remove storage fluid_dimensions:craft Test2
 data remove storage fluid_dimensions:craft ClearSlotUseless
 data remove storage fluid_dimensions:craft FillAllSlot
 data remove storage fluid_dimensions:craft FillSlot
-data remove storage fluid_dimensions:craft fd_of_gui_item
+data remove storage fluid_dimensions:craft GUIItem
 data remove storage fluid_dimensions:craft Display

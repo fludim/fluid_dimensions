@@ -1,2 +1,2 @@
 
-execute unless entity @s[tag=fd.of.display_craft] if data storage fluid_dimensions:craft Items[{id:"minecraft:fermented_spider_eye",tag:{fd_nullite_piece:1b}}] if data storage fluid_dimensions:craft Items[{id:"minecraft:iron_ingot"}] run function fluid_dimensions:ocular_forge/craft/nulliron_ingot
+execute unless entity @s[tag=fd.of.display_craft] if data storage fluid_dimensions:craft Items[{id:"minecraft:fermented_spider_eye",tag:{fd:{id:"nullite_piece"}}}] if data storage fluid_dimensions:craft Items[{id:"minecraft:iron_ingot"}] run function fluid_dimensions:ocular_forge/craft/nulliron_ingot

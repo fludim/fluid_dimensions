@@ -7,7 +7,7 @@
         "trigger": "minecraft:tick",
         "conditions": {
           "player": {
-            "nbt": "{Inventory:[{tag:{fd_of_gui_clear:1}}]}"
+            "nbt": "{Inventory:[{tag:{fd:{tags:{\"of_gui_clear\":1b}}}}]}"
           }
         }
       }

@@ -4,7 +4,7 @@
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
         "item": {
-          "nbt": "{fd_item_ore:1b}"
+          "nbt": "{fd:{tags:{\"block\":1b}}}"
         }
       }
     }

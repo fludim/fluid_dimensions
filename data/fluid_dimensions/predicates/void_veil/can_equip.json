@@ -19,7 +19,7 @@
         "predicate": {
           "equipment": {
             "mainhand": {
-              "nbt": "{fd_void_veil:1b}"
+              "nbt": "{fd:{id:\"void_veil\"}}"
             }
           }
         }
@@ -30,7 +30,7 @@
         "predicate": {
           "equipment": {
             "offhand": {
-              "nbt": "{fd_void_veil:1b}"
+              "nbt": "{fd:{id:\"void_veil\"}}"
             }
           }
         }

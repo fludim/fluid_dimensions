@@ -5,7 +5,7 @@
 		"equipment": {
 			"mainhand": {
 				"items": ["minecraft:knowledge_book"],
-				"nbt": "{fd_stygian_iris:1b}"
+				"nbt": "{fd:{id:\"stygian_iris\"}}"
 			}
 		}
 	}

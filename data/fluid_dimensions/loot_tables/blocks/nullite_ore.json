@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:4470003, display:{Name:'{\"translate\":\"item.fd.nullite_piece\",\"italic\":false}'}, fd_nullite_piece:1b}"
+                            "tag": "{CustomModelData:4470003, display:{Name:'{\"translate\":\"item.fd.nullite_piece\",\"italic\":false}'},fd:{id:\"nullite_piece\"}}"
                         }
                     ]
                 }

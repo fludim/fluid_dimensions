@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:4470008,display:{Name:'{\"translate\":\"block.fd.garnet_ore\",\"italic\":false}'},EntityTag:{Tags:[\"fd.garnet_ore\",\"fd.ore\"],Invulnerable:1b,Facing:1b,Invisible:1b,Fixed:1b,Item:{id:\"minecraft:wooden_shovel\",Count:1b,tag:{CustomModelData:4470008,display:{Name:'{\"text\":\"\"}'}}}},fd_item_ore:1b,fd_item_garnet_ore:1b}"
+                            "tag": "{CustomModelData:4470008,display:{Name:'{\"translate\":\"block.fd.garnet_ore\",\"italic\":false}'},EntityTag:{Tags:[\"fd.garnet_ore\",\"fd.ore\",\"global.ignore\",\"global.ignore.kill\",\"global.ignore.pos\"],Invulnerable:1b,Facing:1b,Invisible:1b,Fixed:1b,Item:{id:\"minecraft:wooden_shovel\",Count:1b,tag:{CustomModelData:4470008,display:{Name:'{\"text\":\"\"}'}}}},fd:{id:\"garnet_ore\",tags:{\"block\":1b}}}"
                         }
                     ]
                 }
