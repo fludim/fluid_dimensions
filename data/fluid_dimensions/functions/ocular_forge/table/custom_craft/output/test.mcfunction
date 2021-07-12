@@ -9,7 +9,7 @@ data modify storage fluid_dimensions:craft Display.Count set from storage fluid_
 
 execute store success score Item_Change fd.o_forge run data modify storage fluid_dimensions:craft Display set from storage fluid_dimensions:craft Items[{Slot:15b}]
 
-execute if score Item_Change fd.o_forge matches 1 run function fluid_dimensions:ocular_forge/table/custom_craft/output/replace_output
+execute if score #item_change fd.o_forge matches 1 run function fluid_dimensions:ocular_forge/table/custom_craft/output/replace_output
 
-execute if score Item_Change fd.o_forge matches 0 if score $count_change fd.o_forge < $count_change2 fd.o_forge run function fluid_dimensions:ocular_forge/table/custom_craft/output/replace_output
-execute if score Item_Change fd.o_forge matches 0 if score $count_change fd.o_forge > $count_change2 fd.o_forge run function fluid_dimensions:ocular_forge/table/custom_craft/output/count_change
+execute if score #item_change fd.o_forge matches 0 if score $count_change fd.o_forge < $count_change2 fd.o_forge run function fluid_dimensions:ocular_forge/table/custom_craft/output/replace_output
+execute if score #item_change fd.o_forge matches 0 if score $count_change fd.o_forge > $count_change2 fd.o_forge run function fluid_dimensions:ocular_forge/table/custom_craft/output/count_change

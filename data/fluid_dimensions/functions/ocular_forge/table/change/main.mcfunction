@@ -20,3 +20,8 @@ execute if entity @s[tag=fd.of.display_craft] run data remove storage fluid_dime
 
 execute unless data storage fluid_dimensions:craft Test[0] run function fluid_dimensions:ocular_forge/table/change/display
 execute if data storage fluid_dimensions:craft Test[0] run function fluid_dimensions:ocular_forge/table/change/replace/replace
+
+# Visual
+
+execute unless entity @s[tag=fd.of.display_craft] run data modify entity @s Item.tag.CustomModelData set value 4470014
+execute if entity @s[tag=fd.of.display_craft] run data modify entity @s Item.tag.CustomModelData set value 4470022
