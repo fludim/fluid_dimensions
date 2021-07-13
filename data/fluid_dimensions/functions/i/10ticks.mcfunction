@@ -1,5 +1,5 @@
 # From: load
-# every 10 ticks
+# Runs every 10 ticks
 
 effect give @e[limit=1,type=elder_guardian,tag=fd.i,sort=random] minecraft:invisibility 1000000 0 true
 effect give @e[limit=1,type=elder_guardian,tag=fd.i,sort=random] minecraft:fire_resistance 1000000 0 true
@@ -20,7 +20,6 @@ execute as @e[type=elder_guardian,limit=1,scores={fd.i_id=5}] at @s run function
 execute unless entity @e[type=elder_guardian,scores={fd.i_id=5}] run bossbar set minecraft:fd.i_4 players
 
 #Stages
-
-execute as @e[type=elder_guardian,tag=fd.i] run function fluid_dimensions:i/stages
+execute as @e[type=elder_guardian,tag=fd.i] at @s run function fluid_dimensions:i/stages
 
 schedule function fluid_dimensions:i/10ticks 10t

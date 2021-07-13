@@ -12,6 +12,7 @@ scoreboard objectives remove fd.sball_thrown
 scoreboard objectives remove fd.i_id
 scoreboard objectives remove fd.consume_book
 scoreboard objectives remove fd.i_stage
+scoreboard objectives remove fd.i_stage_last
 scoreboard objectives remove fd.r_click
 scoreboard objectives remove fd.health
 scoreboard objectives remove fd.warp_time

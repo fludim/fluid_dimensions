@@ -11,6 +11,7 @@ scoreboard objectives add fd.i_id dummy
 scoreboard objectives add fd.consume_book minecraft.used:knowledge_book
 scoreboard objectives add fd.r_click minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add fd.i_stage dummy
+scoreboard objectives add fd.i_stage_last dummy
 scoreboard objectives add fd.health dummy
 scoreboard objectives add fd.warp_time dummy
 scoreboard objectives add fd.gamemode dummy
