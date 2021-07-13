@@ -27,6 +27,7 @@ scoreboard objectives remove fd.pod_age
 scoreboard objectives remove fd.pod_stage
 scoreboard objectives remove fd.pod_ripeness
 scoreboard objectives remove fd.fall_dist
+scoreboard objectives remove fd.hurt
 
 # Remove Pod objectives
 function fluid_dimensions:pod/uninstall

@@ -1,8 +1,20 @@
 {
-        "values": [
-            "minecraft:magma_cube",
-            "minecraft:zombie",
-            "minecraft:wither_skeleton",
-            "minecraft:skeleton"
-        ]
+    "values": [
+        {
+            "id": "minecraft:magma_cube",
+            "required": false
+        },
+        {
+            "id": "minecraft:zombie",
+            "required": false
+        },
+        {
+            "id": "minecraft:wither_skeleton",
+            "required": false
+        },
+        {
+            "id": "minecraft:skeleton",
+            "required": false
+        }
+    ]
 }

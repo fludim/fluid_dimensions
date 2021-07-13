@@ -1,7 +1,16 @@
 {
-        "values": [
-            "minecraft:drowned",
-            "minecraft:stray",
-            "minecraft:slime"
-        ]
+    "values": [
+        {
+            "id": "minecraft:drowned",
+            "required": false
+        },
+        {
+            "id": "minecraft:stray",
+            "required": false
+        },
+        {
+            "id": "minecraft:slime",
+            "required": false
+        }
+    ]
 }

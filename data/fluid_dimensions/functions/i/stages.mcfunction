@@ -1,7 +1,8 @@
 # From: 10ticks (as fd.i)
 
-# Remove visual fire
+# Remove visual fire and wither effect
 data modify entity @s Fire set value 0s
+effect clear @s wither
 
 # Put health into a score
 execute store result score @s fd.health run data get entity @s Health 100
