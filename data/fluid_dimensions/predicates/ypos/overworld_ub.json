@@ -3,7 +3,7 @@
 	"predicate": {
 		"position": {
 			"y": {
-				"min": 384
+				"min": 512
 			}
 		},
 		"dimension": "minecraft:overworld"

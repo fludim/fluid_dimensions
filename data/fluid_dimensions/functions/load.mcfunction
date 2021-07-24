@@ -37,10 +37,9 @@ scoreboard players set $counter fd.i_id 0
 
 # Universal Altimeter heights
 scoreboard players set $underridge fd.y 0
-scoreboard players set $nether fd.y 511
-scoreboard players set $end fd.y 1086
-scoreboard players set $overworld fd.y 1533
-scoreboard players set $upper_sky fd.y 1976
+scoreboard players set $nether fd.y 576
+scoreboard players set $overworld fd.y 1152
+scoreboard players set $upper_sky fd.y 1724
 
 advancement grant @a only fluid_dimensions:root
 

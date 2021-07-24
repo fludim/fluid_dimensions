@@ -3,7 +3,7 @@
 	"predicate": {
 		"position": {
 			"y": {
-				"max": -128
+				"max": -192
 			}
 		},
 		"dimension": "minecraft:overworld"
