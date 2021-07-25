@@ -1,6 +1,6 @@
-#From: replace
+# From: replace
 
-#Probability Tree
+# Probability Tree
 
 ##                               P:0.4       +----------+
 ##                         +---------------->+   Iron   |  =  0.4
