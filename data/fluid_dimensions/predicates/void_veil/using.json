@@ -1,36 +1,14 @@
 {
-  "condition": "minecraft:inverted",
-  "term": {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:location_check",
-          "predicate": {
-            "position": {
-              "y": {
-                "max": -64
-              }
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
-                "items": ["minecraft:warped_fungus_on_a_stick"],
-                "nbt": "{fd:{id:\"void_veil\"}}"
-              }
-            }
-          }
-        }
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "minecraft:warped_fungus_on_a_stick"
+        ],
+        "nbt": "{fd:{id:\"void_veil\"}}"
       }
-    ]
+    }
   }
 }
