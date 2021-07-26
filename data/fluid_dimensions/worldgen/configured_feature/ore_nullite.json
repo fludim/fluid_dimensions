@@ -2,9 +2,9 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:count",
+      "type": "minecraft:chance",
       "config": {
-        "count": 2
+        "chance": 3
       }
     },
     "feature": {
@@ -16,7 +16,7 @@
             "height": {
               "type": "minecraft:biased_to_bottom",
               "min_inclusive": {
-                "absolute": 3
+                "absolute": 5
               },
               "max_inclusive": {
                 "absolute": 31

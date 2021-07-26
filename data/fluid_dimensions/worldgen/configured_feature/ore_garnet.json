@@ -4,61 +4,38 @@
     "decorator": {
       "type": "minecraft:count",
       "config": {
-        "count": {
-          "type": "minecraft:uniform",
-          "value": {
-            "min_inclusive": 5,
-            "max_inclusive": 6
-          }
-        }
+        "count": 3
       }
     },
     "feature": {
       "type": "minecraft:decorated",
       "config": {
         "decorator": {
-          "type": "minecraft:square",
-          "config": {}
-        },
-        "feature": {
-          "type": "minecraft:decorated",
+          "type": "minecraft:range",
           "config": {
-            "decorator": {
-              "type": "minecraft:range",
-              "config": {
-                "height": {
-                  "type": "minecraft:uniform",
-                  "min_inclusive": {
-                    "absolute": 6
-                  },
-                  "max_inclusive": {
-                    "absolute": 83
-                  }
-                }
-              }
-            },
-            "feature": {
-              "type": "minecraft:ore",
-              "config": {
-                "size": 4,
-                "discard_chance_on_air_exposure": 0.2,
-                "targets": [
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:blackstone"
-                    },
-                    "state": {
-                      "Name": "minecraft:red_nether_brick_slab",
-                      "Properties": {
-                        "type": "double",
-                        "waterlogged": "true"
-                      }
-                    }
-                  }
-                ]
+            "height": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": 7
+              },
+              "max_inclusive": {
+                "absolute": 83
               }
             }
+          }
+        },
+        "feature": {
+          "type": "minecraft:fossil",
+          "config": {
+            "max_empty_corners_allowed": 1,
+            "fossil_structures": [
+              "fluid_dimensions:garnet_cluster"
+            ],
+            "overlay_structures": [
+              "minecraft:empty"
+            ],
+            "fossil_processors": "fluid_dimensions:no",
+            "overlay_processors": "fluid_dimensions:no"
           }
         }
       }
