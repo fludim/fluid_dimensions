@@ -8,5 +8,8 @@ execute if data entity @s SelectedItem.tag.fd{id:"enchanted_warped_door"} as @s 
 ## void_veil attempt > verify > equip
 execute if entity @s[predicate=fluid_dimensions:void_veil/can_equip] at @s run function fluid_dimensions:void_veil/equip
 
+## nadir_tunneller attempt > verify > activate
+execute if data entity @s SelectedItem.tag.fd{id:"nadir_tunneller"} if predicate fluid_dimensions:tunnellable at @s anchored feet run function fluid_dimensions:nadir_tunnel/create
+
 # RESET
 scoreboard players reset @s[scores={fd.r_click=1..}] fd.r_click

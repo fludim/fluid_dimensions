@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:blindness": {
+                        "amplifier": 48
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "fluid_dimensions:nadir_tunnel/up"
+    }
+}
