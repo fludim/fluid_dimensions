@@ -9,7 +9,6 @@ tag @s remove fd.blindness
 
 # Sball check
 execute if score @s fd.sball_thrown matches 1.. at @s run function fluid_dimensions:sky_pearl/check
-scoreboard players reset @s fd.sball_thrown
 
 # Universal Altimeter
 function fluid_dimensions:uni_altimeter/holding
@@ -17,9 +16,6 @@ function fluid_dimensions:uni_altimeter/holding
 # Right clicks
 function fluid_dimensions:i/tick/iris
 function fluid_dimensions:enchanted_door/door
-
-# Void Veil
-function fluid_dimensions:void_veil/tick
 
 # Call r_click
 execute if entity @s[scores={fd.r_click=1..}] run function fluid_dimensions:r_click

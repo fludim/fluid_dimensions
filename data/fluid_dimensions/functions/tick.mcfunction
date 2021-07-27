@@ -1,5 +1,5 @@
-# fd.tick
-gamerule sendCommandFeedback true
+# From: #minecraft:tick
+# Makes the wheels on the bus go round and round
 
 # player
 execute as @a at @s run function fluid_dimensions:player
