@@ -4,8 +4,9 @@
 function fluid_dimensions:travel/tick
 
 # Blindness tag
-effect give @s[tag=fd.blindness] minecraft:blindness 2 0 true
-tag @s remove fd.blindness
+effect give @s[tag=fd.in_transit] minecraft:blindness 2 0 true
+effect give @s[tag=fd.in_transit] minecraft:slow_falling 2 0 true
+tag @s remove fd.in_transit
 
 # Sball check
 execute if score @s fd.sball_thrown matches 1.. at @s run function fluid_dimensions:sky_pearl/check

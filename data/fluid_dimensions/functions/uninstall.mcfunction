@@ -36,7 +36,7 @@ function fluid_dimensions:pod/uninstall
 tp @e[tag=fd.i] 0 -9999 0
 tp @e[tag=fd.i_carrier] 0 -9999 0
 
-tag @a remove fd.blindness
+tag @a remove fd.in_transit
 tag @a remove fd.sky_pearl_in_transit
 tag @a remove fd.just_tunnelled
 
