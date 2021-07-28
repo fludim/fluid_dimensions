@@ -1,0 +1,22 @@
+{
+  "name": "fluid_dimensions:stacks/loot_barrel",
+  "fallback": "fluid_dimensions:stacks/loot_barrel",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "fluid_dimensions:stacks/loot_barrel",
+        "processors": "fluid_dimensions:no",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

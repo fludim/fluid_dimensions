@@ -1,0 +1,360 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{fd:{id:\"midnight_broth\"},display:{Name:'{\"translate\":\"item.fd.midnight_broth\",\"italic\":false}'},CustomModelData:4470012,Effects:[{EffectId:2b,EffectDuration:10400},{EffectId:12b,EffectDuration:10400},{EffectId:16b,EffectDuration:10800}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4470007, display:{Name:'{\"translate\":\"item.fd.garnet\",\"italic\":false}'},fd:{id:\"garnet\"}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 8,
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4470011,display:{Name:'{\"translate\":\"item.fd.hiatuan_cloth\",\"italic\":false}'},fd:{id:\"hiatuan_cloth\"}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 12,
+                    "name": "minecraft:charcoal",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4470010,display:{Name:'{\"translate\":\"item.fd.nadir_gel\",\"italic\":false}'},fd:{id:\"nadir_gel\"}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 6
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 12,
+                    "name": "minecraft:bone",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 12
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 7
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 5,
+                                "max": 15
+                            },
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:golden_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:golden_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:golden_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:golden_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:golden_shovel",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:golden_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:enchanted_golden_apple",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:netherite_scrap",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 13,
+                    "name": "minecraft:iron_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 8
+                            },
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 9,
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 4
+                            },
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 16,
+                    "name": "minecraft:gold_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 19
+                            },
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

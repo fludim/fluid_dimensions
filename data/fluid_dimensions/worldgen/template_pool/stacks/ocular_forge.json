@@ -1,0 +1,22 @@
+{
+  "name": "fluid_dimensions:stacks/ocular_forge",
+  "fallback": "fluid_dimensions:stacks/ocular_forge",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "fluid_dimensions:stacks/ocular_forge",
+        "processors": "fluid_dimensions:no",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

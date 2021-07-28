@@ -3,6 +3,56 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
+      "weight": 100,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "fluid_dimensions:stacks/bridges/bridge_1",
+        "processors": "fluid_dimensions:damage_stacks",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "fluid_dimensions:stacks/bridges/bridge_1",
+        "processors": "fluid_dimensions:damage_stacks",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 12,
+      "element": {
+        "location": "fluid_dimensions:stacks/bridges/bridge_3",
+        "processors": "fluid_dimensions:damage_stacks",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "fluid_dimensions:stacks/bridges/bridge_4",
+        "processors": "fluid_dimensions:damage_stacks",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
       "weight": 10,
       "element": {
         "location": "fluid_dimensions:stacks/rooms/room_l_1",

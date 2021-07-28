@@ -1,0 +1,22 @@
+{
+  "name": "fluid_dimensions:stacks/psirot",
+  "fallback": "fluid_dimensions:stacks/psirot",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "fluid_dimensions:stacks/psirot",
+        "processors": "fluid_dimensions:no",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}
