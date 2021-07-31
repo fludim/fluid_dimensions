@@ -5,10 +5,10 @@
 
 # Harder Magma Cubes
 execute if entity @s[type=minecraft:magma_cube] run attribute @s minecraft:generic.follow_range base set 60
+execute if entity @s[type=minecraft:magma_cube] run attribute @s minecraft:generic.attack_damage base set 4
 execute if entity @s[type=minecraft:magma_cube,nbt={Size:3}] run attribute @s minecraft:generic.max_health base set 30
 execute if entity @s[type=minecraft:magma_cube,nbt={Size:3}] run data modify entity @s Health set value 30
-execute if entity @s[type=minecraft:magma_cube] run attribute @s minecraft:generic.attack_damage base set 4
-execute if entity @s[type=minecraft:magma_cube] run data modify entity @s DeathLootTable set value "fluid_dimensions:entities/ur_magma_cube"
+execute if entity @s[type=minecraft:magma_cube,nbt={Size:3}] run attribute @s minecraft:generic.attack_damage base set 8
 
 # Haunted Armour
 execute if entity @s[type=minecraft:skeleton] run function fluid_dimensions:haunted/resolve
