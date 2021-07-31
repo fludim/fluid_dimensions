@@ -1,0 +1,2 @@
+tag @s add fd.of.display_craft
+execute if entity @s[tag=fd.of.display_craft] run data modify storage fluid_dimensions:craft Items[{Slot:15b}] merge value {id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:4470023,fd:{id:"nadir_tunneller"},display:{Name:'{"translate":"item.fd.nadir_tunneller","italic":false}'}}}
