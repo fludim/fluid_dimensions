@@ -28,6 +28,9 @@ scoreboard objectives remove fd.pod_stage
 scoreboard objectives remove fd.pod_ripeness
 scoreboard objectives remove fd.fall_dist
 scoreboard objectives remove fd.hurt
+scoreboard objectives remove fd.hand_timer
+scoreboard objectives remove fd.hand_dist
+scoreboard objectives remove fd.hand_count
 
 # Remove Pod objectives
 function fluid_dimensions:pod/uninstall

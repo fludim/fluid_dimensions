@@ -1,0 +1,45 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:4470011}"
+        },
+        "title": {
+            "text": "Look Ma!"
+        },
+        "description": {
+            "text": "Kill a Psirot with no hands",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "fluid_dimensions:the_abyss",
+    "criteria": {
+        "psirot": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:wither_skeleton",
+                            "nbt": "{Tags:[\"fd.psirot\"]}",
+                            "equipment": {
+                                "mainhand": {
+                                    "items": ["minecraft:air"]
+                                },
+                                "offhand": {
+                                    "items": ["minecraft:air"]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
