@@ -5,16 +5,15 @@
             "nbt": "{CustomModelData:4470011}"
         },
         "title": {
-            "text": "Look Ma!"
+            "text": "advancement.fd.no_hands.t"
         },
         "description": {
-            "text": "Kill a Psirot with no hands",
-            "color": "dark_purple"
+            "text": "advancement.fd.no_hands.d"
         },
         "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
     "parent": "fluid_dimensions:the_abyss",
     "criteria": {

@@ -2,7 +2,7 @@
 
 scoreboard players add @s fd.hand_dist 1
 
-execute at @s[scores={fd.hand_dist=0..30}] run tp @s ~ ~ ~ facing entity @e[limit=1,type=#fluid_dimensions:psirot_attack,tag=!global.ignore,distance=..50,sort=nearest]
+execute at @s[scores={fd.hand_dist=0..25}] run tp @s ~ ~ ~ facing entity @e[limit=1,type=#fluid_dimensions:psirot_attack,tag=!global.ignore,distance=..10,sort=nearest]
 execute at @s[scores={fd.hand_dist=0..20}] run tp @s ~ ~ ~ facing entity @p[distance=..50,gamemode=survival]
 
 execute positioned ^ ^ ^-0.5 run particle minecraft:dust_color_transition 0.14 0.02 0.14 1 0 0 0 ~ ~1 ~ 0.1 0.1 0.1 0.3 2
