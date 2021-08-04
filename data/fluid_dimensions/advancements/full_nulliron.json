@@ -1,0 +1,48 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+            "nbt": "{CustomModelData:4470017}"
+        },
+        "title": {
+            "translate": "advancement.fd.full_nulliron.t"
+        },
+        "description": {
+            "translate": "advancement.fd.full_nulliron.d"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "fluid_dimensions:obtain_nullite",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "head": {
+                                    "nbt": "{fd:{id:\"nulliron_helmet\"}}"
+                                },
+                                "chest": {
+                                    "nbt": "{fd:{id:\"nulliron_chestplate\"}}"
+                                },
+                                "legs": {
+                                    "nbt": "{fd:{id:\"nulliron_leggings\"}}"
+                                },
+                                "feet": {
+                                    "nbt": "{fd:{id:\"nulliron_boots\"}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
