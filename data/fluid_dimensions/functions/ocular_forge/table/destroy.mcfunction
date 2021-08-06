@@ -17,4 +17,14 @@ item replace block 16942001 1 -14269007 container.0 with glow_item_frame{CustomM
 
 execute align xyz run loot spawn ~0.5 ~0.4 ~0.5 mine 16942001 1 -14269007 air{drop_contents:1b}
 
+#Re-enable adjacent hoppers
+
+execute if block ~ ~-1 ~ hopper run data modify block ~ ~-1 ~ TransferCooldown set value 7
+
+execute if block ~ ~1 ~ hopper[facing=down] run data modify block ~ ~1 ~ TransferCooldown set value 10
+execute if block ~1 ~ ~ hopper[facing=west] run data modify block ~1 ~ ~ TransferCooldown set value 10
+execute if block ~-1 ~ ~ hopper[facing=east] run data modify block ~-1 ~ ~ TransferCooldown set value 10
+execute if block ~ ~ ~1 hopper[facing=north] run data modify block ~ ~ ~1 TransferCooldown set value 10
+execute if block ~ ~ ~-1 hopper[facing=south] run data modify block ~ ~ ~-1 TransferCooldown set value 10
+
 kill @s[type=!player]

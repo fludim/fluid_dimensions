@@ -1,7 +1,11 @@
 # From: tick
 
-# Disable minecart hoppers
-execute as @e[distance=..1,type=hopper_minecart,tag=!global.ignore,tag=!fd.of.mh_lock] positioned ~ ~1 ~ if entity @e[distance=..1,type=glow_item_frame,tag=fd.ocular_forge] run data merge entity @s {Enabled:1,Tags:["fd.of.mh_locked"]}
+# Re-enable hopper minecarts if no OF near
+execute as @e[type=hopper_minecart,tag=fd.mh_locked] run data modify entity @s Enabled set value 1
+execute as @e[type=hopper_minecart,tag=fd.mh_locked] run tag @s remove fd.mh_locked
+
+# Disable hopping things
+execute as @e[type=glow_item_frame,tag=fd.ocular_forge] at @s run function fluid_dimensions:ocular_forge/clean_hoppers
 
 # Main
 execute as @e[type=glow_item_frame,tag=fd.ocular_forge,tag=!fd.of.closed,predicate=fluid_dimensions:ocular_forge/barrel/closed] at @s run function fluid_dimensions:ocular_forge/table/close
