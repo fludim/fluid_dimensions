@@ -26,6 +26,9 @@ scoreboard objectives add fd.pod_stage dummy
 scoreboard objectives add fd.pod_ripeness dummy
 scoreboard objectives add fd.fall_dist dummy
 scoreboard objectives add fd.hurt dummy
+scoreboard objectives add fd.hand_timer dummy
+scoreboard objectives add fd.hand_dist dummy
+scoreboard objectives add fd.hand_count dummy
 
 function fluid_dimensions:pod/load
 
