@@ -1,6 +1,7 @@
-# From: tick, as carrier with no I passenger
+# From: tick, i_carrier
 
-particle minecraft:lava ~ ~2.3 ~ 0.8 0.8 0.8 0.15 80
+# Limit height due to y motion
+execute anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #fluid_dimensions:no_suffocation run function fluid_dimensions:i/restrict_height
 
-#Kill empty carrier (after the death particles)
-kill @s[type=!player]
+# Kill if no passenger I
+execute if entity @s[nbt=!{Passengers:[{}]}] run function fluid_dimensions:i/death

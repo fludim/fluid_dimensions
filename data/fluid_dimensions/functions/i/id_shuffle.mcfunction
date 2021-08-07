@@ -1,4 +1,4 @@
-#From: i/tick/i
+# From: i/tick/i
 
 scoreboard players operation $current fd.i_id = @s fd.i_id
 scoreboard players remove $current fd.i_id 1
