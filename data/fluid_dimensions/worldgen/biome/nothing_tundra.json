@@ -1,11 +1,11 @@
 {
-  "surface_builder": "fluid_dimensions:empty",
+  "surface_builder": "minecraft:grass",
   "depth": 0.125,
   "scale": 0.05,
-  "temperature": 0.5,
+  "temperature": -0.5,
   "downfall": 1,
-  "precipitation": "none",
-  "category": "plains",
+  "precipitation": "snow",
+  "category": "icy",
   "player_spawn_friendly": false,
   "effects": {
     "sky_color": 460551,
@@ -22,21 +22,65 @@
       "options": {
         "type": "minecraft:falling_honey"
       },
-      "probability": 0.003884
+      "probability": 0.017884
     }
   },
   "starts": [],
   "spawners": {
     "monster": [],
-    "creature": [],
-    "ambient": [],
+    "creature": [
+      {
+        "type": "minecraft:polar_bear",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
     "water_creature": [],
     "water_ambient": [],
     "misc": []
   },
   "spawn_costs": {},
   "carvers": {
-    "air": []
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
   },
-  "features": []
+  "features": [
+    [],
+    [
+      "minecraft:lake_water",
+      "minecraft:lake_lava"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite",
+      "minecraft:ore_diorite",
+      "minecraft:ore_andesite",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
+    ],
+    [],
+    [
+      "minecraft:spruce",
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
 }
