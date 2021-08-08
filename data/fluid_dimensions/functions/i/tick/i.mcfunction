@@ -34,3 +34,6 @@ execute if score @s fd.i_stage matches 3 run function fluid_dimensions:i/stage/3
 # TP detached I into the void (touched water, etc)
 execute as @s[predicate=!fluid_dimensions:not_a_passenger] at @s run particle minecraft:falling_dust quartz_block ~ ~ ~ 0.8 0.8 0.8 0.04 600
 execute in fluid_dimensions:underridge run tp @s[predicate=!fluid_dimensions:not_a_passenger] 0 -9999 0
+
+# Face player
+execute if entity @a[distance=..20] facing entity @p eyes run tp @s ~ ~ ~ ~ ~
