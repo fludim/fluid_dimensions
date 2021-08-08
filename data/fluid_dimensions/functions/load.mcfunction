@@ -29,6 +29,9 @@ scoreboard objectives add fd.hurt dummy
 scoreboard objectives add fd.hand_timer dummy
 scoreboard objectives add fd.hand_dist dummy
 scoreboard objectives add fd.hand_count dummy
+scoreboard objectives add fd.i_laser dummy
+scoreboard objectives add fd.i_laser_long dummy
+scoreboard objectives add fd.i_laser_wait dummy
 
 function fluid_dimensions:pod/load
 
