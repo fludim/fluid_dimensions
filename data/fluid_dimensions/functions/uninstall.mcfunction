@@ -31,6 +31,9 @@ scoreboard objectives remove fd.hurt
 scoreboard objectives remove fd.hand_timer
 scoreboard objectives remove fd.hand_dist
 scoreboard objectives remove fd.hand_count
+scoreboard objectives remove fd.i_laser
+scoreboard objectives remove fd.i_laser_long
+scoreboard objectives remove fd.i_laser_wait
 
 # Remove Pod objectives
 function fluid_dimensions:pod/uninstall
