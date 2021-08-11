@@ -1,7 +1,8 @@
-# From: ocular_forge/tick
+# From: custom_tiles/ocular_forge/block
 
-execute align xyz positioned ~-0.5 ~ ~-0.5 run kill @e[type=item,dx=1,dy=1,dz=1,nbt={Age:0s,Item:{tag:{fd:{tags:{"of_fill":1b}}}}}]
-execute align xyz positioned ~-0.5 ~ ~-0.5 run kill @e[type=item,tag=!global.ignore,tag=!global.ignore.kill,dx=1,dy=1,dz=1,nbt={Age:0s,Item:{id:"minecraft:barrel"}},limit=1]
+# execute align xyz positioned ~-0.5 ~ ~-0.5 run kill @e[type=item,dx=1,dy=1,dz=1,nbt={Age:0s,Item:{tag:{fd:{tags:{"of_fill":1b}}}}}]
+execute align xyz positioned ~-0.5 ~ ~-0.5 run kill @e[type=item,tag=!global.ignore,tag=!global.ignore.kill,dx=1,dy=1,dz=1,nbt={Age:0s}]
+# execute align xyz positioned ~-0.5 ~ ~-0.5 run kill @e[type=item,tag=!global.ignore,tag=!global.ignore.kill,dx=1,dy=1,dz=1,nbt={Age:0s,Item:{id:"minecraft:barrel"}},limit=1]
 
 data remove block 16942001 1 -14269007 Items
 

@@ -1,4 +1,4 @@
-Largely modified and updated (to fit glow_item_frame custom blocks and to remove unneeded autocrafting system) from the amazing work of the authors below.
+Largely modified and updated (not limited to supporting glow_item_frame custom blocks and removing unneeded autocrafting system) from the amazing work of the authors below.
 
 Authors:
 _RedCoal_

@@ -12,6 +12,3 @@ execute as @e[type=glow_item_frame,tag=fd.ocular_forge,tag=!fd.of.closed,predica
 execute as @e[type=glow_item_frame,tag=fd.ocular_forge,tag=fd.of.closed,predicate=fluid_dimensions:ocular_forge/barrel/open] at @s run function fluid_dimensions:ocular_forge/table/open
 
 execute as @e[type=glow_item_frame,tag=fd.ocular_forge,tag=!fd.of.closed] at @s run function fluid_dimensions:ocular_forge/table/main
-
-# Destroy
-execute as @e[type=glow_item_frame,tag=fd.ocular_forge,predicate=!fluid_dimensions:ocular_forge/barrel/barrel] at @s run function fluid_dimensions:ocular_forge/table/destroy

@@ -1,3 +1,5 @@
+# From: ocular_forge/table/change/replace/replace, ocular_forge/table/change/replace/recursive
+
 scoreboard players set #timer fd.o_forge 0
 data remove storage fluid_dimensions:craft Test2
 data modify block ~ ~ ~ Items append from storage fluid_dimensions:craft FillSlot[]
