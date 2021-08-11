@@ -3,13 +3,13 @@
     "pools": [
         {
             "rolls": {
-                "min": 2,
-                "max": 5
+                "min": 4,
+                "max": 7
             },
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 5,
+                    "weight": 8,
                     "name": "minecraft:suspicious_stew",
                     "functions": [
                         {
@@ -20,7 +20,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
+                    "weight": 5,
                     "name": "minecraft:clock",
                     "functions": [
                         {
@@ -31,7 +31,7 @@
                             "function": "minecraft:set_count",
                             "count": {
                                 "min": 1,
-                                "max": 3
+                                "max": 5
                             },
                             "add": false
                         }
@@ -39,7 +39,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 8,
+                    "weight": 10,
                     "name": "minecraft:clock",
                     "functions": [
                         {
@@ -50,8 +50,8 @@
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1,
-                                "max": 3
+                                "min": 2,
+                                "max": 5
                             },
                             "add": false
                         }
@@ -59,7 +59,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 12,
+                    "weight": 10,
                     "name": "minecraft:charcoal",
                     "functions": [
                         {
@@ -78,43 +78,28 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 12,
-                    "name": "minecraft:bone",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 12
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 15,
+                    "weight": 8,
                     "name": "minecraft:arrow",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 3,
-                                "max": 7
+                                "min": 0,
+                                "max": 12
                             },
                             "add": false
                         },
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 5,
-                                "max": 15
+                                "min": 4,
+                                "max": 6
                             },
                             "add": true,
                             "conditions": [
                                 {
                                     "condition": "minecraft:random_chance",
-                                    "chance": 0.4
+                                    "chance": 0.6
                                 }
                             ]
                         }
@@ -122,7 +107,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 4,
+                    "weight": 8,
                     "name": "minecraft:golden_boots",
                     "functions": [
                         {
@@ -131,19 +116,18 @@
                             "add": false
                         },
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.7
-                                }
-                            ]
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 27
+                            },
+                            "treasure": true
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 4,
+                    "weight": 8,
                     "name": "minecraft:golden_leggings",
                     "functions": [
                         {
@@ -152,19 +136,18 @@
                             "add": false
                         },
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.7
-                                }
-                            ]
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 27
+                            },
+                            "treasure": true
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 4,
+                    "weight": 8,
                     "name": "minecraft:golden_chestplate",
                     "functions": [
                         {
@@ -173,19 +156,18 @@
                             "add": false
                         },
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.7
-                                }
-                            ]
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 27
+                            },
+                            "treasure": true
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 4,
+                    "weight": 8,
                     "name": "minecraft:golden_helmet",
                     "functions": [
                         {
@@ -194,19 +176,18 @@
                             "add": false
                         },
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.7
-                                }
-                            ]
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 27
+                            },
+                            "treasure": true
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 6,
+                    "weight": 8,
                     "name": "minecraft:golden_shovel",
                     "functions": [
                         {
@@ -215,19 +196,18 @@
                             "add": false
                         },
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.7
-                                }
-                            ]
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 27
+                            },
+                            "treasure": true
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 5,
+                    "weight": 8,
                     "name": "minecraft:golden_sword",
                     "functions": [
                         {
@@ -236,13 +216,18 @@
                             "add": false
                         },
                         {
-                            "function": "minecraft:enchant_randomly"
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 15,
+                                "max": 27
+                            },
+                            "treasure": true
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 2,
+                    "weight": 6,
                     "name": "minecraft:enchanted_golden_apple",
                     "functions": [
                         {
@@ -254,7 +239,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 2,
+                    "weight": 5,
                     "name": "minecraft:netherite_scrap",
                     "functions": [
                         {
@@ -269,8 +254,52 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 13,
+                    "weight": 5,
+                    "name": "minecraft:netherite_ingot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 9,
                     "name": "minecraft:iron_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 8
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            },
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.6
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 8,
+                    "name": "minecraft:gold_ingot",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -283,43 +312,14 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 0,
-                                "max": 8
-                            },
-                            "add": true,
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.5
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 9,
-                    "name": "minecraft:gold_ingot",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
                                 "min": 1,
-                                "max": 3
-                            },
-                            "add": false
-                        },
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
                                 "max": 4
                             },
                             "add": true,
                             "conditions": [
                                 {
                                     "condition": "minecraft:random_chance",
-                                    "chance": 0.2
+                                    "chance": 0.7
                                 }
                             ]
                         }
@@ -327,14 +327,14 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 16,
-                    "name": "minecraft:gold_nugget",
+                    "weight": 8,
+                    "name": "minecraft:quartz",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 1,
-                                "max": 8
+                                "min": 4,
+                                "max": 12
                             },
                             "add": false
                         },
@@ -342,13 +342,58 @@
                             "function": "minecraft:set_count",
                             "count": {
                                 "min": 0,
-                                "max": 19
+                                "max": 24
                             },
                             "add": true,
                             "conditions": [
                                 {
                                     "condition": "minecraft:random_chance",
-                                    "chance": 0.3
+                                    "chance": 0.6
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:warped_fungus_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4470005,fd:{id:\"enchanted_warped_door\"},display:{Name:'{\"translate\":\"item.fd.enchanted_warped_door\",\"italic\": false,\"color\":\"light_purple\"}'},Enchantments:[{id:\"minecraft:infinity\",lvl:1}],HideFlags:1}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 9,
+                    "name": "minecraft:gold_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 9
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 15
+                            },
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
                                 }
                             ]
                         }
