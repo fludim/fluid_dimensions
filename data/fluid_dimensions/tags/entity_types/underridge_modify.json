@@ -15,6 +15,10 @@
         {
             "id": "minecraft:skeleton",
             "required": false
+        },
+        {
+            "id": "minecraft:zombified_piglin",
+            "required": false
         }
     ]
 }

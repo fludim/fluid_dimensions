@@ -53,6 +53,12 @@
         "weight": 4,
         "minCount": 1,
         "maxCount": 5
+      },
+      {
+        "type": "minecraft:zombified_piglin",
+        "weight": 4,
+        "minCount": 1,
+        "maxCount": 2
       }
     ]
   },
@@ -64,6 +70,10 @@
     "minecraft:skeleton": {
       "energy_budget": 0.12,
       "charge": 0.8
+    },
+    "minecraft:zombified_piglin": {
+      "energy_budget": 0.11,
+      "charge": 0.9
     }
   },
   "carvers": {
