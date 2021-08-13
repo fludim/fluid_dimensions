@@ -1,6 +1,6 @@
 # From: player, i/miasma/collect
 
-execute as @e[tag=fd.i_miasma_collect,nbt={HandItems:[{id:"minecraft:glass_bottle"}]}] run function fluid_dimensions:i/miasma/use
+execute as @e[type=armor_stand,tag=fd.i_miasma_collect,distance=..5,nbt={HandItems:[{id:"minecraft:glass_bottle"}]}] run function fluid_dimensions:i/miasma/use
 
 kill @e[tag=fd.i_miasma_collect]
 
