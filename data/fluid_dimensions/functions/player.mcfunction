@@ -38,3 +38,6 @@ execute as @s[tag=fd.wearing_nulliron_helmet] unless predicate fluid_dimensions:
 
 # Nearby Pod interactions
 execute as @e[type=villager,x=0,tag=fd.pod,tag=!fd.pod_id_set] run function fluid_dimensions:pod/interact/tick
+
+# I Miasma
+execute if entity @e[tag=fd.i_miasma,distance=0..6] anchored eyes run function fluid_dimensions:i/miasma/collect

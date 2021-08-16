@@ -11,5 +11,8 @@ execute as @e[type=minecraft:wither_skeleton,tag=fd.psirot] at @s run particle m
 # Pod
 execute as @e[type=villager,tag=fd.pod] at @s run function fluid_dimensions:pod/tick
 
+# Echoes
+execute as @e[type=stray,tag=fd.echo] at @s run function fluid_dimensions:echo/tick
+
 # Recurse
 schedule function fluid_dimensions:10ticks 10t
