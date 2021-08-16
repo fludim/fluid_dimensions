@@ -32,6 +32,7 @@ scoreboard objectives add fd.hand_count dummy
 scoreboard objectives add fd.i_laser dummy
 scoreboard objectives add fd.i_laser_long dummy
 scoreboard objectives add fd.i_laser_wait dummy
+scoreboard objectives add fd.kill_time dummy
 scoreboard objectives add fd.change_hold dummy
 
 function fluid_dimensions:pod/load
