@@ -1,6 +1,5 @@
 # From: i/laser/hit_entity
 
-say long_hit
 scoreboard players set @e[type=vex,tag=fd.i_laser] fd.i_laser_long 0
 scoreboard players set @e[type=vex,tag=fd.i_laser] fd.i_laser_wait 100
 
