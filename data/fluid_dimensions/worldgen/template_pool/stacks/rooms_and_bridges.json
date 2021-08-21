@@ -1,5 +1,5 @@
 {
-  "name": "fluid_dimensions:stacks/rooms",
+  "name": "fluid_dimensions:stacks/rooms_and_bridges",
   "fallback": "minecraft:empty",
   "elements": [
     {

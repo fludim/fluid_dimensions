@@ -1,6 +1,6 @@
 {
   "name": "fluid_dimensions:stacks/rooms",
-  "fallback": "minecraft:empty",
+  "fallback": "fluid_dimensions:stacks/rooms",
   "elements": [
     {
       "weight": 10,
