@@ -20,7 +20,7 @@
     },
     "particle": {
       "options": {
-        "type": "minecraft:falling_honey"
+        "type": "minecraft:dripping_honey"
       },
       "probability": 0.003884
     }

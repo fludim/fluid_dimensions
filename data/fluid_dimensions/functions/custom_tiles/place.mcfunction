@@ -20,9 +20,6 @@ execute as @e[type=minecraft:glow_item_frame,tag=fd.nulliron_block,tag=!fd.ore_p
 execute as @e[type=minecraft:glow_item_frame,tag=fd.ocular_forge,tag=!fd.ore_placed] at @s unless block ~ ~ ~ #fluid_dimensions:replaceable run loot spawn ~ ~ ~ loot fluid_dimensions:blocks/ocular_forge
 execute as @e[type=minecraft:glow_item_frame,tag=fd.ocular_forge,tag=!fd.ore_placed] at @s if block ~ ~ ~ #fluid_dimensions:replaceable run function fluid_dimensions:custom_tiles/ocular_forge/set
 
-# Warp Dimension Block
-execute as @e[type=minecraft:glow_item_frame,tag=fd.warp_dimension_block,tag=!fd.ore_placed] at @s if block ~ ~ ~ #fluid_dimensions:replaceable run function fluid_dimensions:custom_tiles/warp_dimension_block/set
-
 # Fail blocks not replacing air
 execute as @e[type=minecraft:glow_item_frame,tag=fd.ore,tag=!fd.ore_placed] at @s unless block ~ ~ ~ #fluid_dimensions:replaceable run kill @s
 

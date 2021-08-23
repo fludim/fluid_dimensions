@@ -4,4 +4,4 @@ setblock ~ ~ ~ minecraft:end_gateway{Age:-2147483648,ExactTeleport:1,ExitPortal:
 data modify block ~ ~ ~ ExitPortal.X set from block ~ ~ ~ x
 data modify block ~ ~ ~ ExitPortal.Y set from block ~ ~ ~ y
 data modify block ~ ~ ~ ExitPortal.Z set from block ~ ~ ~ z
-summon marker ~ ~ ~ {Tags:["fd.ore_spawn","fd.ore_warp_dimension_block_spawn"]}
+tag @s add fd.ore_placed
