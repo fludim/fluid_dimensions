@@ -36,6 +36,10 @@ scoreboard objectives add fd.kill_time dummy
 scoreboard objectives add fd.change_hold dummy
 scoreboard objectives add fd.wd_dest dummy
 
+## Constant, gets set to 1 if Warp Dimension has been generated
+scoreboard objectives add fd.wd_generated dummy
+##
+
 function fluid_dimensions:pod/load
 
 # I preload
