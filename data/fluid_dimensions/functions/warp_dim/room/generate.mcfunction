@@ -30,7 +30,7 @@ fill 7 63 -1 7 63 0 minecraft:smooth_sandstone_stairs[facing=east]
 fill -9 63 -1 -9 63 0 minecraft:smooth_sandstone_stairs[facing=east]
 
 # Summon Markers
-function fluid_dimensions:warp_dim/room/spawn_sixty_markers
+function fluid_dimensions:warp_dim/room/spawn_80_markers
 
 ## This does stuff with the markers, there were issues spreading them right
 ## after they were created (didn't work) so I delayed it
