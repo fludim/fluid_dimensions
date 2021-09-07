@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:end_gateway"
+            }
+        }
+    },
+    "rewards": {
+        "function": "fluid_dimensions:warp_dim/teleport_check"
+    }
+}

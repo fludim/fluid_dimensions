@@ -35,9 +35,12 @@ scoreboard objectives remove fd.i_laser
 scoreboard objectives remove fd.i_laser_long
 scoreboard objectives remove fd.i_laser_wait
 scoreboard objectives remove fd.change_hold
+scoreboard objectives remove fd.wd_dest
+scoreboard objectives remove fd.wd_rock_id
 
-# Remove Pod objectives
+# Remove Module objectives
 function fluid_dimensions:pod/uninstall
+function fluid_dimensions:lcg/uninstall
 
 # Remove I boss, bossbars, some tags (not all, in case reinstalled) and teams
 tp @e[tag=fd.i] 0 -9999 0

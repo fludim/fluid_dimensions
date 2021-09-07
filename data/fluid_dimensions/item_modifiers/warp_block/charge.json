@@ -1,0 +1,80 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:4470102}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"fd.wd_to_warp\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:4470103}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"fd.wd_to_underridge\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:4470104}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"fd.wd_to_nether\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:4470105}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"fd.wd_to_overworld\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:4470106}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"fd.wd_to_upper_sky\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:4470107}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"fd.wd_to_end\"]}"
+                }
+            }
+        ]
+    }
+]

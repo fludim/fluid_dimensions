@@ -1,4 +1,4 @@
-#From: tick
+# From: tick
 
 # Nullite Ore
 execute as @e[type=minecraft:glow_item_frame,tag=fd.nullite_ore,tag=fd.ore_placed] at @s run function fluid_dimensions:custom_tiles/nullite_ore/block
@@ -14,6 +14,9 @@ execute as @e[type=minecraft:glow_item_frame,tag=fd.nulliron_block,tag=fd.ore_pl
 
 # Ocular Forge
 execute as @e[type=minecraft:glow_item_frame,tag=fd.ocular_forge,tag=fd.ore_placed] at @s run function fluid_dimensions:custom_tiles/ocular_forge/block
+
+# Warp Dimension Block
+execute as @e[type=minecraft:glow_item_frame,tag=fd.warp_block,tag=fd.ore_placed] at @s run function fluid_dimensions:custom_tiles/warp_block/block
 
 # Ore generation markers
 execute as @e[type=marker,tag=fd.ore_spawn,limit=32] at @s run function fluid_dimensions:custom_tiles/determine

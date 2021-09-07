@@ -1,11 +1,9 @@
-# Generates the Room.
+# From: warp_dim/room/generate_check
+# Generates the Room
 
 # Box
-fill -7 58 -7 6 71 6 minecraft:smooth_sandstone outline
-fill -8 57 -8 7 72 7 minecraft:smooth_sandstone outline
-fill -9 56 -9 8 73 8 minecraft:smooth_sandstone outline
-fill -10 55 -10 9 74 9 minecraft:smooth_sandstone outline
-fill -6 68 -6 5 70 5 minecraft:smooth_sandstone
+fill -10 55 -10 9 74 9 minecraft:smooth_sandstone
+fill -6 59 -6 5 67 5 minecraft:air
 
 # Erode
 fill -1 64 -10 0 65 9 minecraft:air
@@ -30,3 +28,10 @@ fill -8 63 0 -8 63 -1 minecraft:smooth_sandstone_stairs[facing=west]
 fill 8 63 0 8 63 -1 minecraft:smooth_sandstone_stairs[facing=west]
 fill 7 63 -1 7 63 0 minecraft:smooth_sandstone_stairs[facing=east]
 fill -9 63 -1 -9 63 0 minecraft:smooth_sandstone_stairs[facing=east]
+
+# Summon Markers
+function fluid_dimensions:warp_dim/room/spawn_80_markers
+
+## This does stuff with the markers, there were issues spreading them right
+## after they were created (didn't work) so I delayed it
+schedule function fluid_dimensions:warp_dim/room/generate_1t_in_warp 1t
