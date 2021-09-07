@@ -3,7 +3,7 @@
 # Uninstalled pack message (credits: minecraft.tools)
 execute store result score $command_feedback fd.temp run gamerule sendCommandFeedback
 gamerule sendCommandFeedback false
-tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n\n      "},{"text":"Fluid","italic":true,"color":"blue"},{"text":" Dimensions","color":"gold"},{"text":"\n           "},{"text":"v0.1","color":"green"},{"text":"\n\n\n\nThe datapack and its\nrelated tags and\nscoreboard objectives\nhave been removed.\n\nThanks for trying the\npack.\n\n\n\n~"},{"text":"DylzMC","color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/dylzmc/"}},{"text":"\n\n"},{"text":"==+----------------+==","color":"gray"}]
+tellraw @a ["",{"text":"==+----------------+==","color":"gray"},{"text":"\n\n      "},{"text":"Fluid","italic":true,"color":"blue"},{"text":" Dimensions","color":"gold"},{"text":"\n           "},{"text":"v0.1.1","color":"green"},{"text":"\n\n\n\nThe datapack and its\nrelated tags and\nscoreboard objectives\nhave been removed.\n\nThanks for trying the\npack.\n\n\n\n~"},{"text":"DylzMC","color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/dylzmc/"}},{"text":"\n\n"},{"text":"==+----------------+==","color":"gray"}]
 execute if score $command_feedback fd.temp matches 1 run gamerule sendCommandFeedback true
 
 # Remove objectives
@@ -67,4 +67,4 @@ function fluid_dimensions:ocular_forge/uninstall
 kill @e[tag=fd.ore]
 
 # Disable datapack (if name still the same)
-datapack disable "file/Fluid Dimensions v0.1"
+datapack disable "file/Fluid Dimensions v0.1.1"
