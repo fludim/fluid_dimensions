@@ -1,4 +1,4 @@
-# fd.load
+# From: #minecraft:load
 
 # Teams
 team add fd.noNameTag
