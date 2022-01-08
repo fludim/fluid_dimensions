@@ -2,7 +2,12 @@ data merge storage fluid_dimensions:craft {ClearSlotUseless:[{Slot:0b,clear:1},{
 
 scoreboard objectives add fd.o_forge dummy
 
-forceload add 16942000 -14269007 16942000 -14269007
+# Need to load in all dims, otherwise /reload will not use player(s)' dim
+execute in minecraft:overworld run forceload add 16942000 -14269007
+execute in minecraft:the_nether run forceload add 16942000 -14269007
+execute in minecraft:the_end run forceload add 16942000 -14269007
+execute in fluid_dimensions:underridge run forceload add 16942000 -14269007
+execute in fluid_dimensions:upper_sky run forceload add 16942000 -14269007
 
 fill 16942000 0 -14269008 16942002 2 -14269005 minecraft:bedrock outline
 

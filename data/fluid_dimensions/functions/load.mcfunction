@@ -45,6 +45,8 @@ function fluid_dimensions:pod/load
 
 function fluid_dimensions:lcg/load
 
+function fluid_dimensions:ocular_forge/load
+
 # I preload
 function fluid_dimensions:i/bossbar_config
 scoreboard players reset @e fd.i_id
@@ -62,9 +64,6 @@ advancement grant @a only fluid_dimensions:root
 # Custom ore min depth
 scoreboard players set $min_ore_depth fd.const 5
 scoreboard players set $ore_depth fd.const 0
-
-# Set up Ocular Forge
-function fluid_dimensions:ocular_forge/load
 
 # Less-often-ticking functions:
 ## 10t
