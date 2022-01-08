@@ -23,3 +23,6 @@ setblock -43 61 0 minecraft:redstone_block
 setblock 1 61 -44 minecraft:redstone_block
 setblock 44 61 0 minecraft:redstone_block
 setblock -1 31 -1 minecraft:redstone_block
+
+# Tell the Warp Block sound system that there are Warp Blocks, in case all older ones were unloaded/deleted
+scoreboard players set $Warp_Block_Exists fd.temp 1

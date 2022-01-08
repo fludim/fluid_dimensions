@@ -71,5 +71,7 @@ function fluid_dimensions:ocular_forge/load
 function fluid_dimensions:10ticks
 ## 10t, offset 5t
 schedule function fluid_dimensions:i/10ticks 5t
+## 200t (10 secs)
+function fluid_dimensions:custom_tiles/warp_block/white_noise_20t
 ## 6000t (5 mins)
 function fluid_dimensions:6000ticks
