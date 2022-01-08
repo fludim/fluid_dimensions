@@ -24,9 +24,9 @@
       },
       {
         "type": "minecraft:zombie",
-        "weight": 6,
-        "minCount": 2,
-        "maxCount": 4
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 3
       },
       {
         "type": "minecraft:wither_skeleton",
