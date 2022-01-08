@@ -59,6 +59,10 @@ scoreboard players set $upper_sky fd.y 1724
 
 advancement grant @a only fluid_dimensions:root
 
+# Custom ore min depth
+scoreboard players set $min_ore_depth fd.const 5
+scoreboard players set $ore_depth fd.const 0
+
 # Set up Ocular Forge
 function fluid_dimensions:ocular_forge/load
 
