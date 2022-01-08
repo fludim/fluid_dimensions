@@ -26,7 +26,7 @@
                         "overlay_structures": [
                             "minecraft:empty"
                         ],
-                        "fossil_processors": "fluid_dimensions:damage_pod_pod",
+                        "fossil_processors": "fluid_dimensions:pod_pod",
                         "overlay_processors": "fluid_dimensions:no"
                     }
                 }

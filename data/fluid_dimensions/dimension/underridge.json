@@ -94,7 +94,7 @@
       "name": "fluid_dimensions:underridge",
       "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
-      "sea_level": 31,
+      "sea_level": 63,
       "disable_mob_generation": false,
       "noise_caves_enabled": false,
       "aquifers_enabled": false,

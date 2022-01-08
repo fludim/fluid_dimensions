@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:chance",
+      "config": {
+        "chance": 5
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:range",
+          "config": {
+            "height": {
+              "type": "minecraft:biased_to_bottom",
+              "min_inclusive": {
+                "absolute": 5
+              },
+              "max_inclusive": {
+                "absolute": 31
+              }
+            }
+          }
+        },
+        "feature": {
+          "type": "minecraft:fossil",
+          "config": {
+            "max_empty_corners_allowed": 0,
+            "fossil_structures": [
+              "fluid_dimensions:nullite_cluster"
+            ],
+            "overlay_structures": [
+              "minecraft:empty"
+            ],
+            "fossil_processors": "fluid_dimensions:no",
+            "overlay_processors": "fluid_dimensions:no"
+          }
+        }
+      }
+    }
+  }
+}
