@@ -13,7 +13,7 @@ execute as @e[type=wither_skeleton,tag=fd.psirot] at @s run function fluid_dimen
 execute as @e[type=armor_stand,tag=fd.psirot_hand] at @s run function fluid_dimensions:psirot/hand
 
 # Custom Blocks
-function fluid_dimensions:custom_tiles/tick
+function fluid_dimensions:custom_tiles/pretick
 function fluid_dimensions:ocular_forge/tick
 
 # Volatile Effluvia
