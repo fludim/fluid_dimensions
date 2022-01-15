@@ -4,8 +4,6 @@
 
 execute store result score @s fd.temp run data get entity @s Pos[1]
 
-###tellraw @a {"score":{"name":"@s","objective":"fd.temp"},"color":"yellow","italic":false}
-
 # Min of y or 5
 scoreboard players operation @s fd.temp > $min_ore_depth fd.const
 # Subtract 5 for desired LCG range (0 to y - 5)
