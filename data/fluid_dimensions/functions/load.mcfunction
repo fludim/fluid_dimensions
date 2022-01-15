@@ -36,6 +36,7 @@ scoreboard objectives add fd.kill_time dummy
 scoreboard objectives add fd.change_hold dummy
 scoreboard objectives add fd.wd_dest dummy
 scoreboard objectives add fd.wd_rock_id dummy
+scoreboard objectives add fd.tunneller_cd dummy
 
 ## Constant, gets set to 1 if Warp Dimension has been generated
 scoreboard objectives add fd.wd_generated dummy
@@ -60,6 +61,9 @@ scoreboard players set $overworld fd.y 1152
 scoreboard players set $upper_sky fd.y 1724
 
 advancement grant @a only fluid_dimensions:root
+
+# Nadir Tunneller cooldown score
+scoreboard players add @a fd.tunneller_cd 0
 
 # Custom ore min depth
 scoreboard players set $min_ore_depth fd.const 5

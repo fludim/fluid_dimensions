@@ -21,9 +21,11 @@ function fluid_dimensions:enchanted_door/door
 # Call r_click
 execute if entity @s[scores={fd.r_click=1..}] run function fluid_dimensions:r_click
 
+# Decrement Nadir Tunneller cooldown
+execute if score @s fd.tunneller_cd matches 1.. run scoreboard players remove @s fd.tunneller_cd 1
+
 # Nulliron Boots: Store fall distance with scale 100
-execute store result score @s fd.fall_dist run data get entity @s FallDistance 100
-execute if score @s fd.fall_dist matches 260.. if predicate fluid_dimensions:wearing/nulliron_boots run function fluid_dimensions:nulliron/boots/protecc
+execute if predicate fluid_dimensions:wearing/nulliron_boots run function fluid_dimensions:nulliron/boots/checc
 execute if entity @s[tag=fd.fall_safe] if score @s fd.fall_dist matches 0 run function fluid_dimensions:nulliron/boots/clear
 
 # Nulliron Chestplate: Check equipped

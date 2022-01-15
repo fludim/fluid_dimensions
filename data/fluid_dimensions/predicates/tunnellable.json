@@ -1,31 +1,31 @@
 {
-    "condition": "minecraft:inverted",
-    "term": {
-        "condition": "minecraft:alternative",
-        "terms": [
-            {
-                "condition": "minecraft:inverted",
-                "term": {
-                    "condition": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "stepping_on": {
-                            "block": {
-                                "blocks": [
-                                    "minecraft:bedrock"
-                                ]
-                            }
-                        }
-                    }
-                }
-            },
-            {
-                "condition": "minecraft:location_check",
-                "offsetY": -2,
-                "predicate": {
-                    "block": {}
-                }
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "stepping_on": {
+              "block": {
+                "blocks": [
+                  "minecraft:bedrock"
+                ]
+              }
             }
-        ]
-    }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -2,
+        "predicate": {
+          "block": {}
+        }
+      }
+    ]
+  }
 }

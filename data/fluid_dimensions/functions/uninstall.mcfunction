@@ -37,6 +37,7 @@ scoreboard objectives remove fd.i_laser_wait
 scoreboard objectives remove fd.change_hold
 scoreboard objectives remove fd.wd_dest
 scoreboard objectives remove fd.wd_rock_id
+scoreboard objectives remove fd.tunneller_cd
 
 # Remove Module objectives
 function fluid_dimensions:pod/uninstall

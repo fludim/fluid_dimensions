@@ -1,0 +1,41 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:location_check",
+          "offsetY": 2,
+          "predicate": {
+            "position": {},
+            "block": {
+              "blocks": [
+                "minecraft:bedrock"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "min": 125,
+                  "max": 125.1
+                }
+              },
+              "dimension": "minecraft:the_nether"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
