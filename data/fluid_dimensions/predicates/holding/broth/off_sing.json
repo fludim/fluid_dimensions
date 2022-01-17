@@ -5,7 +5,9 @@
         "equipment": {
             "offhand": {
                 "count": 1,
-                "items": ["minecraft:bowl"]
+                "items": [
+                    "minecraft:bowl"
+                ]
             }
         }
     }

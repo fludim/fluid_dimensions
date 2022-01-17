@@ -1,14 +1,14 @@
 {
-    "condition": "minecraft:location_check",
-    "offsetX": -1,
-    "predicate": {
-      "block": {
-        "blocks": [
-          "hopper"
-        ],
-        "state": {
-          "facing": "east"
-        }
+  "condition": "minecraft:location_check",
+  "offsetX": -1,
+  "predicate": {
+    "block": {
+      "blocks": [
+        "hopper"
+      ],
+      "state": {
+        "facing": "east"
       }
     }
   }
+}

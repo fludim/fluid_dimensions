@@ -4,7 +4,9 @@
   "predicate": {
     "equipment": {
       "offhand": {
-        "items": ["minecraft:bowl"],
+        "items": [
+          "minecraft:bowl"
+        ],
         "count": {
           "min": 2
         }

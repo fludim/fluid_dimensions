@@ -5,8 +5,10 @@
         "equipment": {
             "mainhand": {
                 "count": 1,
-                "items": ["minecraft:bowl"]
+                "items": [
+                    "minecraft:bowl"
+                ]
             }
         }
     }
-}   
+}

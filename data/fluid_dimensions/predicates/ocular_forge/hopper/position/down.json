@@ -1,11 +1,11 @@
 {
-    "condition": "minecraft:location_check",
-    "offsetY": -1,
-    "predicate": {
-      "block": {
-        "blocks": [
-          "hopper"
-        ]
-      }
+  "condition": "minecraft:location_check",
+  "offsetY": -1,
+  "predicate": {
+    "block": {
+      "blocks": [
+        "hopper"
+      ]
     }
   }
+}

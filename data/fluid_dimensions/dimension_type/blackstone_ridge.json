@@ -3,7 +3,7 @@
   "min_y": 0,
   "ultrawarm": true,
   "natural": false,
-  "coordinate_scale": 8.0,
+  "coordinate_scale": 8,
   "ambient_light": -0.005,
   "fixed_time": 6000,
   "has_skylight": false,
