@@ -1869,9 +1869,6 @@
             "id": "minecraft:zombie_wall_head",
             "required": false
         },
-
-
-
         {
             "id": "minecraft:white_stained_glass",
             "required": false
@@ -1940,9 +1937,6 @@
             "id": "minecraft:glass",
             "required": false
         },
-
-
-
         {
             "id": "minecraft:oak_leaves",
             "required": false
@@ -2319,9 +2313,6 @@
             "id": "minecraft:potted_flowering_azalea_bush",
             "required": false
         },
-        
-
-
         {
             "id": "#fluid_dimensions:air",
             "required": false
