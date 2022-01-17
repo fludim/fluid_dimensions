@@ -93,9 +93,6 @@
     [],
     [
       "fluid_dimensions:ur_ore_magma",
-      "fluid_dimensions:ur_ore_magma",
-      "fluid_dimensions:ore_air",
-      "fluid_dimensions:ore_air",
       "fluid_dimensions:ore_air",
       "minecraft:ore_debris_small",
       "minecraft:ore_debris_small",
@@ -107,7 +104,6 @@
       "fluid_dimensions:warp_portal"
     ],
     [
-      "fluid_dimensions:ur_spring_lava",
       "fluid_dimensions:ur_spring_lava"
     ],
     []
