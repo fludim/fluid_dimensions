@@ -1,54 +1,17 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:netherrack_replace_blobs",
   "config": {
-    "decorator": {
-      "type": "minecraft:count_multilayer",
-      "config": {
-        "count": 24
-      }
+    "state": {
+      "Name": "minecraft:smooth_basalt"
     },
-    "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:count_noise_biased",
-          "config": {
-            "noise_to_count_ratio": 1,
-            "noise_factor": 20,
-            "noise_offset": 0.4
-          }
-        },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:count_noise_biased",
-              "config": {
-                "noise_to_count_ratio": 1,
-                "noise_factor": 2,
-                "noise_offset": 0.2
-              }
-            },
-            "feature": {
-              "type": "minecraft:netherrack_replace_blobs",
-              "config": {
-                "state": {
-                  "Name": "minecraft:smooth_basalt"
-                },
-                "target": {
-                  "Name": "minecraft:gray_concrete_powder"
-                },
-                "radius": {
-                  "type": "minecraft:uniform",
-                  "value": {
-                    "min_inclusive": 1,
-                    "max_inclusive": 2
-                  }
-                }
-              }
-            }
-          }
-        }
+    "target": {
+      "Name": "minecraft:gray_concrete_powder"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 1,
+        "max_inclusive": 2
       }
     }
   }

@@ -1,0 +1,19 @@
+{
+  "feature": "fluid_dimensions:ochre_pine",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 3
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 6,
+      "noise_offset": 0.2
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    }
+  ]
+}

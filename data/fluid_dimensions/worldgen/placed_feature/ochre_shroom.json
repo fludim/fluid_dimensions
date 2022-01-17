@@ -1,0 +1,25 @@
+{
+  "feature": "fluid_dimensions:ochre_shroom",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 0,
+          "max_inclusive": 3
+        }
+      }
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": -24,
+      "noise_offset": 0.3
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    }
+  ]
+}

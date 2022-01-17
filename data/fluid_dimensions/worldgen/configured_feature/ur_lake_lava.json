@@ -1,21 +1,19 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:lake",
   "config": {
-    "decorator": {
-      "type": "minecraft:chance",
-      "config": {
-        "chance": 10
+    "fluid": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:lava",
+        "Properties": {
+          "level": "0"
+        }
       }
     },
-    "feature": {
-      "type": "minecraft:lake",
-      "config": {
-        "state": {
-          "Name": "minecraft:lava",
-          "Properties": {
-            "level": "0"
-          }
-        }
+    "barrier": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:stone"
       }
     }
   }

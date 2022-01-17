@@ -1,12 +1,8 @@
 {
-  "surface_builder": "fluid_dimensions:empty",
-  "depth": 0.125,
-  "scale": 0.05,
   "temperature": 0.5,
   "downfall": 1,
   "precipitation": "none",
   "category": "plains",
-  "player_spawn_friendly": false,
   "effects": {
     "sky_color": 460551,
     "fog_color": 460551,
@@ -25,7 +21,6 @@
       "probability": 0.003884
     }
   },
-  "starts": [],
   "spawners": {
     "monster": [],
     "creature": [],

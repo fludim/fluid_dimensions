@@ -1,0 +1,19 @@
+{
+  "feature": "fluid_dimensions:quartz_spike",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "WORLD_SURFACE"
+    }
+  ]
+}

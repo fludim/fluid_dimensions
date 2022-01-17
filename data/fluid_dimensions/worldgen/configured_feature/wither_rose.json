@@ -1,78 +1,48 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:flower",
   "config": {
-    "decorator": {
-      "type": "minecraft:chance",
-      "config": {
-        "chance": 3
-      }
-    },
+    "tries": 32,
+    "xz_spread": 4,
+    "y_spread": 3,
     "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:count",
-          "config": {
-            "count": {
-              "type": "minecraft:uniform",
-              "value": {
-                "min_inclusive": 1,
-                "max_inclusive": 3
-              }
-            }
-          }
-        },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:decorated",
-              "config": {
-                "outer": {
-                  "type": "minecraft:square",
-                  "config": {}
-                },
-                "inner": {
-                  "type": "minecraft:heightmap",
-                  "config": {
-                    "heightmap": "WORLD_SURFACE"
-                  }
-                }
-              }
-            },
-            "feature": {
-              "type": "minecraft:flower",
-              "config": {
-                "can_replace": false,
-                "project": false,
-                "need_water": false,
-                "xspread": 4,
-                "yspread": 3,
-                "zspread": 4,
-                "tries": 32,
-                "state_provider": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:wither_rose"
-                  }
-                },
-                "block_placer": {
-                  "type": "minecraft:simple_block_placer"
-                },
-                "whitelist": [
-                  {
-                    "Name": "minecraft:grass_block",
-                    "Properties": {
-                      "snowy": "false"
-                    }
-                  }
-                ],
-                "blacklist": []
-              }
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:wither_rose"
             }
           }
         }
-      }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:grass_block"
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

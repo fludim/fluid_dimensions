@@ -1,0 +1,24 @@
+{
+  "feature": "fluid_dimensions:ore_dirt",
+  "placement": [
+    {
+      "type": "count",
+      "count": 20
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 130
+        }
+      }
+    }
+  ]
+}

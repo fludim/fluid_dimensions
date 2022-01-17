@@ -1,0 +1,30 @@
+{
+  "feature": "fluid_dimensions:ore_nullite",
+  "placement": [
+    {
+      "type": "count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 2
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      }
+    }
+  ]
+}

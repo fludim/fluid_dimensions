@@ -1,96 +1,14 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:fossil",
   "config": {
-    "decorator": {
-      "type": "minecraft:decorated",
-      "config": {
-        "outer": {
-          "type": "minecraft:count",
-          "config": {
-            "count": {
-              "type": "minecraft:uniform",
-              "value": {
-                "min_inclusive": 2,
-                "max_inclusive": 7
-              }
-            }
-          }
-        },
-        "inner": {
-          "type": "minecraft:square",
-          "config": {}
-        }
-      }
-    },
-    "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:count_noise_biased",
-          "config": {
-            "noise_to_count_ratio": 1,
-            "noise_factor": 28,
-            "noise_offset": 0.9
-          }
-        },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:count_noise_biased",
-              "config": {
-                "noise_to_count_ratio": 1,
-                "noise_factor": 14,
-                "noise_offset": -0.1
-              }
-            },
-            "feature": {
-              "type": "minecraft:decorated",
-              "config": {
-                "decorator": {
-                  "type": "minecraft:range",
-                  "config": {
-                    "height": {
-                      "type": "minecraft:uniform",
-                      "min_inclusive": {
-                        "absolute": 7
-                      },
-                      "max_inclusive": {
-                        "absolute": 83
-                      }
-                    }
-                  }
-                },
-                "feature": {
-                  "type": "minecraft:decorated",
-                  "config": {
-                    "decorator": {
-                      "type": "minecraft:count",
-                      "config": {
-                        "count": 1
-                      }
-                    },
-                    "feature": {
-                      "type": "minecraft:fossil",
-                      "config": {
-                        "max_empty_corners_allowed": 0,
-                        "fossil_structures": [
-                          "fluid_dimensions:garnet_cluster"
-                        ],
-                        "overlay_structures": [
-                          "minecraft:empty"
-                        ],
-                        "fossil_processors": "fluid_dimensions:no",
-                        "overlay_processors": "fluid_dimensions:no"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+    "max_empty_corners_allowed": 0,
+    "fossil_structures": [
+      "fluid_dimensions:garnet_cluster"
+    ],
+    "overlay_structures": [
+      "minecraft:empty"
+    ],
+    "fossil_processors": "fluid_dimensions:no",
+    "overlay_processors": "fluid_dimensions:no"
   }
 }

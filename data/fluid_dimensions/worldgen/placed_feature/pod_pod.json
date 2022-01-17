@@ -1,0 +1,13 @@
+{
+  "feature": "fluid_dimensions:pod_pod",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 50
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    }
+  ]
+}

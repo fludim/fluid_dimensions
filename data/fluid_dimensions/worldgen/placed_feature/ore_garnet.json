@@ -1,0 +1,46 @@
+{
+  "feature": "fluid_dimensions:ore_garnet",
+  "placement": [
+    {
+      "type": "count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 2,
+          "max_inclusive": 7
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 28,
+      "noise_offset": 0.9
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 14,
+      "noise_offset": -0.1
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 7
+        },
+        "max_inclusive": {
+          "absolute": 83
+        }
+      }
+    },
+    {
+      "type": "count",
+      "count": 1
+    }
+  ]
+}

@@ -1,97 +1,61 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:random_patch",
   "config": {
-    "decorator": {
-      "type": "minecraft:count",
-      "config": {
-        "count": {
-          "type": "minecraft:uniform",
-          "value": {
-            "min_inclusive": 4,
-            "max_inclusive": 5
-          }
-        }
-      }
-    },
+    "tries": 5,
+    "xz_spread": 2,
+    "y_spread": 1,
     "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:square",
-          "config": {}
-        },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:count_noise_biased",
-              "config": {
-                "noise_to_count_ratio": 1,
-                "noise_factor": 2,
-                "noise_offset": 0.3
-              }
-            },
-            "feature": {
-              "type": "minecraft:decorated",
-              "config": {
-                "decorator": {
-                  "type": "minecraft:heightmap",
-                  "config": {
-                    "heightmap": "OCEAN_FLOOR_WG"
-                  }
-                },
-                "feature": {
-                  "type": "minecraft:random_patch",
-                  "config": {
-                    "can_replace": false,
-                    "project": false,
-                    "need_water": false,
-                    "xspread": 2,
-                    "yspread": 1,
-                    "zspread": 2,
-                    "tries": 5,
-                    "state_provider": {
-                      "type": "minecraft:weighted_state_provider",
-                      "entries": [
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:air"
-                          }
-                        },
-                        {
-                          "weight": 2,
-                          "data": {
-                            "Name": "minecraft:brown_mushroom"
-                          }
-                        }
-                      ]
-                    },
-                    "block_placer": {
-                      "type": "minecraft:simple_block_placer"
-                    },
-                    "whitelist": [
-                      {
-                        "Name": "minecraft:coarse_dirt"
-                      },
-                      {
-                        "Name": "minecraft:grass_block",
-                        "Properties": {
-                          "snowy": "false"
-                        }
-                      },
-                      {
-                        "Name": "minecraft:dirt"
-                      }
-                    ],
-                    "blacklist": []
-                  }
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:air"
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "minecraft:brown_mushroom"
                 }
               }
-            }
+            ]
           }
         }
-      }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:coarse_dirt",
+                  "minecraft:grass_block",
+                  "minecraft:dirt"
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

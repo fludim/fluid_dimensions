@@ -1,0 +1,9 @@
+{
+  "feature": "fluid_dimensions:ur_lake_lava",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 10
+    }
+  ]
+}

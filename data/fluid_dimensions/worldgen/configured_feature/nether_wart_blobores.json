@@ -1,57 +1,18 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:ore",
   "config": {
-    "decorator": {
-      "type": "minecraft:count",
-      "config": {
-        "count": 16
-      }
-    },
-    "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:square",
-          "config": {}
+    "size": 64,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:blackstone"
         },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:range",
-              "config": {
-                "height": {
-                  "type": "minecraft:uniform",
-                  "min_inclusive": {
-                    "absolute": 10
-                  },
-                  "max_inclusive": {
-                    "absolute": 255
-                  }
-                }
-              }
-            },
-            "feature": {
-              "type": "minecraft:ore",
-              "config": {
-                "size": 64,
-                "discard_chance_on_air_exposure": 0,
-                "targets": [
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:blackstone"
-                    },
-                    "state": {
-                      "Name": "minecraft:nether_wart_block"
-                    }
-                  }
-                ]
-              }
-            }
-          }
+        "state": {
+          "Name": "minecraft:nether_wart_block"
         }
       }
-    }
+    ]
   }
 }

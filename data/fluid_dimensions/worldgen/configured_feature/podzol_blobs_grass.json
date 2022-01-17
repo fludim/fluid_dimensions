@@ -1,77 +1,18 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:netherrack_replace_blobs",
   "config": {
-    "decorator": {
-      "type": "minecraft:count_extra",
-      "config": {
-        "count": 128,
-        "extra_count": 1000,
-        "extra_chance": 1
+    "state": {
+      "Name": "minecraft:podzol",
+      "Properties": {
+        "snowy": "false"
       }
     },
-    "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:square",
-          "config": {}
-        },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:heightmap",
-              "config": {
-                "heightmap": "WORLD_SURFACE"
-              }
-            },
-            "feature": {
-              "type": "minecraft:decorated",
-              "config": {
-                "decorator": {
-                  "type": "minecraft:count_noise_biased",
-                  "config": {
-                    "noise_to_count_ratio": 1,
-                    "noise_factor": 5,
-                    "noise_offset": 0.3
-                  }
-                },
-                "feature": {
-                  "type": "minecraft:decorated",
-                  "config": {
-                    "decorator": {
-                      "type": "minecraft:count_noise_biased",
-                      "config": {
-                        "noise_to_count_ratio": 1,
-                        "noise_factor": 7,
-                        "noise_offset": -0.2
-                      }
-                    },
-                    "feature": {
-                      "type": "minecraft:netherrack_replace_blobs",
-                      "config": {
-                        "state": {
-                          "Name": "minecraft:podzol",
-                          "Properties": {
-                            "snowy": "false"
-                          }
-                        },
-                        "target": {
-                          "Name": "minecraft:grass_block",
-                          "Properties": {
-                            "snowy": "false"
-                          }
-                        },
-                        "radius": 1
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+    "target": {
+      "Name": "minecraft:grass_block",
+      "Properties": {
+        "snowy": "false"
       }
-    }
+    },
+    "radius": 1
   }
 }

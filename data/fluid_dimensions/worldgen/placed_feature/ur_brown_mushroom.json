@@ -1,0 +1,28 @@
+{
+  "feature": "fluid_dimensions:ur_brown_mushroom",
+  "placement": [
+    {
+      "type": "count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 4,
+          "max_inclusive": 5
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 2,
+      "noise_offset": 0.3
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    }
+  ]
+}

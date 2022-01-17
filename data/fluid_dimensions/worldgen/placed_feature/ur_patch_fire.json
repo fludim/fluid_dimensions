@@ -1,0 +1,22 @@
+{
+  "feature": "fluid_dimensions:ur_patch_fire",
+  "placement": [
+    {
+      "type": "count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "WORLD_SURFACE"
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 24,
+      "noise_offset": 0.1
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "fluid_dimensions:dismal_slopes_basalt",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 12
+    }
+  ]
+}

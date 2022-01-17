@@ -1,0 +1,13 @@
+{
+  "feature": "fluid_dimensions:warp_portal",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 32
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    }
+  ]
+}

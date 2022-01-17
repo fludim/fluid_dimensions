@@ -1,36 +1,14 @@
 {
-    "type": "minecraft:decorated",
+    "type": "minecraft:fossil",
     "config": {
-        "decorator": {
-            "type": "minecraft:chance",
-            "config": {
-                "chance": 32
-            }
-        },
-        "feature": {
-            "type": "minecraft:decorated",
-            "config": {
-                "decorator": {
-                    "type": "minecraft:heightmap",
-                    "config": {
-                        "heightmap": "OCEAN_FLOOR"
-                    }
-                },
-                "feature": {
-                    "type": "minecraft:fossil",
-                    "config": {
-                        "max_empty_corners_allowed": 4,
-                        "fossil_structures": [
-                            "fluid_dimensions:warp_portal"
-                        ],
-                        "overlay_structures": [
-                            "minecraft:empty"
-                        ],
-                        "fossil_processors": "fluid_dimensions:no",
-                        "overlay_processors": "fluid_dimensions:no"
-                    }
-                }
-            }
-        }
+        "max_empty_corners_allowed": 4,
+        "fossil_structures": [
+            "fluid_dimensions:warp_portal"
+        ],
+        "overlay_structures": [
+            "minecraft:empty"
+        ],
+        "fossil_processors": "fluid_dimensions:no",
+        "overlay_processors": "fluid_dimensions:no"
     }
 }

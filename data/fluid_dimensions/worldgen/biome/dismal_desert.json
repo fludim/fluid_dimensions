@@ -1,12 +1,8 @@
 {
-  "surface_builder": "fluid_dimensions:dismal_desert",
-  "depth": 0.4,
-  "scale": 1,
   "temperature": 0.7,
   "downfall": 0,
   "precipitation": "none",
   "category": "nether",
-  "player_spawn_friendly": true,
   "effects": {
     "sky_color": 197893,
     "fog_color": 132100,
@@ -32,9 +28,6 @@
       "replace_current_music": false
     }
   },
-  "starts": [
-    "fluid_dimensions:stacks"
-  ],
   "spawners": {
     "water_ambient": [],
     "ambient": [],
@@ -95,7 +88,6 @@
       "fluid_dimensions:ur_ore_magma",
       "fluid_dimensions:ore_air",
       "minecraft:ore_debris_small",
-      "minecraft:ore_debris_small",
       "fluid_dimensions:ore_nullite"
     ],
     [],
@@ -103,6 +95,7 @@
       "fluid_dimensions:fallen_basalt_pillars",
       "fluid_dimensions:warp_portal"
     ],
+    [],
     [
       "fluid_dimensions:ur_spring_lava"
     ],

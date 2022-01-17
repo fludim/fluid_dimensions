@@ -1,0 +1,21 @@
+{
+  "feature": "fluid_dimensions:smooth_basalt_blobs",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 24
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 20,
+      "noise_offset": 0.4
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 2,
+      "noise_offset": 0.2
+    }
+  ]
+}

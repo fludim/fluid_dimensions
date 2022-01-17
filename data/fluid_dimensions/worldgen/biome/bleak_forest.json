@@ -1,8 +1,4 @@
 {
-  "starts": [
-    "minecraft:nether_fossil",
-    "fluid_dimensions:stacks"
-  ],
   "spawners": {
     "water_ambient": [],
     "ambient": [],
@@ -46,7 +42,6 @@
       "charge": 0.7
     }
   },
-  "surface_builder": "fluid_dimensions:bleak_forest",
   "carvers": {
     "air": [
       "fluid_dimensions:nether_cave"
@@ -62,7 +57,7 @@
     [],
     [
       "fluid_dimensions:ur_ore_magma",
-      "minecraft:ore_debris_large",
+      "minecraft:ore_ancient_debris_large",
       "fluid_dimensions:ore_nullite"
     ],
     [],
@@ -71,6 +66,7 @@
       "minecraft:basalt_blobs",
       "fluid_dimensions:warped_wart_blobs"
     ],
+    [],
     [
       "fluid_dimensions:wither_rose",
       "fluid_dimensions:bleak_trees",
@@ -83,14 +79,14 @@
     ]
   ],
   "temperature": 0.9,
-  "downfall": 0.0,
+  "downfall": 0,
   "effects": {
     "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
     "mood_sound": {
       "sound": "minecraft:ambient.basalt_deltas.mood",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
     "additions_sound": {
       "sound": "minecraft:ambient.basalt_deltas.additions",
@@ -116,8 +112,5 @@
     }
   },
   "precipitation": "none",
-  "category": "nether",
-  "player_spawn_friendly": true,
-  "depth": 0.3,
-  "scale": 0.2
+  "category": "nether"
 }

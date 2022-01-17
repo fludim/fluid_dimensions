@@ -1,7 +1,4 @@
 {
-  "starts": [
-    "minecraft:nether_fossil"
-  ],
   "spawners": {
     "water_ambient": [],
     "ambient": [
@@ -30,7 +27,6 @@
       "charge": 0.8
     }
   },
-  "surface_builder": "fluid_dimensions:garnet_gorge",
   "carvers": {
     "air": [
       "fluid_dimensions:gorge_canyon",
@@ -46,7 +42,7 @@
     ],
     [
       "fluid_dimensions:ur_ore_magma",
-      "minecraft:ore_debris_large",
+      "minecraft:ore_ancient_debris_large",
       "fluid_dimensions:ore_gilded_blackstone",
       "fluid_dimensions:ore_garnet"
     ],
@@ -62,14 +58,14 @@
     []
   ],
   "temperature": 0.8,
-  "downfall": 0.0,
+  "downfall": 0,
   "effects": {
     "ambient_sound": "minecraft:ambient.crimson_forest.loop",
     "mood_sound": {
       "sound": "minecraft:ambient.basalt_deltas.mood",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
     "additions_sound": {
       "sound": "minecraft:ambient.crimson_forest.additions",
@@ -95,8 +91,5 @@
     }
   },
   "precipitation": "none",
-  "category": "nether",
-  "player_spawn_friendly": false,
-  "depth": -0.2,
-  "scale": 0.1
+  "category": "nether"
 }

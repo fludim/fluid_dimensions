@@ -1,58 +1,19 @@
 {
-  "type": "minecraft:decorated",
+  "type": "minecraft:spring_feature",
   "config": {
-    "decorator": {
-      "type": "minecraft:count",
-      "config": {
-        "count": 20
+    "state": {
+      "Name": "minecraft:lava",
+      "Properties": {
+        "falling": "true",
+        "level": "0"
       }
     },
-    "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:square",
-          "config": {}
-        },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:range",
-              "config": {
-                "height": {
-                  "type": "minecraft:very_biased_to_bottom",
-                  "min_inclusive": {
-                    "above_bottom": 0
-                  },
-                  "max_inclusive": {
-                    "below_top": 8
-                  }
-                }
-              }
-            },
-            "feature": {
-              "type": "minecraft:spring_feature",
-              "config": {
-                "state": {
-                  "Name": "minecraft:lava",
-                  "Properties": {
-                    "falling": "true",
-                    "level": "0"
-                  }
-                },
-                "rock_count": 3,
-                "hole_count": 1,
-                "requires_block_below": true,
-                "valid_blocks": [
-                  "minecraft:blackstone",
-                  "minecraft:magma_block"
-                ]
-              }
-            }
-          }
-        }
-      }
-    }
+    "rock_count": 3,
+    "hole_count": 1,
+    "requires_block_below": true,
+    "valid_blocks": [
+      "minecraft:blackstone",
+      "minecraft:magma_block"
+    ]
   }
 }
