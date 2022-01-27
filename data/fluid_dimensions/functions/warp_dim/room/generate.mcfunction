@@ -34,4 +34,4 @@ function fluid_dimensions:warp_dim/room/spawn_80_markers
 
 ## This does stuff with the markers, there were issues spreading them right
 ## after they were created (didn't work) so I delayed it
-schedule function fluid_dimensions:warp_dim/room/generate_1t_in_warp 1t
+schedule function fluid_dimensions:warp_dim/room/generate_10t_in_warp 10t
