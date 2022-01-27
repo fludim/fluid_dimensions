@@ -41,6 +41,7 @@
       "fluid_dimensions:ur_lake_lava"
     ],
     [
+      "fluid_dimensions:underridge_cave_carver",
       "fluid_dimensions:crobs_spikes"
     ],
     [
@@ -53,8 +54,7 @@
     [],
     [
       "fluid_dimensions:stone_to_blackstone",
-      "minecraft:basalt_blobs",
-      "fluid_dimensions:podzol_blobs_grass"
+      "minecraft:basalt_blobs"
     ],
     [],
     [

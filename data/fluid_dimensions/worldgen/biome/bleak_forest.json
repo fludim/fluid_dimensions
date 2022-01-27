@@ -54,7 +54,9 @@
     ],
     [],
     [],
-    [],
+    [
+      "fluid_dimensions:underridge_cave_carver"
+    ],
     [
       "fluid_dimensions:ur_ore_magma",
       "minecraft:ore_ancient_debris_large",

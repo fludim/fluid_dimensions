@@ -4,8 +4,8 @@
   "precipitation": "none",
   "category": "nether",
   "effects": {
-    "sky_color": 197893,
-    "fog_color": 132100,
+    "sky_color": 15198676,
+    "fog_color": 15461595,
     "water_color": 1184274,
     "water_fog_color": 4341314,
     "grass_color": 4010029,
@@ -38,35 +38,35 @@
       {
         "type": "minecraft:skeleton",
         "weight": 3,
-        "minCount": 2,
+        "minCount": 1,
         "maxCount": 3
       },
       {
         "type": "minecraft:wither_skeleton",
-        "weight": 4,
+        "weight": 2,
         "minCount": 1,
-        "maxCount": 5
+        "maxCount": 3
       },
       {
-        "type": "minecraft:zombified_piglin",
+        "type": "minecraft:ghast",
         "weight": 4,
         "minCount": 1,
-        "maxCount": 2
+        "maxCount": 3
       }
     ]
   },
   "spawn_costs": {
     "minecraft:wither_skeleton": {
-      "energy_budget": 0.05,
-      "charge": 0.6
+      "energy_budget": 0.02,
+      "charge": 0.5
     },
     "minecraft:skeleton": {
-      "energy_budget": 0.12,
-      "charge": 0.8
+      "energy_budget": 0.04,
+      "charge": 0.7
     },
-    "minecraft:zombified_piglin": {
-      "energy_budget": 0.11,
-      "charge": 0.9
+    "minecraft:ghast": {
+      "energy_budget": 0.04,
+      "charge": 0.5
     }
   },
   "carvers": {
@@ -75,17 +75,13 @@
     ]
   },
   "features": [
+    [],
+    [],
+    [],
+    [],
     [
       "fluid_dimensions:underridge_cave_carver"
     ],
-    [
-      "fluid_dimensions:dismal_slopes",
-      "fluid_dimensions:dismal_slopes_basalt",
-      "fluid_dimensions:smooth_basalt_blobs"
-    ],
-    [],
-    [],
-    [],
     [
       "fluid_dimensions:ur_ore_magma",
       "fluid_dimensions:ore_air",
@@ -94,8 +90,6 @@
     ],
     [],
     [
-      "fluid_dimensions:fallen_basalt_pillars",
-      "fluid_dimensions:warp_portal"
     ],
     [],
     [
