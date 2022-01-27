@@ -2,7 +2,7 @@
   "feature": "fluid_dimensions:dismal_slopes",
   "placement": [
     {
-      "type": "minecraft:count_on_every_layer",
+      "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
         "value": {
@@ -16,6 +16,12 @@
       "noise_to_count_ratio": 1,
       "noise_factor": 7,
       "noise_offset": 0.4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

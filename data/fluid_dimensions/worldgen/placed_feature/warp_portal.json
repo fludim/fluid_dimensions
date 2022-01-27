@@ -8,6 +8,9 @@
     {
       "type": "heightmap",
       "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

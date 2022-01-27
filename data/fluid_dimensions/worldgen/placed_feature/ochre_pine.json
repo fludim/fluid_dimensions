@@ -2,8 +2,11 @@
   "feature": "fluid_dimensions:ochre_pine",
   "placement": [
     {
-      "type": "minecraft:count_on_every_layer",
+      "type": "minecraft:count",
       "count": 3
+    },
+    {
+      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:noise_based_count",
@@ -12,8 +15,23 @@
       "noise_offset": 0.2
     },
     {
-      "type": "heightmap",
+      "type": "minecraft:heightmap",
       "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

@@ -6,7 +6,7 @@
         "type": "minecraft:random_patch",
         "config": {
           "tries": 1,
-          "xz_spread": 5,
+          "xz_spread": 1,
           "y_spread": 0,
           "feature": {
             "feature": {
@@ -59,7 +59,7 @@
       "placement": [
         {
           "type": "count",
-          "count": 24
+          "count": 8
         }
       ]
     },
@@ -68,7 +68,7 @@
         "type": "minecraft:random_patch",
         "config": {
           "tries": 1,
-          "xz_spread": 0,
+          "xz_spread": 1,
           "y_spread": 0,
           "feature": {
             "feature": {
@@ -121,7 +121,7 @@
       "placement": [
         {
           "type": "count",
-          "count": 24
+          "count": 8
         }
       ]
     }

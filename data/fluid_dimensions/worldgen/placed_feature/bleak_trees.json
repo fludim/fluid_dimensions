@@ -2,21 +2,36 @@
   "feature": "fluid_dimensions:bleak_trees",
   "placement": [
     {
-      "type": "minecraft:in_square"
-    },
-    {
-      "type": "minecraft:count_on_every_layer",
+      "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
         "value": {
           "min_inclusive": 2,
-          "max_inclusive": 5
+          "max_inclusive": 4
         }
       }
     },
     {
-      "type": "heightmap",
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
       "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

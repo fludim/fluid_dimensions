@@ -39,6 +39,9 @@
         ]
       },
       "max_steps": 32
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

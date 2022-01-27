@@ -19,6 +19,25 @@
       "noise_to_count_ratio": -1,
       "noise_factor": 24,
       "noise_offset": 0.25
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 45
+        },
+        "max_inclusive": {
+          "below_top": 10
+        }
+      }
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }
