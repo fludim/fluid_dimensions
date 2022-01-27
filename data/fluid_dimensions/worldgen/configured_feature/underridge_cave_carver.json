@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:replace_single_block",
+  "config": {
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "fluid_dimensions:underridge_surface"
+        },
+        "state": {
+          "Name": "minecraft:air"
+        }
+      }
+    ]
+  }
+}

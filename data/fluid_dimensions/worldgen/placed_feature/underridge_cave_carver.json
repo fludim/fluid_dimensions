@@ -1,0 +1,67 @@
+{
+  "feature": "fluid_dimensions:underridge_cave_carver",
+  "placement": [
+    {
+      "type": "minecraft:carving_mask",
+      "step": "air"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                1,
+                0,
+                0
+              ],
+              "fluids": [
+                "minecraft:lava"
+              ]
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                0,
+                0,
+                1
+              ],
+              "fluids": [
+                "minecraft:lava"
+              ]
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                -1,
+                0,
+                0
+              ],
+              "fluids": [
+                "minecraft:lava"
+              ]
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                0,
+                0,
+                -1
+              ],
+              "fluids": [
+                "minecraft:lava"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}
