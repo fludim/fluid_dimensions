@@ -453,6 +453,86 @@
                 }
               ]
             }
+          },
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "minecraft:stone_depth",
+              "offset": 0,
+              "surface_type": "floor",
+              "add_surface_depth": true,
+              "add_surface_secondary_depth": true
+            },
+            "then_run": {
+              "type": "minecraft:sequence",
+              "sequence": [
+                {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                      "fluid_dimensions:ochre_plains"
+                    ]
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:yellow_terracotta"
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                      "fluid_dimensions:garnet_gorge"
+                    ]
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:red_terracotta"
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                      "fluid_dimensions:alabaster_tundra"
+                    ]
+                  },
+                  "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                      {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                          "type": "minecraft:noise_threshold",
+                          "noise": "fluid_dimensions:alabaster_calcite",
+                          "min_threshold": -0.70,
+                          "max_threshold": 0.80
+                        },
+                        "then_run": {
+                          "type": "minecraft:block",
+                          "result_state": {
+                            "Name": "minecraft:calcite"
+                          }
+                        }
+                      },
+                      {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "minecraft:white_terracotta"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
           }
         ]
       }

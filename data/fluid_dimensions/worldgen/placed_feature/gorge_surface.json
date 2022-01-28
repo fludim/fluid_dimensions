@@ -2,12 +2,12 @@
   "feature": "fluid_dimensions:gorge_surface",
   "placement": [
     {
-      "type": "minecraft:count_on_every_layer",
+      "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
         "value": {
-          "min_inclusive": 70,
-          "max_inclusive": 150
+          "min_inclusive": 100,
+          "max_inclusive": 200
         }
       }
     },

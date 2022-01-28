@@ -7,7 +7,7 @@
     "extra_bottom_block_chance": 0,
     "extra_edge_column_chance": 0,
     "vegetation_chance": 1,
-    "xz_radius": 0,
+    "xz_radius": 1,
     "replaceable": "fluid_dimensions:garnet_surface",
     "ground_state": {
       "type": "minecraft:simple_state_provider",
@@ -69,7 +69,7 @@
             "type": "minecraft:uniform",
             "value": {
               "min_inclusive": 1,
-              "max_inclusive": 2
+              "max_inclusive": 3
             }
           }
         }

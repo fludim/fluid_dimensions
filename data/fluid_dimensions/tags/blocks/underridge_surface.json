@@ -5,6 +5,10 @@
             "required": false
         },
         {
+            "id": "minecraft:magma_block",
+            "required": false
+        },
+        {
             "id": "minecraft:tuff",
             "required": false
         },
