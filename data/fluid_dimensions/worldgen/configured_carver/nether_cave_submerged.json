@@ -5,10 +5,10 @@
     "y": {
       "type": "minecraft:biased_to_bottom",
       "min_inclusive": {
-        "absolute": 15
+        "absolute": 6
       },
       "max_inclusive": {
-        "absolute": 127
+        "absolute": 31
       },
       "inner": 24
     },
@@ -34,7 +34,10 @@
         }
       },
       "barrier_state": {
-        "Name": "minecraft:blackstone"
+        "Name": "minecraft:lava",
+        "Properties": {
+          "level": "0"
+        }
       }
     },
     "horizontal_radius_multiplier": {

@@ -1,0 +1,9 @@
+{
+  "feature": "fluid_dimensions:underridge_cave_carver_submerged",
+  "placement": [
+    {
+      "type": "minecraft:carving_mask",
+      "step": "liquid"
+    }
+  ]
+}

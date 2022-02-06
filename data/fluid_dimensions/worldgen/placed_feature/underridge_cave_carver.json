@@ -15,6 +15,17 @@
             {
               "type": "minecraft:matching_fluids",
               "offset": [
+                0,
+                1,
+                0
+              ],
+              "fluids": [
+                "minecraft:lava"
+              ]
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
                 1,
                 0,
                 0

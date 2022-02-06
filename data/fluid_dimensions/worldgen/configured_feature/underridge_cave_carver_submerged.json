@@ -8,7 +8,10 @@
           "tag": "fluid_dimensions:underridge_surface"
         },
         "state": {
-          "Name": "minecraft:cave_air"
+          "Name": "minecraft:lava",
+          "Properties": {
+            "level": "0"
+          }
         }
       }
     ]

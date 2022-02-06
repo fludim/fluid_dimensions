@@ -1,0 +1,114 @@
+{
+  "feature": "fluid_dimensions:basalt_columns_v2",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 3,
+          "max_inclusive": 10
+        }
+      }
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 50
+        },
+        "max_inclusive": {
+          "below_top": 20
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 13,
+      "noise_offset": 0.12
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:clamped_normal",
+        "value": {
+          "min_inclusive": 7,
+          "max_inclusive": 18,
+          "mean": 14,
+          "deviation": 3
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:clamped_normal",
+        "value": {
+          "min_inclusive": -2,
+          "max_inclusive": 1,
+          "mean": -0.5,
+          "deviation": 0.9
+        }
+      },
+      "y_spread": 0
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_block_tag",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "tag": "fluid_dimensions:underridge_surface"
+            },
+            {
+              "type": "minecraft:matching_block_tag",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "tag": "fluid_dimensions:underridge_surface"
+            },
+            {
+              "type": "minecraft:matching_block_tag",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "tag": "fluid_dimensions:air"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    }
+  ]
+}

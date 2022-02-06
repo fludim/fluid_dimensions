@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "minecraft:basalt",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "target": {
+      "Name": "minecraft:blackstone"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 8
+      }
+    }
+  }
+}

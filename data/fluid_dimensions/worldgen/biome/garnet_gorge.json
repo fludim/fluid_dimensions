@@ -31,6 +31,9 @@
     "air": [
       "fluid_dimensions:gorge_canyon",
       "fluid_dimensions:nether_cave"
+    ],
+    "liquid": [
+      "fluid_dimensions:nether_cave_submerged"
     ]
   },
   "features": [
@@ -38,6 +41,7 @@
     [],
     [
       "fluid_dimensions:underridge_cave_carver",
+      "fluid_dimensions:underridge_cave_carver_submerged",
       "fluid_dimensions:gorge_surface",
       "fluid_dimensions:quartz_spike"
     ],

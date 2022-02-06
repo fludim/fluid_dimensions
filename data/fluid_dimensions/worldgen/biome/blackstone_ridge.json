@@ -36,6 +36,9 @@
   "carvers": {
     "air": [
       "fluid_dimensions:nether_cave"
+    ],
+    "liquid": [
+      "fluid_dimensions:nether_cave_submerged"
     ]
   },
   "features": [
@@ -45,6 +48,7 @@
     [],
     [
       "fluid_dimensions:underridge_cave_carver",
+      "fluid_dimensions:underridge_cave_carver_submerged",
       "fluid_dimensions:ur_delta"
     ],
     [
@@ -55,9 +59,8 @@
     ],
     [],
     [
-      "minecraft:basalt_blobs",
       "minecraft:spring_delta",
-      "fluid_dimensions:ur_small_basalt_columns"
+      "fluid_dimensions:basalt_columns_v2"
     ],
     [],
     [
