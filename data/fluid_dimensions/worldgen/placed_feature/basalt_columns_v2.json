@@ -66,7 +66,7 @@
     },
     {
       "type": "minecraft:surface_water_depth_filter",
-      "max_water_depth": 0
+      "max_water_depth": 16
     },
     {
       "type": "minecraft:block_predicate_filter",
@@ -76,31 +76,31 @@
           "type": "minecraft:any_of",
           "predicates": [
             {
-              "type": "minecraft:matching_block_tag",
+              "type": "minecraft:matching_blocks",
               "offset": [
                 0,
                 1,
                 0
               ],
-              "tag": "fluid_dimensions:underridge_surface"
+              "blocks": "#fluid_dimensions:underridge_surface"
             },
             {
-              "type": "minecraft:matching_block_tag",
+              "type": "minecraft:matching_blocks",
               "offset": [
                 0,
                 0,
                 0
               ],
-              "tag": "fluid_dimensions:underridge_surface"
+              "blocks": "#fluid_dimensions:underridge_surface"
             },
             {
-              "type": "minecraft:matching_block_tag",
+              "type": "minecraft:matching_blocks",
               "offset": [
                 0,
                 -2,
                 0
               ],
-              "tag": "fluid_dimensions:air"
+              "blocks": "#fluid_dimensions:air"
             }
           ]
         }

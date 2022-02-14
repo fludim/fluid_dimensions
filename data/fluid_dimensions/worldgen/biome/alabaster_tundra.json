@@ -92,7 +92,9 @@
       "minecraft:ore_debris_small",
       "fluid_dimensions:ore_nullite"
     ],
-    [],
+    [
+      "fluid_dimensions:alabaster_spike"
+    ],
     [
     ],
     [],

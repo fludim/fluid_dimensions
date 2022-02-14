@@ -1,6 +1,10 @@
 {
     "values": [
         {
+            "id": "minecraft:blackstone",
+            "required": false
+        },
+        {
             "id": "minecraft:obsidian",
             "required": false
         },

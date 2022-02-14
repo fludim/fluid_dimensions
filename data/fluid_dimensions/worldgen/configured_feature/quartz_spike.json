@@ -10,8 +10,8 @@
         "config": {
           "direction": "up",
           "allowed_placement": {
-            "type": "minecraft:matching_block_tag",
-            "tag": "fluid_dimensions:air"
+            "type": "minecraft:matching_blocks",
+            "blocks": "#fluid_dimensions:air"
           },
           "prioritize_tip": false,
           "layers": [
@@ -45,8 +45,8 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_block_tag",
-                "tag": "fluid_dimensions:air"
+                "type": "minecraft:matching_blocks",
+                "blocks": "#fluid_dimensions:air"
               },
               {
                 "type": "minecraft:matching_blocks",

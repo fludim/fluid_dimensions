@@ -2,30 +2,36 @@
   "feature": "fluid_dimensions:fallen_basalt_pillars",
   "placement": [
     {
-      "type": "minecraft:count_on_every_layer",
-      "count": 5
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 6,
+          "max_inclusive": 12
+        }
+      }
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:noise_based_count",
-      "noise_to_count_ratio": 1,
-      "noise_factor": 18,
-      "noise_offset": 0.05
+      "noise_to_count_ratio": 1.8,
+      "noise_factor": 47,
+      "noise_offset": 0.15
     },
     {
       "type": "minecraft:noise_based_count",
-      "noise_to_count_ratio": -1,
-      "noise_factor": 24,
-      "noise_offset": 0.25
+      "noise_to_count_ratio": 2.4,
+      "noise_factor": 29,
+      "noise_offset": -0.19
     },
     {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "above_bottom": 45
+          "above_bottom": 35
         },
         "max_inclusive": {
           "below_top": 10
@@ -34,7 +40,7 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "OCEAN_FLOOR_WG"
+      "heightmap": "OCEAN_FLOOR"
     },
     {
       "type": "minecraft:biome"

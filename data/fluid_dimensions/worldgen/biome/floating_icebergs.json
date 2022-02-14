@@ -93,7 +93,8 @@
   },
   "features": [
     [
-      "fluid_dimensions:underridge_cave_carver"
+      "fluid_dimensions:underridge_cave_carver",
+      "fluid_dimensions:underridge_cave_carver_submerged"
     ],
     [
       "minecraft:lake_lava_surface",
