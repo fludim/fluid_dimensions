@@ -1,214 +1,226 @@
 {
-    "type": "minecraft:block",
-    "pools": [
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
         {
-            "rolls": 1,
-            "bonus_rolls": 0,
-            "entries": [
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:oak_leaves",
+              "conditions": [
                 {
-                    "type": "minecraft:alternatives",
-                    "children": [
-                        {
-                            "type": "minecraft:item",
-                            "name": "minecraft:oak_leaves",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:alternative",
-                                    "terms": [
-                                        {
-                                            "condition": "minecraft:match_tool",
-                                            "predicate": {
-                                                "items": [
-                                                    "minecraft:shears"
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "condition": "minecraft:match_tool",
-                                            "predicate": {
-                                                "enchantments": [
-                                                    {
-                                                        "enchantment": "minecraft:silk_touch",
-                                                        "levels": {
-                                                            "min": 1
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "minecraft:item",
-                            "name": "minecraft:oak_sapling",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:survives_explosion"
-                                },
-                                {
-                                    "condition": "minecraft:table_bonus",
-                                    "enchantment": "minecraft:fortune",
-                                    "chances": [
-                                        0.05,
-                                        0.0625,
-                                        0.083333336,
-                                        0.1
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "bonus_rolls": 0,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:stick",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 1,
-                                "max": 2
-                            },
-                            "add": false
-                        },
-                        {
-                            "function": "minecraft:explosion_decay"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:table_bonus",
-                            "enchantment": "minecraft:fortune",
-                            "chances": [
-                                0.02,
-                                0.022222223,
-                                0.025,
-                                0.033333335,
-                                0.1
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "conditions": [
-                {
-                    "condition": "minecraft:inverted",
-                    "term": {
-                        "condition": "minecraft:alternative",
-                        "terms": [
-                            {
-                                "condition": "minecraft:match_tool",
-                                "predicate": {
-                                    "items": [
-                                        "minecraft:shears"
-                                    ]
-                                }
-                            },
-                            {
-                                "condition": "minecraft:match_tool",
-                                "predicate": {
-                                    "enchantments": [
-                                        {
-                                            "enchantment": "minecraft:silk_touch",
-                                            "levels": {
-                                                "min": 1
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "items": [
+                          "minecraft:shears"
                         ]
-                    }
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "bonus_rolls": 0,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:apple",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"translate\":\"item.fd.fallen_apple\",\"color\":\"dark_purple\",\"italic\":false}'},CustomModelData:4470013,fd:{id:\"fallen_apple\"}}"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "dimension": "minecraft:the_nether",
-                                "light": {
-                                    "light": 0
-                                }
+                      }
+                    },
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "enchantments": [
+                          {
+                            "enchantment": "minecraft:silk_touch",
+                            "levels": {
+                              "min": 1
                             }
-                        },
-                        {
-                            "condition": "minecraft:survives_explosion"
-                        },
-                        {
-                            "condition": "minecraft:block_state_property",
-                            "block": "minecraft:oak_leaves",
-                            "properties": {
-                                "persistent": "false"
-                            }
-                        },
-                        {
-                            "condition": "minecraft:table_bonus",
-                            "enchantment": "minecraft:fortune",
-                            "chances": [
-                                0.0001,
-                                0.0005,
-                                0.001,
-                                0.0025,
-                                0.005
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "conditions": [
-                {
-                    "condition": "minecraft:inverted",
-                    "term": {
-                        "condition": "minecraft:alternative",
-                        "terms": [
-                            {
-                                "condition": "minecraft:match_tool",
-                                "predicate": {
-                                    "items": [
-                                        "minecraft:shears"
-                                    ]
-                                }
-                            },
-                            {
-                                "condition": "minecraft:match_tool",
-                                "predicate": {
-                                    "enchantments": [
-                                        {
-                                            "enchantment": "minecraft:silk_touch",
-                                            "levels": {
-                                                "min": 1
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
+                          }
                         ]
+                      }
                     }
+                  ]
                 }
-            ]
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:oak_sapling",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                },
+                {
+                  "condition": "minecraft:table_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "chances": [
+                    0.05,
+                    0.0625,
+                    0.083333336,
+                    0.1
+                  ]
+                }
+              ]
+            }
+          ]
         }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [
+                0.02,
+                0.022222223,
+                0.025,
+                0.033333335,
+                0.1
+              ]
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:alternative",
+            "terms": [
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": [
+                    "minecraft:shears"
+                  ]
+                }
+              },
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"item.fd.fallen_apple\",\"color\":\"dark_purple\",\"italic\":false}'},CustomModelData:4470013,fd:{id:\"fallen_apple\"}}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:the_nether",
+                "light": {
+                  "light": 0
+                }
+              }
+            },
+            {
+              "condition": "minecraft:survives_explosion"
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:oak_leaves",
+              "properties": {
+                "persistent": "false"
+              }
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [
+                0.0001,
+                0.0005,
+                0.001,
+                0.0025,
+                0.005
+              ]
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:alternative",
+            "terms": [
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": [
+                    "minecraft:shears"
+                  ]
+                }
+              },
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "__smithed__": {
+    "rules":[
+      {
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[2]"
+        }
+      }
     ]
+  }
 }

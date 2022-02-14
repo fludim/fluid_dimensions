@@ -66,7 +66,7 @@ advancement grant @a only fluid_dimensions:root
 scoreboard players add @a fd.tunneller_cd 0
 
 # Custom ore min depth
-scoreboard players set $min_ore_depth fd.const 5
+scoreboard players set $min_ore_depth fd.const 8
 scoreboard players set $ore_depth fd.const 0
 
 # Less-often-ticking functions:

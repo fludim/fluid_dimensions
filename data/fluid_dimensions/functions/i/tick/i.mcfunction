@@ -19,7 +19,7 @@ tag @s remove fd.i_suffocating
 
 # Hurt
 execute store result score @s fd.hurt run data get entity @s HurtTime
-execute if score @s fd.hurt matches 10.. run summon minecraft:snowball ~ ~-1 ~ {NoGravity:0b,Tags:["global.ignore", "global.ignore.pos"],Passengers:[{id:"minecraft:area_effect_cloud",Particle:"minecraft:dust_color_transition 0.3 0.05 0 2 0.1 0.1 0.1",NoGravity:0b,CustomNameVisible:0b,ReapplicationDelay:10,Radius:1f,RadiusPerTick:0.005f,RadiusOnUse:-0.1f,Duration:200,Tags:["fd.i_miasma"],Effects:[{Id:15b,Amplifier:0b,Duration:100},{Id:20b,Amplifier:1b,Duration:120}],CustomName:'{"translate":"entity.fd.i","color":"dark_red","bold":true,"italic":false}'}],Item:{id:"minecraft:white_stained_glass_pane",Count:1b,tag:{CustomModelData:4470099}}}
+execute if score @s fd.hurt matches 10.. run summon minecraft:snowball ~ ~-1 ~ {NoGravity:0b,Tags:["smithed.entity","smithed.strict"],Passengers:[{id:"minecraft:area_effect_cloud",Particle:"minecraft:dust_color_transition 0.3 0.05 0 2 0.1 0.1 0.1",NoGravity:0b,CustomNameVisible:0b,ReapplicationDelay:10,Radius:1f,RadiusPerTick:0.005f,RadiusOnUse:-0.1f,Duration:200,Tags:["fd.i_miasma","smithed.entity","smithed.strict"],Effects:[{Id:15b,Amplifier:0b,Duration:100},{Id:20b,Amplifier:1b,Duration:120}],CustomName:'{"translate":"entity.fd.i","color":"dark_red","bold":true,"italic":false}'}],Item:{id:"minecraft:white_stained_glass_pane",Count:1b,tag:{CustomModelData:4470099}}}
 
 # Stages
 ## all stages
