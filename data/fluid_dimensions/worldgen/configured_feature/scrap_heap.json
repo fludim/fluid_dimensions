@@ -1,0 +1,103 @@
+{
+  "type": "minecraft:block_pile",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:chain",
+            "Properties": {
+              "axis": "y",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:chain",
+            "Properties": {
+              "axis": "x",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:chain",
+            "Properties": {
+              "axis": "z",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:smooth_basalt"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:polished_basalt",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:polished_basalt",
+            "Properties": {
+              "axis": "x"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:polished_basalt",
+            "Properties": {
+              "axis": "z"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:polished_blackstone"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:gilded_blackstone"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:oxidized_cut_copper"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:iron_block"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:raw_gold_block"
+          }
+        }
+      ]
+    }
+  }
+}

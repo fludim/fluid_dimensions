@@ -1,0 +1,123 @@
+{
+  "feature": "fluid_dimensions:scrap_heap",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 7
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 32
+        },
+        "max_inclusive": {
+          "absolute": 130
+        }
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 32,
+      "target_condition": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "#fluid_dimensions:air"
+            }
+          },
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "fluids": "minecraft:lava"
+            }
+          }
+        ]
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "#fluid_dimensions:air"
+          },
+          {
+            "type": "minecraft:matching_fluids",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "fluids": "minecraft:lava"
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 18,
+          "max_inclusive": 30
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": 1
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:clamped_normal",
+        "value": {
+          "min_inclusive": 0,
+          "max_inclusive": 4,
+          "mean": 2,
+          "deviation": 1.2
+        }
+      },
+      "y_spread": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": -1,
+          "max_inclusive": 2
+        }
+      }
+    },
+    {
+      "type": "minecraft:surface_relative_threshold_filter",
+      "heightmap": "OCEAN_FLOOR_WG",
+      "max_inclusive": -12
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

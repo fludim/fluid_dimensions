@@ -99,6 +99,7 @@
     [],
     [
       "fluid_dimensions:ur_basalt_blobs",
+      "fluid_dimensions:scrap_heap",
       "fluid_dimensions:fallen_basalt_pillars",
       "fluid_dimensions:warp_portal"
     ],
