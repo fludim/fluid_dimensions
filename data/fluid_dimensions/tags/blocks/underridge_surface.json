@@ -1,60 +1,60 @@
 {
-    "values": [
-        {
-            "id": "minecraft:blackstone",
-            "required": false
-        },
-        {
-            "id": "minecraft:obsidian",
-            "required": false
-        },
-        {
-            "id": "minecraft:magma_block",
-            "required": false
-        },
-        {
-            "id": "minecraft:tuff",
-            "required": false
-        },
-        {
-            "id": "minecraft:gray_concrete_powder",
-            "required": false
-        },
-        {
-            "id": "minecraft:gravel",
-            "required": false
-        },
-        {
-            "id": "minecraft:white_terracotta",
-            "required": false
-        },
-        {
-            "id": "minecraft:calcite",
-            "required": false
-        },
-        {
-            "id": "minecraft:red_terracotta",
-            "required": false
-        },
-        {
-            "id": "minecraft:red_concrete_powder",
-            "required": false
-        },
-        {
-            "id": "minecraft:pink_concrete_powder",
-            "required": false
-        },
-        {
-            "id": "minecraft:netherrack",
-            "required": false
-        },
-        {
-            "id": "minecraft:nether_quartz_ore",
-            "required": false
-        },
-        {
-            "id": "minecraft:yellow_terracotta",
-            "required": false
-        }
-    ]
+  "values": [
+    {
+      "id": "minecraft:blackstone",
+      "required": false
+    },
+    {
+      "id": "minecraft:obsidian",
+      "required": false
+    },
+    {
+      "id": "minecraft:magma_block",
+      "required": false
+    },
+    {
+      "id": "minecraft:tuff",
+      "required": false
+    },
+    {
+      "id": "minecraft:gray_concrete_powder",
+      "required": false
+    },
+    {
+      "id": "minecraft:gravel",
+      "required": false
+    },
+    {
+      "id": "minecraft:white_terracotta",
+      "required": false
+    },
+    {
+      "id": "minecraft:calcite",
+      "required": false
+    },
+    {
+      "id": "minecraft:red_terracotta",
+      "required": false
+    },
+    {
+      "id": "minecraft:red_concrete_powder",
+      "required": false
+    },
+    {
+      "id": "minecraft:pink_concrete_powder",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherrack",
+      "required": false
+    },
+    {
+      "id": "minecraft:nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:yellow_terracotta",
+      "required": false
+    }
+  ]
 }

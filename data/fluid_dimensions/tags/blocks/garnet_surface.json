@@ -1,12 +1,12 @@
 {
-    "values": [
-        {
-            "id": "minecraft:red_terracotta",
-            "required": false
-        },
-        {
-            "id": "minecraft:blackstone",
-            "required": false
-        }
-    ]
+  "values": [
+    {
+      "id": "minecraft:red_terracotta",
+      "required": false
+    },
+    {
+      "id": "minecraft:blackstone",
+      "required": false
+    }
+  ]
 }

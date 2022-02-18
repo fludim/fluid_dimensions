@@ -35,6 +35,7 @@
             },
             {
               "function": "minecraft:set_contents",
+              "type": "minecraft:shulker_box",
               "entries": [
                 {
                   "type": "minecraft:dynamic",
@@ -49,7 +50,7 @@
               "term": {
                 "condition": "minecraft:match_tool",
                 "predicate": {
-                  "item": "minecraft:air",
+                  "items": ["minecraft:air"],
                   "nbt": "{drop_contents:1b}"
                 }
               }
@@ -68,7 +69,7 @@
             {
               "condition": "minecraft:match_tool",
               "predicate": {
-                "item": "minecraft:air",
+                "items": ["minecraft:air"],
                 "nbt": "{drop_contents:1b}"
               }
             }

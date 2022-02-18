@@ -1,84 +1,84 @@
 {
-    "values": [
-        {
-            "id": "#minecraft:fire",
-            "required": false
-        },
-        {
-            "id": "#fluid_dimensions:air",
-            "required": false
-        },
-        {
-            "id": "minecraft:light",
-            "required": false
-        },
-        {
-            "id": "minecraft:water",
-            "required": false
-        },
-        {
-            "id": "minecraft:bubble_column",
-            "required": false
-        },
-        {
-            "id": "minecraft:lava",
-            "required": false
-        },
-        {
-            "id": "minecraft:grass",
-            "required": false
-        },
-        {
-            "id": "minecraft:tall_grass",
-            "required": false
-        },
-        {
-            "id": "minecraft:fern",
-            "required": false
-        },
-        {
-            "id": "minecraft:large_fern",
-            "required": false
-        },
-        {
-            "id": "minecraft:dead_bush",
-            "required": false
-        },
-        {
-            "id": "minecraft:vine",
-            "required": false
-        },
-        {
-            "id": "minecraft:glow_lichen",
-            "required": false
-        },
-        {
-            "id": "minecraft:seagrass",
-            "required": false
-        },
-        {
-            "id": "minecraft:tall_seagrass",
-            "required": false
-        },
-        {
-            "id": "minecraft:structure_void",
-            "required": false
-        },
-        {
-            "id": "minecraft:crimson_roots",
-            "required": false
-        },
-        {
-            "id": "minecraft:warped_roots",
-            "required": false
-        },
-        {
-            "id": "minecraft:nether_sprouts",
-            "required": false
-        },
-        {
-            "id": "minecraft:snow",
-            "required": false
-        }
-    ]
+  "values": [
+    {
+      "id": "#minecraft:fire",
+      "required": false
+    },
+    {
+      "id": "#fluid_dimensions:air",
+      "required": false
+    },
+    {
+      "id": "minecraft:light",
+      "required": false
+    },
+    {
+      "id": "minecraft:water",
+      "required": false
+    },
+    {
+      "id": "minecraft:bubble_column",
+      "required": false
+    },
+    {
+      "id": "minecraft:lava",
+      "required": false
+    },
+    {
+      "id": "minecraft:grass",
+      "required": false
+    },
+    {
+      "id": "minecraft:tall_grass",
+      "required": false
+    },
+    {
+      "id": "minecraft:fern",
+      "required": false
+    },
+    {
+      "id": "minecraft:large_fern",
+      "required": false
+    },
+    {
+      "id": "minecraft:dead_bush",
+      "required": false
+    },
+    {
+      "id": "minecraft:vine",
+      "required": false
+    },
+    {
+      "id": "minecraft:glow_lichen",
+      "required": false
+    },
+    {
+      "id": "minecraft:seagrass",
+      "required": false
+    },
+    {
+      "id": "minecraft:tall_seagrass",
+      "required": false
+    },
+    {
+      "id": "minecraft:structure_void",
+      "required": false
+    },
+    {
+      "id": "minecraft:crimson_roots",
+      "required": false
+    },
+    {
+      "id": "minecraft:warped_roots",
+      "required": false
+    },
+    {
+      "id": "minecraft:nether_sprouts",
+      "required": false
+    },
+    {
+      "id": "minecraft:snow",
+      "required": false
+    }
+  ]
 }
