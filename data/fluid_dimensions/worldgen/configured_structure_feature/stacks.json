@@ -3,6 +3,26 @@
     "start_pool": "fluid_dimensions:stacks/rooms",
     "size": 4
   },
-  "type": "minecraft:village",
-  "name": "fluid_dimensions:stacks"
+  "biomes": "#fluid_dimensions:has_structure/stacks",
+  "adapt_noise": true,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:wither_skeleton",
+          "weight": 6,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "type": "minecraft:skeleton",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 3
+        }
+      ]
+    }
+  },
+  "type": "minecraft:village"
 }

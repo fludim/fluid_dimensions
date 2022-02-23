@@ -1,0 +1,17 @@
+{
+  "replace": "false",
+  "values": [
+    {
+      "id": "fluid_dimensions:bleak_forest",
+      "required": false
+    },
+    {
+      "id": "fluid_dimensions:dismal_desert",
+      "required": false
+    },
+    {
+      "id": "fluid_dimensions:ochre_plains",
+      "required": false
+    }
+  ]
+}

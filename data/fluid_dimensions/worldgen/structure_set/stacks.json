@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fluid_dimensions:stacks",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 47,
+    "separation": 24,
+    "salt": 30084232,
+    "type": "minecraft:random_spread"
+  }
+}

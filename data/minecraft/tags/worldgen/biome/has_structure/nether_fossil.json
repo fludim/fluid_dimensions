@@ -1,0 +1,13 @@
+{
+  "replace": "false",
+  "values": [
+    {
+      "id": "fluid_dimensions:bleak_forest",
+      "required": false
+    },
+    {
+      "id": "fluid_dimensions:garnet_gorge",
+      "required": false
+    }
+  ]
+}
