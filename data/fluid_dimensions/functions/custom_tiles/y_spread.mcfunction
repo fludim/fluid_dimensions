@@ -15,4 +15,4 @@ scoreboard players operation $ore_depth fd.const = #Out fd.lcg_main
 # Add back $min_ore_depth for range of ($min_ore_depth to y)
 scoreboard players operation $ore_depth fd.const += $min_ore_depth fd.const
 
-execute as @e[type=marker,tag=fd.ore_needs_y_spread,distance=..3] run function fluid_dimensions:custom_tiles/y_set
+execute at @s as @e[type=marker,tag=fd.ore_needs_y_spread,distance=..3] run function fluid_dimensions:custom_tiles/y_set
